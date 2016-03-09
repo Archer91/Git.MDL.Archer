@@ -1,0 +1,14 @@
+D:\xh.li\Projects\工作单转换\JobOrderConvert.MDL\JobOrderConvert\bin\Debug\JobOrderConvert.exe.config
+D:\xh.li\Projects\工作单转换\JobOrderConvert.MDL\JobOrderConvert\bin\Debug\JobOrderConvert.exe
+D:\xh.li\Projects\工作单转换\JobOrderConvert.MDL\JobOrderConvert\bin\Debug\JobOrderConvert.pdb
+D:\xh.li\Projects\工作单转换\JobOrderConvert.MDL\JobOrderConvert\obj\x86\Debug\JobOrderConvert.frmMain.resources
+D:\xh.li\Projects\工作单转换\JobOrderConvert.MDL\JobOrderConvert\obj\x86\Debug\JobOrderConvert.Properties.Resources.resources
+D:\xh.li\Projects\工作单转换\JobOrderConvert.MDL\JobOrderConvert\obj\x86\Debug\JobOrderConvert.csproj.GenerateResource.Cache
+D:\xh.li\Projects\工作单转换\JobOrderConvert.MDL\JobOrderConvert\obj\x86\Debug\JobOrderConvert.exe
+D:\xh.li\Projects\工作单转换\JobOrderConvert.MDL\JobOrderConvert\obj\x86\Debug\JobOrderConvert.pdb
+D:\xh.li\Projects\工作单转换\JobOrderConvert.MDL\JobOrderConvert\obj\x86\Debug\JobOrderConvert.csprojResolveAssemblyReference.cache
+D:\xh.li\Projects\工作单转换\JobOrderConvert.MDL\JobOrderConvert\bin\Debug\VerticalLabel.xml
+D:\xh.li\Projects\工作单转换\JobOrderConvert.MDL\JobOrderConvert\obj\x86\Debug\JobOrderConvert.frmImplant.resources
+D:\xh.li\Projects\工作单转换\JobOrderConvert.MDL\JobOrderConvert\obj\x86\Debug\JobOrderConvert.frmDentureAndOrthodontics.resources
+D:\xh.li\Projects\工作单转换\JobOrderConvert.MDL\JobOrderConvert\obj\x86\Debug\JobOrderConvert.frmInfo.resources
+D:\xh.li\Projects\工作单转换\JobOrderConvert.MDL\JobOrderConvert\bin\Debug\BarCode.dll

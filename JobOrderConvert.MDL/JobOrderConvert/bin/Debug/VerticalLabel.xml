@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VerticalLabel</name>
+    </assembly>
+    <members>
+        <member name="T:randz.CustomControls.VerticalLabel">
+            <summary>
+            A custom windows control to display text vertically
+            </summary>
+        </member>
+        <member name="M:randz.CustomControls.VerticalLabel.#ctor">
+            <summary>
+            VerticalLabel constructor
+            </summary>
+        </member>
+        <member name="M:randz.CustomControls.VerticalLabel.Dispose(System.Boolean)">
+            <summary>
+            Dispose override method
+            </summary>
+            <param name="disposing">boolean parameter</param>
+        </member>
+        <member name="M:randz.CustomControls.VerticalLabel.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            OnPaint override. This is where the text is rendered vertically.
+            </summary>
+            <param name="e">PaintEventArgs</param>
+        </member>
+        <member name="P:randz.CustomControls.VerticalLabel.CreateParams">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:randz.CustomControls.VerticalLabel.RenderingMode">
+            <summary>
+            Graphics rendering mode. Supprot for antialiasing.
+            </summary>
+        </member>
+        <member name="P:randz.CustomControls.VerticalLabel.Text">
+            <summary>
+            The text to be displayed in the control
+            </summary>
+        </member>
+        <member name="P:randz.CustomControls.VerticalLabel.TextDrawMode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:randz.CustomControls.DrawMode">
+            <summary>
+            Text Drawing Mode
+            </summary>
+        </member>
+        <member name="F:randz.CustomControls.DrawMode.BottomUp">
+            <summary>
+            Text is drawn from bottom - up
+            </summary>
+        </member>
+        <member name="F:randz.CustomControls.DrawMode.TopBottom">
+            <summary>
+            Text is drawn from top to bottom
+            </summary>
+        </member>
+    </members>
+</doc>
