@@ -1,0 +1,785 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6016A633-872D-4B76-AF14-05185D09D36E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PWW</RootNamespace>
+    <AssemblyName>PWW</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://192.168.8.53/</InstallUrl>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8009C6B25D833C181992B54C40A9D7671F475090</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>PWW_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BarCode">
+      <HintPath>.\BarCode.dll</HintPath>
+    </Reference>
+    <Reference Include="CheckBoxComboBox, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CheckBoxComboBox.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>NPOI\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="NPOI, Version=2.1.3.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>NPOI\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.1.3.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>NPOI\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.1.3.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>NPOI\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.1.3.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>NPOI\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.OracleClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AligmentHelper.cs" />
+    <Compile Include="CCBoxItem.cs" />
+    <Compile Include="CheckedComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataGridViewEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DB.cs" />
+    <Compile Include="dsAllRedo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAllRedo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsCauseAnalysis.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCauseAnalysis.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsDataStatistics.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDataStatistics.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsReworBrief.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReworBrief.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsReworkCompare.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReworkCompare.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Fi_InqGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fi_InqGeneral.Designer.cs">
+      <DependentUpon>Fi_InqGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fi_MayDuplicate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fi_MayDuplicate.Designer.cs">
+      <DependentUpon>Fi_MayDuplicate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fi_Rework_Inq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fi_Rework_Inq.Designer.cs">
+      <DependentUpon>Fi_Rework_Inq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fi_Rework_InqSum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fi_Rework_InqSum.designer.cs">
+      <DependentUpon>Fi_Rework_InqSum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fi_SumTrn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fi_SumTrn.Designer.cs">
+      <DependentUpon>Fi_SumTrn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_2_weight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_2_weight.Designer.cs">
+      <DependentUpon>Fm_2_weight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_5_weight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_5_weight.Designer.cs">
+      <DependentUpon>Fm_5_weight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_CauseAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_CauseAnalysis.designer.cs">
+      <DependentUpon>Fm_CauseAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_ChangePwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_ChangePwd.designer.cs">
+      <DependentUpon>Fm_ChangePwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_CustomReceiveQty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_CustomReceiveQty.Designer.cs">
+      <DependentUpon>Fm_CustomReceiveQty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_DataStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_DataStatistics.designer.cs">
+      <DependentUpon>Fm_DataStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_DeductItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_DeductItem.designer.cs">
+      <DependentUpon>Fm_DeductItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Dept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Dept.Designer.cs">
+      <DependentUpon>Fm_Dept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Grade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Grade.Designer.cs">
+      <DependentUpon>Fm_Grade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_JobAccessory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_JobAccessory.Designer.cs">
+      <DependentUpon>Fm_JobAccessory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_RedoReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_RedoReport.designer.cs">
+      <DependentUpon>Fm_RedoReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_RespFormula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_RespFormula.Designer.cs">
+      <DependentUpon>Fm_RespFormula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_ReworkBrief.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_ReworkBrief.designer.cs">
+      <DependentUpon>Fm_ReworkBrief.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_ReworkCompare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_ReworkCompare.designer.cs">
+      <DependentUpon>Fm_ReworkCompare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Rework_Reg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Rework_Reg.Designer.cs">
+      <DependentUpon>Fm_Rework_Reg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Rework_UpdTrn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Rework_UpdTrn.Designer.cs">
+      <DependentUpon>Fm_Rework_UpdTrn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Special_Case_History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Special_Case_History.Designer.cs">
+      <DependentUpon>Fm_Special_Case_History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_SyncEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_SyncEmp.Designer.cs">
+      <DependentUpon>Fm_SyncEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_UpdDeduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_UpdDeduct.designer.cs">
+      <DependentUpon>Fm_UpdDeduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_UpdTrn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_UpdTrn.Designer.cs">
+      <DependentUpon>Fm_UpdTrn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_WorkItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_WorkItem.Designer.cs">
+      <DependentUpon>Fm_WorkItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_WorkType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_WorkType.Designer.cs">
+      <DependentUpon>Fm_WorkType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Wpos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Wpos.Designer.cs">
+      <DependentUpon>Fm_Wpos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Deduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Deduct.designer.cs">
+      <DependentUpon>Form_Deduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fr_EmpPosBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fr_EmpPosBar.Designer.cs">
+      <DependentUpon>Fr_EmpPosBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fr_Rework_Ana.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fr_Rework_Ana.Designer.cs">
+      <DependentUpon>Fr_Rework_Ana.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BindingCollection.cs" />
+    <Compile Include="Model\DataGridViewAutoFilterColumnHeaderCell.cs" />
+    <Compile Include="Model\Gold_So_Dtl.cs" />
+    <Compile Include="Model\Gold_So_DtlDAL.cs" />
+    <Compile Include="Model\Gold_So_Hdr.cs" />
+    <Compile Include="Model\Gold_So_HdrDAL.cs" />
+    <Compile Include="Model\IDataGridRowCellValueChange.cs" />
+    <Compile Include="Model\Oracle\Delete.cs" />
+    <Compile Include="Model\Oracle\Edit.cs" />
+    <Compile Include="Model\Oracle\Insert.cs" />
+    <Compile Include="Model\Oracle\ZOra.cs" />
+    <Compile Include="Model\PrintBSD.cs" />
+    <Compile Include="Model\Special_Case.cs" />
+    <Compile Include="Model\Special_CaseDAL.cs" />
+    <Compile Include="Model\UWinLiveSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Model\UWinLiveSearch.Designer.cs">
+      <DependentUpon>UWinLiveSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Weight.cs" />
+    <Compile Include="Model\Zt_Gold_So_Dtl.cs" />
+    <Compile Include="Model\Zt_Gold_So_DtlDAL.cs" />
+    <Compile Include="Model\Zt_Gold_So_Dtl_.cs" />
+    <Compile Include="Model\Zt_Gold_So_DtlDAL_.cs" />
+    <Compile Include="Model\Gold_So_DtlDAL_.cs" />
+    <Compile Include="Model\Gold_So_Dtl_.cs" />
+    <Compile Include="NpoiHelper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PWMDI_W.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PWMDI_W.Designer.cs">
+      <DependentUpon>PWMDI_W.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SummaryTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SummaryTextBox.Designer.cs">
+      <DependentUpon>SummaryTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Special_Case.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Special_Case.Designer.cs">
+      <DependentUpon>Fm_Special_Case.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Special_Casez_SearchCond.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Special_Casez_SearchCond.Designer.cs">
+      <DependentUpon>Fm_Special_Casez_SearchCond.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Special_CaseSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Special_CaseSearch.Designer.cs">
+      <DependentUpon>Fm_Special_CaseSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_6_weight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_6_weight.Designer.cs">
+      <DependentUpon>Fm_6_weight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_7_weight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_7_weight.Designer.cs">
+      <DependentUpon>Fm_7_weight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_2_pop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_2_pop.Designer.cs">
+      <DependentUpon>Fm_2_pop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fi_Weight_Print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fi_Weight_Print.designer.cs">
+      <DependentUpon>Fi_Weight_Print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fi_Weight_Job.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fi_Weight_Job.designer.cs">
+      <DependentUpon>Fi_Weight_Job.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fi_Weight_4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fi_Weight_4.designer.cs">
+      <DependentUpon>Fi_Weight_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fi_Weight_JobDt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fi_Weight_JobDt.designer.cs">
+      <DependentUpon>Fi_Weight_JobDt.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Fi_InqGeneral.resx">
+      <DependentUpon>Fi_InqGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fi_MayDuplicate.resx">
+      <DependentUpon>Fi_MayDuplicate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fi_Rework_Inq.resx">
+      <DependentUpon>Fi_Rework_Inq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fi_Rework_InqSum.resx">
+      <DependentUpon>Fi_Rework_InqSum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fi_SumTrn.resx">
+      <DependentUpon>Fi_SumTrn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_2_weight.resx">
+      <DependentUpon>Fm_2_weight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_5_weight.resx">
+      <DependentUpon>Fm_5_weight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_CauseAnalysis.resx">
+      <DependentUpon>Fm_CauseAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_ChangePwd.resx">
+      <DependentUpon>Fm_ChangePwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_CustomReceiveQty.resx">
+      <DependentUpon>Fm_CustomReceiveQty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_DataStatistics.resx">
+      <DependentUpon>Fm_DataStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_DeductItem.resx">
+      <DependentUpon>Fm_DeductItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Dept.resx">
+      <DependentUpon>Fm_Dept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Grade.resx">
+      <DependentUpon>Fm_Grade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_JobAccessory.resx">
+      <DependentUpon>Fm_JobAccessory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_RedoReport.resx">
+      <DependentUpon>Fm_RedoReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_RespFormula.resx">
+      <DependentUpon>Fm_RespFormula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_ReworkBrief.resx">
+      <DependentUpon>Fm_ReworkBrief.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_ReworkCompare.resx">
+      <DependentUpon>Fm_ReworkCompare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Rework_Reg.resx">
+      <DependentUpon>Fm_Rework_Reg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Rework_UpdTrn.resx">
+      <DependentUpon>Fm_Rework_UpdTrn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Special_Case_History.resx">
+      <DependentUpon>Fm_Special_Case_History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_SyncEmp.resx">
+      <DependentUpon>Fm_SyncEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_UpdDeduct.resx">
+      <DependentUpon>Fm_UpdDeduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_UpdTrn.resx">
+      <DependentUpon>Fm_UpdTrn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_WorkItem.resx">
+      <DependentUpon>Fm_WorkItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_WorkType.resx">
+      <DependentUpon>Fm_WorkType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Wpos.resx">
+      <DependentUpon>Fm_Wpos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Deduct.resx">
+      <DependentUpon>Form_Deduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fr_EmpPosBar.resx">
+      <DependentUpon>Fr_EmpPosBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fr_Rework_Ana.resx">
+      <DependentUpon>Fr_Rework_Ana.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\UWinLiveSearch.resx">
+      <DependentUpon>UWinLiveSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PWMDI_W.resx">
+      <DependentUpon>PWMDI_W.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rdlc\AllRedoMonthReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rdlc\AllRedoReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rdlc\CauseAnalysisMonthReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rdlc\CauseAnalysisMonthSubReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rdlc\DataStatisticsMonthReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rdlc\DataStatisticsMonthSubReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rdlc\ReworkBriefMonthReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rdlc\ReworkBriefMonthSubReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rdlc\ReworkCompareMonthReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rdlc\ReworkCompareMonthSubReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Fm_Special_Case.resx">
+      <DependentUpon>Fm_Special_Case.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Special_Casez_SearchCond.resx">
+      <DependentUpon>Fm_Special_Casez_SearchCond.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Special_CaseSearch.resx">
+      <DependentUpon>Fm_Special_CaseSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_6_weight.resx">
+      <DependentUpon>Fm_6_weight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_7_weight.resx">
+      <DependentUpon>Fm_7_weight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_2_pop.resx">
+      <DependentUpon>Fm_2_pop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fi_Weight_Print.resx">
+      <DependentUpon>Fi_Weight_Print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fi_Weight_Job.resx">
+      <DependentUpon>Fi_Weight_Job.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fi_Weight_4.resx">
+      <DependentUpon>Fi_Weight_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fi_Weight_JobDt.resx">
+      <DependentUpon>Fi_Weight_JobDt.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="dsAllRedo.xsc">
+      <DependentUpon>dsAllRedo.xsd</DependentUpon>
+    </None>
+    <None Include="dsAllRedo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAllRedo.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsAllRedo.xss">
+      <DependentUpon>dsAllRedo.xsd</DependentUpon>
+    </None>
+    <None Include="dsCauseAnalysis.xsc">
+      <DependentUpon>dsCauseAnalysis.xsd</DependentUpon>
+    </None>
+    <None Include="dsCauseAnalysis.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCauseAnalysis.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsCauseAnalysis.xss">
+      <DependentUpon>dsCauseAnalysis.xsd</DependentUpon>
+    </None>
+    <None Include="dsDataStatistics.xsc">
+      <DependentUpon>dsDataStatistics.xsd</DependentUpon>
+    </None>
+    <None Include="dsDataStatistics.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDataStatistics.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsDataStatistics.xss">
+      <DependentUpon>dsDataStatistics.xsd</DependentUpon>
+    </None>
+    <None Include="dsReworBrief.xsc">
+      <DependentUpon>dsReworBrief.xsd</DependentUpon>
+    </None>
+    <None Include="dsReworBrief.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReworBrief.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsReworBrief.xss">
+      <DependentUpon>dsReworBrief.xsd</DependentUpon>
+    </None>
+    <None Include="dsReworkCompare.xsc">
+      <DependentUpon>dsReworkCompare.xsd</DependentUpon>
+    </None>
+    <None Include="dsReworkCompare.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReworkCompare.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsReworkCompare.xss">
+      <DependentUpon>dsReworkCompare.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="PWW_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\WinTest\ZComm1\ZComm1.csproj">
+      <Project>{03C956C5-356A-481C-92D5-DA3D9E6B15E1}</Project>
+      <Name>ZComm1</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NPOI\CheckBoxComboBox.dll" />
+    <Content Include="NPOI\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="NPOI\NPOI.dll" />
+    <Content Include="NPOI\NPOI.OOXML.dll" />
+    <Content Include="NPOI\NPOI.OOXML.XML" />
+    <Content Include="NPOI\NPOI.OpenXml4Net.dll" />
+    <Content Include="NPOI\NPOI.OpenXml4Net.XML" />
+    <Content Include="NPOI\NPOI.OpenXmlFormats.dll" />
+    <Content Include="NPOI\NPOI.XML" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

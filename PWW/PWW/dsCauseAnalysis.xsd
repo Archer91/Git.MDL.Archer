@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsCauseAnalysis" targetNamespace="http://tempuri.org/dsCauseAnalysis.xsd" xmlns:mstns="http://tempuri.org/dsCauseAnalysis.xsd" xmlns="http://tempuri.org/dsCauseAnalysis.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsCauseAnalysis" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsCauseAnalysis" msprop:Generator_UserDSName="dsCauseAnalysis">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtCauseAnalysisMonth" msprop:Generator_TableClassName="dtCauseAnalysisMonthDataTable" msprop:Generator_TableVarName="tabledtCauseAnalysisMonth" msprop:Generator_RowChangedName="dtCauseAnalysisMonthRowChanged" msprop:Generator_TablePropName="dtCauseAnalysisMonth" msprop:Generator_RowDeletingName="dtCauseAnalysisMonthRowDeleting" msprop:Generator_RowChangingName="dtCauseAnalysisMonthRowChanging" msprop:Generator_RowEvHandlerName="dtCauseAnalysisMonthRowChangeEventHandler" msprop:Generator_RowDeletedName="dtCauseAnalysisMonthRowDeleted" msprop:Generator_RowClassName="dtCauseAnalysisMonthRow" msprop:Generator_UserTableName="dtCauseAnalysisMonth" msprop:Generator_RowEvArgName="dtCauseAnalysisMonthRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="dept" msprop:Generator_ColumnVarNameInTable="columndept" msprop:Generator_ColumnPropNameInRow="dept" msprop:Generator_ColumnPropNameInTable="deptColumn" msprop:Generator_UserColumnName="dept" type="xs:string" minOccurs="0" />
+              <xs:element name="type" msprop:Generator_ColumnVarNameInTable="columntype" msprop:Generator_ColumnPropNameInRow="type" msprop:Generator_ColumnPropNameInTable="typeColumn" msprop:Generator_UserColumnName="type" type="xs:string" minOccurs="0" />
+              <xs:element name="item" msprop:Generator_ColumnVarNameInTable="columnitem" msprop:Generator_ColumnPropNameInRow="item" msprop:Generator_ColumnPropNameInTable="itemColumn" msprop:Generator_UserColumnName="item" type="xs:string" minOccurs="0" />
+              <xs:element name="code" msprop:Generator_ColumnVarNameInTable="columncode" msprop:Generator_ColumnPropNameInRow="code" msprop:Generator_ColumnPropNameInTable="codeColumn" msprop:Generator_UserColumnName="code" type="xs:string" minOccurs="0" />
+              <xs:element name="c1" msprop:Generator_ColumnVarNameInTable="columnc1" msprop:Generator_ColumnPropNameInRow="c1" msprop:Generator_ColumnPropNameInTable="c1Column" msprop:Generator_UserColumnName="c1" type="xs:double" minOccurs="0" />
+              <xs:element name="c2" msprop:Generator_ColumnVarNameInTable="columnc2" msprop:Generator_ColumnPropNameInRow="c2" msprop:Generator_ColumnPropNameInTable="c2Column" msprop:Generator_UserColumnName="c2" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtCauseAnalysisMonthHeader" msprop:Generator_TableClassName="dtCauseAnalysisMonthHeaderDataTable" msprop:Generator_TableVarName="tabledtCauseAnalysisMonthHeader" msprop:Generator_TablePropName="dtCauseAnalysisMonthHeader" msprop:Generator_RowDeletingName="dtCauseAnalysisMonthHeaderRowDeleting" msprop:Generator_RowChangingName="dtCauseAnalysisMonthHeaderRowChanging" msprop:Generator_RowEvHandlerName="dtCauseAnalysisMonthHeaderRowChangeEventHandler" msprop:Generator_RowDeletedName="dtCauseAnalysisMonthHeaderRowDeleted" msprop:Generator_UserTableName="dtCauseAnalysisMonthHeader" msprop:Generator_RowChangedName="dtCauseAnalysisMonthHeaderRowChanged" msprop:Generator_RowEvArgName="dtCauseAnalysisMonthHeaderRowChangeEvent" msprop:Generator_RowClassName="dtCauseAnalysisMonthHeaderRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="dept" msprop:Generator_ColumnVarNameInTable="columndept" msprop:Generator_ColumnPropNameInRow="dept" msprop:Generator_ColumnPropNameInTable="deptColumn" msprop:Generator_UserColumnName="dept" type="xs:string" minOccurs="0" />
+              <xs:element name="type" msprop:Generator_ColumnVarNameInTable="columntype" msprop:Generator_ColumnPropNameInRow="type" msprop:Generator_ColumnPropNameInTable="typeColumn" msprop:Generator_UserColumnName="type" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

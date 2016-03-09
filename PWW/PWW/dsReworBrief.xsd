@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsReworBrief" targetNamespace="http://tempuri.org/dsReworBrief.xsd" xmlns:mstns="http://tempuri.org/dsReworBrief.xsd" xmlns="http://tempuri.org/dsReworBrief.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsReworBrief" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsReworBrief" msprop:Generator_UserDSName="dsReworBrief">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtReworkBriefMonthHeader" msprop:Generator_TableClassName="dtReworkBriefMonthHeaderDataTable" msprop:Generator_TableVarName="tabledtReworkBriefMonthHeader" msprop:Generator_RowChangedName="dtReworkBriefMonthHeaderRowChanged" msprop:Generator_TablePropName="dtReworkBriefMonthHeader" msprop:Generator_RowDeletingName="dtReworkBriefMonthHeaderRowDeleting" msprop:Generator_RowChangingName="dtReworkBriefMonthHeaderRowChanging" msprop:Generator_RowEvHandlerName="dtReworkBriefMonthHeaderRowChangeEventHandler" msprop:Generator_RowDeletedName="dtReworkBriefMonthHeaderRowDeleted" msprop:Generator_RowClassName="dtReworkBriefMonthHeaderRow" msprop:Generator_UserTableName="dtReworkBriefMonthHeader" msprop:Generator_RowEvArgName="dtReworkBriefMonthHeaderRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="reason" msprop:Generator_ColumnVarNameInTable="columnreason" msprop:Generator_ColumnPropNameInRow="reason" msprop:Generator_ColumnPropNameInTable="reasonColumn" msprop:Generator_UserColumnName="reason" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtReworkBriefMonth" msprop:Generator_TableClassName="dtReworkBriefMonthDataTable" msprop:Generator_TableVarName="tabledtReworkBriefMonth" msprop:Generator_RowChangedName="dtReworkBriefMonthRowChanged" msprop:Generator_TablePropName="dtReworkBriefMonth" msprop:Generator_RowDeletingName="dtReworkBriefMonthRowDeleting" msprop:Generator_RowChangingName="dtReworkBriefMonthRowChanging" msprop:Generator_RowEvHandlerName="dtReworkBriefMonthRowChangeEventHandler" msprop:Generator_RowDeletedName="dtReworkBriefMonthRowDeleted" msprop:Generator_RowClassName="dtReworkBriefMonthRow" msprop:Generator_UserTableName="dtReworkBriefMonth" msprop:Generator_RowEvArgName="dtReworkBriefMonthRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="reason" msprop:Generator_ColumnVarNameInTable="columnreason" msprop:Generator_ColumnPropNameInRow="reason" msprop:Generator_ColumnPropNameInTable="reasonColumn" msprop:Generator_UserColumnName="reason" type="xs:string" minOccurs="0" />
+              <xs:element name="item" msprop:Generator_ColumnVarNameInTable="columnitem" msprop:Generator_ColumnPropNameInRow="item" msprop:Generator_ColumnPropNameInTable="itemColumn" msprop:Generator_UserColumnName="item" type="xs:string" minOccurs="0" />
+              <xs:element name="month" msprop:Generator_ColumnVarNameInTable="columnmonth" msprop:Generator_ColumnPropNameInRow="month" msprop:Generator_ColumnPropNameInTable="monthColumn" msprop:Generator_UserColumnName="month" type="xs:string" minOccurs="0" />
+              <xs:element name="qty" msprop:Generator_ColumnVarNameInTable="columnqty" msprop:Generator_ColumnPropNameInRow="qty" msprop:Generator_ColumnPropNameInTable="qtyColumn" msprop:Generator_UserColumnName="qty" type="xs:double" minOccurs="0" />
+              <xs:element name="all" msprop:Generator_ColumnVarNameInTable="columnall" msprop:Generator_ColumnPropNameInRow="all" msprop:Generator_ColumnPropNameInTable="allColumn" msprop:Generator_UserColumnName="all" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtReworkBriefAllMonth" msprop:Generator_TableClassName="dtReworkBriefAllMonthDataTable" msprop:Generator_TableVarName="tabledtReworkBriefAllMonth" msprop:Generator_RowChangedName="dtReworkBriefAllMonthRowChanged" msprop:Generator_TablePropName="dtReworkBriefAllMonth" msprop:Generator_RowDeletingName="dtReworkBriefAllMonthRowDeleting" msprop:Generator_RowChangingName="dtReworkBriefAllMonthRowChanging" msprop:Generator_RowEvHandlerName="dtReworkBriefAllMonthRowChangeEventHandler" msprop:Generator_RowDeletedName="dtReworkBriefAllMonthRowDeleted" msprop:Generator_RowClassName="dtReworkBriefAllMonthRow" msprop:Generator_UserTableName="dtReworkBriefAllMonth" msprop:Generator_RowEvArgName="dtReworkBriefAllMonthRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="reason" msprop:Generator_ColumnVarNameInTable="columnreason" msprop:Generator_ColumnPropNameInRow="reason" msprop:Generator_ColumnPropNameInTable="reasonColumn" msprop:Generator_UserColumnName="reason" type="xs:string" minOccurs="0" />
+              <xs:element name="month" msprop:Generator_ColumnVarNameInTable="columnmonth" msprop:Generator_ColumnPropNameInRow="month" msprop:Generator_ColumnPropNameInTable="monthColumn" msprop:Generator_UserColumnName="month" type="xs:string" minOccurs="0" />
+              <xs:element name="all" msprop:Generator_ColumnVarNameInTable="columnall" msprop:Generator_ColumnPropNameInRow="all" msprop:Generator_ColumnPropNameInTable="allColumn" msprop:Generator_UserColumnName="all" type="xs:double" minOccurs="0" />
+              <xs:element name="receiveQty" msprop:Generator_ColumnVarNameInTable="columnreceiveQty" msprop:Generator_ColumnPropNameInRow="receiveQty" msprop:Generator_ColumnPropNameInTable="receiveQtyColumn" msprop:Generator_UserColumnName="receiveQty" type="xs:double" minOccurs="0" />
+              <xs:element name="redoQty" msprop:Generator_ColumnVarNameInTable="columnredoQty" msprop:Generator_ColumnPropNameInRow="redoQty" msprop:Generator_ColumnPropNameInTable="redoQtyColumn" msprop:Generator_UserColumnName="redoQty" type="xs:double" minOccurs="0" />
+              <xs:element name="repairQty" msprop:Generator_ColumnVarNameInTable="columnrepairQty" msprop:Generator_ColumnPropNameInRow="repairQty" msprop:Generator_ColumnPropNameInTable="repairQtyColumn" msprop:Generator_UserColumnName="repairQty" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

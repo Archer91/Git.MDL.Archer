@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsReworkCompare" targetNamespace="http://tempuri.org/dsReworkCompare.xsd" xmlns:mstns="http://tempuri.org/dsReworkCompare.xsd" xmlns="http://tempuri.org/dsReworkCompare.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsReworkCompare" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsReworkCompare" msprop:Generator_UserDSName="dsReworkCompare">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtReworkCompareMonth" msprop:Generator_TableClassName="dtReworkCompareMonthDataTable" msprop:Generator_TableVarName="tabledtReworkCompareMonth" msprop:Generator_RowChangedName="dtReworkCompareMonthRowChanged" msprop:Generator_TablePropName="dtReworkCompareMonth" msprop:Generator_RowDeletingName="dtReworkCompareMonthRowDeleting" msprop:Generator_RowChangingName="dtReworkCompareMonthRowChanging" msprop:Generator_RowEvHandlerName="dtReworkCompareMonthRowChangeEventHandler" msprop:Generator_RowDeletedName="dtReworkCompareMonthRowDeleted" msprop:Generator_RowClassName="dtReworkCompareMonthRow" msprop:Generator_UserTableName="dtReworkCompareMonth" msprop:Generator_RowEvArgName="dtReworkCompareMonthRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="month" msprop:Generator_ColumnVarNameInTable="columnmonth" msprop:Generator_ColumnPropNameInRow="month" msprop:Generator_ColumnPropNameInTable="monthColumn" msprop:Generator_UserColumnName="month" type="xs:string" minOccurs="0" />
+              <xs:element name="mgrpcode" msprop:Generator_ColumnVarNameInTable="columnmgrpcode" msprop:Generator_ColumnPropNameInRow="mgrpcode" msprop:Generator_ColumnPropNameInTable="mgrpcodeColumn" msprop:Generator_UserColumnName="mgrpcode" type="xs:string" minOccurs="0" />
+              <xs:element name="all" msprop:Generator_ColumnVarNameInTable="columnall" msprop:Generator_ColumnPropNameInRow="all" msprop:Generator_ColumnPropNameInTable="allColumn" msprop:Generator_UserColumnName="all" type="xs:double" minOccurs="0" />
+              <xs:element name="dr_qty" msprop:Generator_ColumnVarNameInTable="columndr_qty" msprop:Generator_ColumnPropNameInRow="dr_qty" msprop:Generator_ColumnPropNameInTable="dr_qtyColumn" msprop:Generator_UserColumnName="dr_qty" type="xs:double" minOccurs="0" />
+              <xs:element name="factory_qty" msprop:Generator_ColumnVarNameInTable="columnfactory_qty" msprop:Generator_ColumnPropNameInRow="factory_qty" msprop:Generator_ColumnPropNameInTable="factory_qtyColumn" msprop:Generator_UserColumnName="factory_qty" type="xs:double" minOccurs="0" />
+              <xs:element name="redo_qty" msprop:Generator_ColumnVarNameInTable="columnredo_qty" msprop:Generator_ColumnPropNameInRow="redo_qty" msprop:Generator_ColumnPropNameInTable="redo_qtyColumn" msprop:Generator_UserColumnName="redo_qty" type="xs:double" minOccurs="0" />
+              <xs:element name="repair_qty" msprop:Generator_ColumnVarNameInTable="columnrepair_qty" msprop:Generator_ColumnPropNameInRow="repair_qty" msprop:Generator_ColumnPropNameInTable="repair_qtyColumn" msprop:Generator_UserColumnName="repair_qty" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtReworkCompareMonthHeader" msprop:Generator_TableClassName="dtReworkCompareMonthHeaderDataTable" msprop:Generator_TableVarName="tabledtReworkCompareMonthHeader" msprop:Generator_TablePropName="dtReworkCompareMonthHeader" msprop:Generator_RowDeletingName="dtReworkCompareMonthHeaderRowDeleting" msprop:Generator_RowChangingName="dtReworkCompareMonthHeaderRowChanging" msprop:Generator_RowEvHandlerName="dtReworkCompareMonthHeaderRowChangeEventHandler" msprop:Generator_RowDeletedName="dtReworkCompareMonthHeaderRowDeleted" msprop:Generator_UserTableName="dtReworkCompareMonthHeader" msprop:Generator_RowChangedName="dtReworkCompareMonthHeaderRowChanged" msprop:Generator_RowEvArgName="dtReworkCompareMonthHeaderRowChangeEvent" msprop:Generator_RowClassName="dtReworkCompareMonthHeaderRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="month" msprop:Generator_ColumnVarNameInTable="columnmonth" msprop:Generator_ColumnPropNameInRow="month" msprop:Generator_ColumnPropNameInTable="monthColumn" msprop:Generator_UserColumnName="month" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtReworkCompareAllMonth" msprop:Generator_TableClassName="dtReworkCompareAllMonthDataTable" msprop:Generator_TableVarName="tabledtReworkCompareAllMonth" msprop:Generator_TablePropName="dtReworkCompareAllMonth" msprop:Generator_RowDeletingName="dtReworkCompareAllMonthRowDeleting" msprop:Generator_RowChangingName="dtReworkCompareAllMonthRowChanging" msprop:Generator_RowEvHandlerName="dtReworkCompareAllMonthRowChangeEventHandler" msprop:Generator_RowDeletedName="dtReworkCompareAllMonthRowDeleted" msprop:Generator_UserTableName="dtReworkCompareAllMonth" msprop:Generator_RowChangedName="dtReworkCompareAllMonthRowChanged" msprop:Generator_RowEvArgName="dtReworkCompareAllMonthRowChangeEvent" msprop:Generator_RowClassName="dtReworkCompareAllMonthRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="item" msprop:Generator_ColumnVarNameInTable="columnitem" msprop:Generator_ColumnPropNameInRow="item" msprop:Generator_ColumnPropNameInTable="itemColumn" msprop:Generator_UserColumnName="item" type="xs:string" minOccurs="0" />
+              <xs:element name="month" msprop:Generator_ColumnVarNameInTable="columnmonth" msprop:Generator_ColumnPropNameInRow="month" msprop:Generator_ColumnPropNameInTable="monthColumn" msprop:Generator_UserColumnName="month" type="xs:string" minOccurs="0" />
+              <xs:element name="all" msprop:Generator_ColumnVarNameInTable="columnall" msprop:Generator_ColumnPropNameInRow="all" msprop:Generator_ColumnPropNameInTable="allColumn" msprop:Generator_UserColumnName="all" type="xs:double" minOccurs="0" />
+              <xs:element name="qty" msprop:Generator_ColumnVarNameInTable="columnqty" msprop:Generator_ColumnPropNameInRow="qty" msprop:Generator_ColumnPropNameInTable="qtyColumn" msprop:Generator_UserColumnName="qty" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
