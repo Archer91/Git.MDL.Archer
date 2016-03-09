@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F3D80249-612B-40BA-974B-1132B51296F0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CaseInquire</RootNamespace>
+    <AssemblyName>CaseInquire</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Inquiry128.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="O2S.Components.PDFRender4NET, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\O2S.Components.PDFRender4NET.dll</HintPath>
+    </Reference>
+    <Reference Include="PictureView, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\PictureView.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\System.Data.OracleClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZComm1, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\ZComm1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessNewPartialWithDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessNewPartialWithMethod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessReplyPartialWithDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessReplyPartialWithMethod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessReportPartialWithDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessReportPartialWtihMethod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_AddUserToRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_AddUserToRole.Designer.cs">
+      <DependentUpon>Fm_AddUserToRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Attachment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Attachment.Designer.cs">
+      <DependentUpon>Fm_Attachment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_BusinessNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_BusinessNew.Designer.cs">
+      <DependentUpon>Fm_BusinessNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_BusinessReply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_BusinessReply.Designer.cs">
+      <DependentUpon>Fm_BusinessReply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_BusinessReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_BusinessReport.Designer.cs">
+      <DependentUpon>Fm_BusinessReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_CaseType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_CaseType.Designer.cs">
+      <DependentUpon>Fm_CaseType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Category.Designer.cs">
+      <DependentUpon>Fm_Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_ChangePwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_ChangePwd.designer.cs">
+      <DependentUpon>Fm_ChangePwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_DirectReply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_DirectReply.Designer.cs">
+      <DependentUpon>Fm_DirectReply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Help.Designer.cs">
+      <DependentUpon>Fm_Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Login.Designer.cs">
+      <DependentUpon>Fm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Main.Designer.cs">
+      <DependentUpon>Fm_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_MgrpGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_MgrpGroup.Designer.cs">
+      <DependentUpon>Fm_MgrpGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_PermissionAssignment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_PermissionAssignment.Designer.cs">
+      <DependentUpon>Fm_PermissionAssignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_SysSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_SysSet.Designer.cs">
+      <DependentUpon>Fm_SysSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_TemplateCopy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_TemplateCopy.Designer.cs">
+      <DependentUpon>Fm_TemplateCopy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_TemplateItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_TemplateItem.Designer.cs">
+      <DependentUpon>Fm_TemplateItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_TemplateType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_TemplateType.Designer.cs">
+      <DependentUpon>Fm_TemplateType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPhoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPhoto.designer.cs">
+      <DependentUpon>FormPhoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="helperclass\DB.cs" />
+    <Compile Include="helperclass\PublicClass.cs" />
+    <Compile Include="helperclass\PublicMethod.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDI_W.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI_W.designer.cs">
+      <DependentUpon>MDI_W.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\CaseWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateItemPartialWithDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TemplateItemPartialWithMethod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Fm_AddUserToRole.resx">
+      <DependentUpon>Fm_AddUserToRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Attachment.resx">
+      <DependentUpon>Fm_Attachment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_BusinessNew.resx">
+      <DependentUpon>Fm_BusinessNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_BusinessReply.resx">
+      <DependentUpon>Fm_BusinessReply.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_BusinessReport.resx">
+      <DependentUpon>Fm_BusinessReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_CaseType.resx">
+      <DependentUpon>Fm_CaseType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Category.resx">
+      <DependentUpon>Fm_Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_ChangePwd.resx">
+      <DependentUpon>Fm_ChangePwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_DirectReply.resx">
+      <DependentUpon>Fm_DirectReply.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Help.resx">
+      <DependentUpon>Fm_Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Login.resx">
+      <DependentUpon>Fm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Main.resx">
+      <DependentUpon>Fm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_MgrpGroup.resx">
+      <DependentUpon>Fm_MgrpGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_PermissionAssignment.resx">
+      <DependentUpon>Fm_PermissionAssignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_SysSet.resx">
+      <DependentUpon>Fm_SysSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_TemplateCopy.resx">
+      <DependentUpon>Fm_TemplateCopy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_TemplateItem.resx">
+      <DependentUpon>Fm_TemplateItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_TemplateType.resx">
+      <DependentUpon>Fm_TemplateType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPhoto.resx">
+      <DependentUpon>FormPhoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI_W.resx">
+      <DependentUpon>MDI_W.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\CaseWS\CaseInquire.CaseWS.WO_ReturnInfoR.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CaseWS\Service1.wsdl" />
+    <None Include="Service References\CaseWS\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CaseWS\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CaseWS\Service110.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CaseWS\Service111.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CaseWS\Service12.wsdl" />
+    <None Include="Service References\CaseWS\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CaseWS\Service13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CaseWS\Service18.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CaseWS\Service19.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dll\O2S.Components.PDFRender4NET.dll" />
+    <Content Include="dll\PictureView.dll" />
+    <Content Include="dll\System.Data.OracleClient.dll" />
+    <Content Include="dll\ZComm1.dll" />
+    <Content Include="ico\Inquiry128.ico" />
+    <Content Include="ico\Inquiry72.ico" />
+    <Content Include="ico\log.ico" />
+    <Content Include="ico\logo2.ico" />
+    <Content Include="ico\refresh.png" />
+    <Content Include="ico\search.png" />
+    <Content Include="img\Logo.png" />
+    <Content Include="Inquiry128.ico" />
+    <Content Include="Inquiry72.ico" />
+    <Content Include="log.ico" />
+    <Content Include="logo2.ico" />
+    <None Include="Service References\CaseWS\Service112.disco" />
+    <None Include="Service References\CaseWS\Service11.disco" />
+    <None Include="Service References\CaseWS\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\CaseWS\configuration.svcinfo" />
+    <None Include="Service References\CaseWS\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CaseWS\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

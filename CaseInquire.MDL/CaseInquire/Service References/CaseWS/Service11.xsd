@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://support2.moderndentallab.com/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfService_Support2" />
+  <xs:import schemaLocation="http://support2.moderndentallab.com/Service1.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="SyncWorkOrderData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WcfService_Support2" minOccurs="0" name="WODataRecord" nillable="true" type="q1:WO_SyncDataR" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SyncWorkOrderDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WcfService_Support2" minOccurs="0" name="SyncWorkOrderDataResult" nillable="true" type="q2:WO_ReturnInfoR" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCaseEstimateDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Jobm_AccountID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CaseNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="OperationUserID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="OperationUserPwd" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCaseEstimateDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCaseEstimateDateResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCaseListByEstimateDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Jobm_AccountID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="EstimateDate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="OperationUserID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="OperationUserPwd" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCaseListByEstimateDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCaseListByEstimateDateResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPackingListByShipDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Jobm_AccountID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ShipDate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="OperationUserID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="OperationUserPwd" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPackingListByShipDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPackingListByShipDateResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCateGory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OperationUserID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="OperationUserPwd" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Jobm_AccountID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Category_Type" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCateGoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCateGoryResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPriority">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OperationUserID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="OperationUserPwd" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPriorityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPriorityResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRepeatReason">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OperationUserID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="OperationUserPwd" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRepeatReasonResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetRepeatReasonResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserReportPartner">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OperationUserID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="OperationUserPwd" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserReportPartnerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetUserReportPartnerResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTitleTopic">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OperationUserID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="OperationUserPwd" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="JOBM_NO" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Title_Topic_Type" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CASE_FROM_ACCTID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CASE_TO_ACCTID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTitleTopicResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTitleTopicResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActiveLogReport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OperationUserID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="OperationUserPwd" nillable="true" type="xs:string" />
+        <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FromToAcctIdArr" nillable="true" type="q3:ArrayOfstring" />
+        <xs:element minOccurs="0" name="StartDateTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="EndDateTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="UserArr" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CaseNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActiveLogReportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetActiveLogReportResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitCaseListInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OperationUserID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="OperationUserPwd" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CASE_FROM_ACCTID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CASE_TO_ACCTID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="JOBM_NO" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CASE_CONTENT" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CASE_TOPIC" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CASE_ISNEW_TOPIC" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CASE_TITLE" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CASE_FROM_CATEGORY" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CASE_TO_CATEGORY" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CASE_PRIORITY" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CASE_FROM_SYSTEM" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CASE_FROM_KEYVALUE" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CASE_IS_REPEAT_REPLY" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CASE_REPEAT_REASON" nillable="true" type="xs:string" />
+        <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ARRAY_FILE_NAME" nillable="true" type="q4:ArrayOfstring" />
+        <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ARRAY_FILE_STREAM" nillable="true" type="q5:ArrayOfbase64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitCaseListInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SubmitCaseListInfoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

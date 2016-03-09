@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://support2.moderndentallab.com/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://support2.moderndentallab.com/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://support2.moderndentallab.com/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfService_Support2" />
+      <xsd:import schemaLocation="http://support2.moderndentallab.com/Service1.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_SyncWorkOrderData_InputMessage">
+    <wsdl:part name="parameters" element="tns:SyncWorkOrderData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SyncWorkOrderData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SyncWorkOrderDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCaseEstimateDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCaseEstimateDate" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCaseEstimateDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCaseEstimateDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCaseListByEstimateDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCaseListByEstimateDate" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCaseListByEstimateDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCaseListByEstimateDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetPackingListByShipDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPackingListByShipDate" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetPackingListByShipDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPackingListByShipDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCateGory_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCateGory" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCateGory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCateGoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetPriority_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPriority" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetPriority_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPriorityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetRepeatReason_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRepeatReason" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetRepeatReason_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRepeatReasonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetUserReportPartner_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserReportPartner" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetUserReportPartner_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserReportPartnerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetTitleTopic_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTitleTopic" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetTitleTopic_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTitleTopicResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetActiveLogReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetActiveLogReport" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetActiveLogReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetActiveLogReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SubmitCaseListInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitCaseListInfo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SubmitCaseListInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitCaseListInfoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="SyncWorkOrderData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SyncWorkOrderData" message="tns:IService1_SyncWorkOrderData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SyncWorkOrderDataResponse" message="tns:IService1_SyncWorkOrderData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCaseEstimateDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetCaseEstimateDate" message="tns:IService1_GetCaseEstimateDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetCaseEstimateDateResponse" message="tns:IService1_GetCaseEstimateDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCaseListByEstimateDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetCaseListByEstimateDate" message="tns:IService1_GetCaseListByEstimateDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetCaseListByEstimateDateResponse" message="tns:IService1_GetCaseListByEstimateDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPackingListByShipDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetPackingListByShipDate" message="tns:IService1_GetPackingListByShipDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetPackingListByShipDateResponse" message="tns:IService1_GetPackingListByShipDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCateGory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetCateGory" message="tns:IService1_GetCateGory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetCateGoryResponse" message="tns:IService1_GetCateGory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPriority">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetPriority" message="tns:IService1_GetPriority_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetPriorityResponse" message="tns:IService1_GetPriority_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRepeatReason">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetRepeatReason" message="tns:IService1_GetRepeatReason_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetRepeatReasonResponse" message="tns:IService1_GetRepeatReason_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserReportPartner">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetUserReportPartner" message="tns:IService1_GetUserReportPartner_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetUserReportPartnerResponse" message="tns:IService1_GetUserReportPartner_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTitleTopic">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetTitleTopic" message="tns:IService1_GetTitleTopic_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetTitleTopicResponse" message="tns:IService1_GetTitleTopic_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveLogReport">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetActiveLogReport" message="tns:IService1_GetActiveLogReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetActiveLogReportResponse" message="tns:IService1_GetActiveLogReport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitCaseListInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SubmitCaseListInfo" message="tns:IService1_SubmitCaseListInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SubmitCaseListInfoResponse" message="tns:IService1_SubmitCaseListInfo_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SyncWorkOrderData">
+      <soap:operation soapAction="http://tempuri.org/IService1/SyncWorkOrderData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCaseEstimateDate">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetCaseEstimateDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCaseListByEstimateDate">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetCaseListByEstimateDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPackingListByShipDate">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetPackingListByShipDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCateGory">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetCateGory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPriority">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetPriority" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRepeatReason">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetRepeatReason" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserReportPartner">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetUserReportPartner" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTitleTopic">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetTitleTopic" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveLogReport">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetActiveLogReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitCaseListInfo">
+      <soap:operation soapAction="http://tempuri.org/IService1/SubmitCaseListInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://support2.moderndentallab.com/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

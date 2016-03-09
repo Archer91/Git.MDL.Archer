@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="04d2a15f-00f0-4736-9201-f8e9bdb255dc" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://support2.moderndentallab.com/Service1.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Service12.wsdl" MetadataType="Wsdl" ID="c28c9292-3091-411a-911d-4fa406b29953" SourceId="1" SourceUrl="http://support2.moderndentallab.com/Service1.svc?wsdl" />
+    <MetadataFile FileName="Service18.xsd" MetadataType="Schema" ID="049ec206-0a8e-423b-96d1-7a70018f1ef7" SourceId="1" SourceUrl="http://support2.moderndentallab.com/Service1.svc?xsd=xsd1" />
+    <MetadataFile FileName="Service19.xsd" MetadataType="Schema" ID="a08252d0-10e6-4d46-bef2-67d83f858073" SourceId="1" SourceUrl="http://support2.moderndentallab.com/Service1.svc?xsd=xsd0" />
+    <MetadataFile FileName="Service110.xsd" MetadataType="Schema" ID="39eb8e0c-6fa4-4817-9a28-d870ddf60d82" SourceId="1" SourceUrl="http://support2.moderndentallab.com/Service1.svc?xsd=xsd3" />
+    <MetadataFile FileName="Service111.xsd" MetadataType="Schema" ID="d7d375fb-f63b-4a2b-90a1-e1b94a75c869" SourceId="1" SourceUrl="http://support2.moderndentallab.com/Service1.svc?xsd=xsd2" />
+    <MetadataFile FileName="Service112.disco" MetadataType="Disco" ID="dd6c6bbf-eb93-4de4-8756-666a0e6ac42c" SourceId="1" SourceUrl="http://support2.moderndentallab.com/Service1.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

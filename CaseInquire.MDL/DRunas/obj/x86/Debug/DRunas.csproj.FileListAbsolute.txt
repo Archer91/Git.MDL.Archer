@@ -1,0 +1,8 @@
+D:\xh.li\Projects\问单条模块\CaseInquire.MDL\DRunas\bin\Debug\DRunas.exe.config
+D:\xh.li\Projects\问单条模块\CaseInquire.MDL\DRunas\bin\Debug\DRunas.exe
+D:\xh.li\Projects\问单条模块\CaseInquire.MDL\DRunas\bin\Debug\DRunas.pdb
+D:\xh.li\Projects\问单条模块\CaseInquire.MDL\DRunas\obj\x86\Debug\DRunas.Form1.resources
+D:\xh.li\Projects\问单条模块\CaseInquire.MDL\DRunas\obj\x86\Debug\DRunas.Properties.Resources.resources
+D:\xh.li\Projects\问单条模块\CaseInquire.MDL\DRunas\obj\x86\Debug\DRunas.csproj.GenerateResource.Cache
+D:\xh.li\Projects\问单条模块\CaseInquire.MDL\DRunas\obj\x86\Debug\DRunas.exe
+D:\xh.li\Projects\问单条模块\CaseInquire.MDL\DRunas\obj\x86\Debug\DRunas.pdb
