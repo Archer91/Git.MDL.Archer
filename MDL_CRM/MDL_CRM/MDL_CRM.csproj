@@ -1,0 +1,644 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D82E9B60-DBA5-493B-8050-041F3FE40CE5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MDL_CRM</RootNamespace>
+    <AssemblyName>MDL_CRM</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>7E1B8F7497FAB8F56AFC4EC15783DCAFA8A9F0A9</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>MDL_CRM_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="O2S.Components.PDFRender4NET, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\O2S.Components.PDFRender4NET.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll_files\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="PictureView, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll_files\PictureView.dll</HintPath>
+    </Reference>
+    <Reference Include="PubModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll_files\PubModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZComm1, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll_files\ZComm1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\CCBoxItem.cs" />
+    <Compile Include="Classes\CheckedComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\DB.cs" />
+    <Compile Include="Classes\ImportJob.cs" />
+    <Compile Include="Factory\ChargeFactory.cs" />
+    <Compile Include="Factory\SaleOrderFactory.cs" />
+    <Compile Include="Factory\WorkOrderFactory.cs" />
+    <Compile Include="Fm_ChargeWithDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_ChargeWithMethod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_EditEstimate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_EditEstimate.Designer.cs">
+      <DependentUpon>Fm_EditEstimate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_JobOrderQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_JobOrderQuery.Designer.cs">
+      <DependentUpon>Fm_JobOrderQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\ChargeHelper.cs" />
+    <Compile Include="Helper\SaleOrderHelper.cs" />
+    <Compile Include="Helper\WorkOrderHelper.cs" />
+    <Compile Include="Impl\ChargeImpl.cs" />
+    <Compile Include="Impl\SaleOrderImpl.cs" />
+    <Compile Include="Impl\WorkOrderImpl.cs" />
+    <Compile Include="Intf\ICharge.cs" />
+    <Compile Include="Intf\ISaleOrder.cs" />
+    <Compile Include="Intf\IWorkOrder.cs" />
+    <Compile Include="Model\JOB_ORDER.cs" />
+    <Compile Include="Model\JOB_PRODUCT.cs" />
+    <Compile Include="Classes\pubcls.cs" />
+    <Compile Include="Model\ZT00_FORM_SYSSEQ.cs" />
+    <Compile Include="Model\ZT00_JOB_ADDINFO.cs" />
+    <Compile Include="Model\ZT00_JOB_ATTACHMENT.cs" />
+    <Compile Include="Model\ZT00_JOB_DISCOUNT_LOG.cs" />
+    <Compile Include="Model\ZT00_JOB_IMAGE.cs" />
+    <Compile Include="Model\ZT00_JOB_ORDER.cs" />
+    <Compile Include="Model\ZT00_JOB_PRODUCT.cs" />
+    <Compile Include="Model\ZT00_JOB_QA_REGISTER.cs" />
+    <Compile Include="Model\ZT00_JOB_REDO_REGISTER.cs" />
+    <Compile Include="Model\ZT00_JOB_REMARK.cs" />
+    <Compile Include="Model\ZT00_JOB_REQUESTDATE_LOG.cs" />
+    <Compile Include="Model\ZT00_JOB_STAGE_LOG.cs" />
+    <Compile Include="Model\ZT10_PRODUCT_PRICE_EX_HIST.cs" />
+    <Compile Include="Model\ZT10_PRODUCT_PRICE_HIST.cs" />
+    <Compile Include="Model\ZT10_RATE_EXCHANGE.cs" />
+    <Compile Include="Model\ZT10_SOD_SO_DETAIL.cs" />
+    <Compile Include="Model\ZT10_SO_SALES_ORDER.cs" />
+    <Compile Include="Ds_Fda.cs">
+      <DependentUpon>Ds_Fda.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ds_Fda.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Fda.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ds_Invno.cs">
+      <DependentUpon>Ds_Invno.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ds_Invno.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Invno.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_AddUserToRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_AddUserToRole.designer.cs">
+      <DependentUpon>Fm_AddUserToRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_ChangePwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_ChangePwd.Designer.cs">
+      <DependentUpon>Fm_ChangePwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Check.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Check.Designer.cs">
+      <DependentUpon>Fm_Check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_EntitySecutity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_EntitySecutity.Designer.cs">
+      <DependentUpon>Fm_EntitySecutity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_InvnoList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_InvnoList.Designer.cs">
+      <DependentUpon>Fm_InvnoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Invoice.Designer.cs">
+      <DependentUpon>Fm_Invoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Charge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Charge.Designer.cs">
+      <DependentUpon>Fm_Charge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_JobItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_JobItem.Designer.cs">
+      <DependentUpon>Fm_JobItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_FDA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_FDA.Designer.cs">
+      <DependentUpon>Fm_FDA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_FDARpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_FDARpt.Designer.cs">
+      <DependentUpon>Fm_FDARpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_JobItemWithDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_JobItemWithMethod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Masterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Masterial.Designer.cs">
+      <DependentUpon>Fm_Masterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_MkInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_MkInvoice.Designer.cs">
+      <DependentUpon>Fm_MkInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_ModityLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_ModityLog.Designer.cs">
+      <DependentUpon>Fm_ModityLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_OrderOther.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_OrderOther.Designer.cs">
+      <DependentUpon>Fm_OrderOther.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_OrderQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_OrderQuery.Designer.cs">
+      <DependentUpon>Fm_OrderQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_OrderRelation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_OrderRelation.Designer.cs">
+      <DependentUpon>Fm_OrderRelation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Print.Designer.cs">
+      <DependentUpon>Fm_Print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_RelationContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_RelationContent.Designer.cs">
+      <DependentUpon>Fm_RelationContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_SaleOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_SaleOrder.Designer.cs">
+      <DependentUpon>Fm_SaleOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_SaleOrderEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_SaleOrderEdit.Designer.cs">
+      <DependentUpon>Fm_SaleOrderEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_SaleOrderEditWithDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_SaleOrderEditWithMethod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_SaleOrderEditWithNormal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_SelectLtd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_SelectLtd.Designer.cs">
+      <DependentUpon>Fm_SelectLtd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_SysSecutity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_SysSecutity.Designer.cs">
+      <DependentUpon>Fm_SysSecutity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBigMeno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBigMeno.Designer.cs">
+      <DependentUpon>FrmBigMeno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Dialog_Faq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Dialog_Faq.Designer.cs">
+      <DependentUpon>Frm_Dialog_Faq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDI_W.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI_W.designer.cs">
+      <DependentUpon>MDI_W.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ZT10_CREDIT_NOTE.cs" />
+    <Compile Include="Model\ZT10_CREDIT_NOTE_DTL.cs" />
+    <Compile Include="Model\ZT10_CURRENCY.cs" />
+    <Compile Include="Model\ZT10_INVOICE_DTL.cs" />
+    <Compile Include="Model\ZT10_INVOICE_MSTR.cs" />
+    <Compile Include="Model\ZT10_INVOICE_MSTR_LOG.cs" />
+    <Compile Include="Model\ZT10_SOPP_PDPRO.cs" />
+    <Compile Include="Model\ZT10_SO_ATTACHMENT.cs" />
+    <Compile Include="Model\ZT10_SO_CHARGE_DTL.cs" />
+    <Compile Include="Model\ZT10_SO_IMAGE.cs" />
+    <Compile Include="Model\ZT10_SO_REMARK.cs" />
+    <Compile Include="Model\ZT_SS_DATA_MODLOG.cs" />
+    <Compile Include="Model\ZT_SS_EXCEPTION.cs" />
+    <Compile Include="Model\ZT_SS_LOG.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Fm_Job_Pro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Job_Pro.Designer.cs">
+      <DependentUpon>Fm_Job_Pro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_FDARpt2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_FDARpt2.Designer.cs">
+      <DependentUpon>Fm_FDARpt2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserComponent\DataGrid.cs">
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="UserComponent\DataGrid.Designer.cs">
+      <DependentUpon>DataGrid.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="VO\ChangeEstimateVO.cs" />
+    <Compile Include="VO\FormSysSeqVO.cs" />
+    <Compile Include="VO\InvoiceDtlVO.cs" />
+    <Compile Include="VO\InvoiceMstrVO.cs" />
+    <Compile Include="VO\InvoiceVO.cs" />
+    <Compile Include="VO\JobImageVO.cs" />
+    <Compile Include="VO\JobOrderVO.cs" />
+    <Compile Include="VO\JobProductVO.cs" />
+    <Compile Include="VO\SaleOrderChargeVO.cs" />
+    <Compile Include="VO\SaleOrderDetailVO.cs" />
+    <Compile Include="VO\SaleOrderImageVO.cs" />
+    <Compile Include="VO\SaleOrderPropertyVO.cs" />
+    <Compile Include="VO\SaleOrderVO.cs" />
+    <EmbeddedResource Include="Fm_AddUserToRole.resx">
+      <DependentUpon>Fm_AddUserToRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_ChangePwd.resx">
+      <DependentUpon>Fm_ChangePwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Check.resx">
+      <DependentUpon>Fm_Check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_EditEstimate.resx">
+      <DependentUpon>Fm_EditEstimate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_EntitySecutity.resx">
+      <DependentUpon>Fm_EntitySecutity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_InvnoList.resx">
+      <DependentUpon>Fm_InvnoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Invoice.resx">
+      <DependentUpon>Fm_Invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Charge.resx">
+      <DependentUpon>Fm_Charge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_JobItem.resx">
+      <DependentUpon>Fm_JobItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_FDA.resx">
+      <DependentUpon>Fm_FDA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_FDARpt.resx">
+      <DependentUpon>Fm_FDARpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_JobOrderQuery.resx">
+      <DependentUpon>Fm_JobOrderQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Masterial.resx">
+      <DependentUpon>Fm_Masterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_MkInvoice.resx">
+      <DependentUpon>Fm_MkInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_ModityLog.resx">
+      <DependentUpon>Fm_ModityLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_OrderOther.resx">
+      <DependentUpon>Fm_OrderOther.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_OrderQuery.resx">
+      <DependentUpon>Fm_OrderQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_OrderRelation.resx">
+      <DependentUpon>Fm_OrderRelation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Print.resx">
+      <DependentUpon>Fm_Print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_RelationContent.resx">
+      <DependentUpon>Fm_RelationContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_SaleOrder.resx">
+      <DependentUpon>Fm_SaleOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_SaleOrderEdit.resx">
+      <DependentUpon>Fm_SaleOrderEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_SelectLtd.resx">
+      <DependentUpon>Fm_SelectLtd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_SysSecutity.resx">
+      <DependentUpon>Fm_SysSecutity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBigMeno.resx">
+      <DependentUpon>FrmBigMeno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Dialog_Faq.resx">
+      <DependentUpon>Frm_Dialog_Faq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI_W.resx">
+      <DependentUpon>MDI_W.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Fm_Job_Pro.resx">
+      <DependentUpon>Fm_Job_Pro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_FDARpt2.resx">
+      <DependentUpon>Fm_FDARpt2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_FdaInvoice.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_Invoice.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_Invoice2.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_InvoiceB.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_subInvoice.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_Invoice_hk.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_Invoice_EUR.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_Invoice_USD.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_subInvoice_Line.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_Invoice_General.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Ds_Fda.xsc">
+      <DependentUpon>Ds_Fda.xsd</DependentUpon>
+    </None>
+    <None Include="Ds_Fda.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Fda.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Ds_Fda.xss">
+      <DependentUpon>Ds_Fda.xsd</DependentUpon>
+    </None>
+    <None Include="Ds_Invno.xsc">
+      <DependentUpon>Ds_Invno.xsd</DependentUpon>
+    </None>
+    <None Include="Ds_Invno.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Invno.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Ds_Invno.xss">
+      <DependentUpon>Ds_Invno.xsd</DependentUpon>
+    </None>
+    <None Include="MDL_CRM_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dll_files\BarCode.dll" />
+    <Content Include="dll_files\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="dll_files\LumenWorks.Framework.IO.dll" />
+    <Content Include="dll_files\MySql.Data.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="dll_files\Newtonsoft.Json.dll" />
+    <Content Include="dll_files\Newtonsoft.Json.xml" />
+    <Content Include="dll_files\NPOI.dll" />
+    <Content Include="dll_files\NPOI.OOXML.dll" />
+    <Content Include="dll_files\NPOI.OpenXml4Net.dll" />
+    <Content Include="dll_files\NPOI.OpenXmlFormats.dll" />
+    <Content Include="dll_files\O2S.Components.PDFRender4NET.dll" />
+    <Content Include="dll_files\Oracle.DataAccess.dll" />
+    <Content Include="dll_files\PictureView.dll" />
+    <Content Include="dll_files\PubModel.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="dll_files\ZBarCode.dll" />
+    <Content Include="dll_files\ZComm1.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="dll_files\ZNPOI.dll" />
+    <Content Include="dll_files\zxing.dll" />
+    <None Include="Resources\btnSmall2.jpg" />
+    <None Include="Resources\btnSmall1.jpg" />
+    <None Include="Resources\btnRight2.jpg" />
+    <None Include="Resources\btnRight1.jpg" />
+    <None Include="Resources\btnPro2.jpg" />
+    <None Include="Resources\btnPro1.jpg" />
+    <None Include="Resources\btnNext2.jpg" />
+    <None Include="Resources\btnNext1.jpg" />
+    <None Include="Resources\btnLeft2.jpg" />
+    <None Include="Resources\btnLeft1.jpg" />
+    <None Include="Resources\btnBig2.jpg" />
+    <None Include="Resources\btnBig1.jpg" />
+    <None Include="Resources\btnAct2.jpg" />
+    <None Include="Resources\btnAct1.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

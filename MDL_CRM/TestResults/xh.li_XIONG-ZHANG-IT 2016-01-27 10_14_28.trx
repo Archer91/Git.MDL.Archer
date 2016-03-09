@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="5158a4df-3622-4817-9fd8-91f9e021e0af" name="xh.li@XIONG-ZHANG-IT 2016-01-27 10:14:28" runUser="MODERNDENTALLAB\xh.li" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="fdda6114-3506-4039-8bf3-4f18a5d84891">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="xh.li_XIONG-ZHANG-IT 2016-01-27 10_14_28">
+      <DeploymentItem filename="D:\APP-Res\MDL_CRM\MDL_CRM\bin\Debug\MDL_CRM.exe" />
+      <DeploymentItem filename="D:\APP-Res\MDL_CRM\MDL_CRM\dll_files\O2S.Components.PDFRender4NET.dll" />
+      <DeploymentItem filename="D:\APP-Res\MDL_CRM\MDL_CRM\dll_files\PictureView.dll" />
+      <DeploymentItem filename="D:\APP-Res\MDL_CRM\MDL_CRM\dll_files\PubModel.dll" />
+      <DeploymentItem filename="D:\APP-Res\MDL_CRM\MDL_CRM\dll_files\ZComm1.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2016-01-27T10:14:28.2013336+08:00" queuing="2016-01-27T10:14:28.2203336+08:00" start="2016-01-27T10:14:28.2253336+08:00" finish="2016-01-27T10:14:29.3333336+08:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="getSaleorderTest" storage="d:\app-res\mdl_crm\mdl_crm_test\bin\debug\mdl_crm_test.dll" id="fd6fc8cf-13a9-c23d-094d-fc10b9451653">
+      <Execution id="22baa36a-75c4-4f7d-990c-30de0d03f3b9" />
+      <TestMethod codeBase="D:/APP-Res/MDL_CRM/MDL_CRM_Test/bin/Debug/MDL_CRM_Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="MDL_CRM_Test.SaleOrderHelperTest, MDL_CRM_Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getSaleorderTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="fd6fc8cf-13a9-c23d-094d-fc10b9451653" executionId="22baa36a-75c4-4f7d-990c-30de0d03f3b9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="22baa36a-75c4-4f7d-990c-30de0d03f3b9" testId="fd6fc8cf-13a9-c23d-094d-fc10b9451653" testName="getSaleorderTest" computerName="XIONG-ZHANG-IT" duration="00:00:00.0332882" startTime="2016-01-27T10:14:28.2653336+08:00" endTime="2016-01-27T10:14:28.4583336+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="22baa36a-75c4-4f7d-990c-30de0d03f3b9">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 MDL_CRM_Test.SaleOrderHelperTest.getSaleorderTest 引发了异常: 
+System.Exception: 过滤条件为空</Message>
+          <StackTrace>    在 MDL_CRM.Impl.SaleOrderImpl.getSaleOrderList(Func`2 predicate) 位置 D:\APP-Res\MDL_CRM\MDL_CRM\Impl\SaleOrderImpl.cs:行号 199
+   在 MDL_CRM.Helper.SaleOrderHelper.getSaleOrder(Func`2 predicate) 位置 D:\APP-Res\MDL_CRM\MDL_CRM\Helper\SaleOrderHelper.cs:行号 34
+   在 MDL_CRM_Test.SaleOrderHelperTest.getSaleorderTest() 位置 D:\APP-Res\MDL_CRM\MDL_CRM_Test\SaleOrderHelperTest.cs:行号 83
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
