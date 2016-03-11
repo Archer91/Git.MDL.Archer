@@ -434,11 +434,11 @@ namespace MDL_CRM.Impl
                 ( select pro.prod_desc from  product pro  where pro.prod_code = jp.schg_prodcode) prod_desc,schg_qty,schg_unit,
                  (select fn_sp_getPrice(jp2.schg_PRO_MAT,jo2.jobm_accountid,JP2.schg_PRODCODE,ac2.ACCT_PRICEGROUP,ac2.ACCT_JOB_TYPE,JO2.JOBM_NO,
                 jobm_receivedate,null,trunc(sysdate),trunc(sysdate)) from {2} jo2,zt10_so_charge_dtl jp2,account ac2 where jo2.jobm_no=jp2.schg_jobm_no 
-                and jo2.jobm_accountid=ac2.acct_id and  jo2.jobm_no=jp.schg_jobm_no and schg_prodcode = jp.schg_prodcode) uprice,schg_discount,'{3}',
-                sysdate,schg_charge_yn,schg_group_id,'{4}','{5}'
+                and jo2.jobm_accountid=ac2.acct_id and  jo2.jobm_no=jp.schg_jobm_no and schg_prodcode = jp.schg_prodcode) uprice,{3},'{4}',
+                sysdate,schg_charge_yn,schg_group_id,'{5}','{6}'
                 from zt10_so_charge_dtl jp
-                where jp.schg_charge_yn  in (1,2,3,4,5) and  jp.schg_jobm_no = '{6}'",
-                    invno,invdCount, JobOrderTable,pInv.INV_USER, pInv.INV_ENTITY, pInv.INV_SITE, pInv.INV_JOBM_NO);
+                where jp.schg_charge_yn  in (1,2,3,4,5) and  jp.schg_jobm_no = '{7}'",
+                invno,invdCount, JobOrderTable,pInv.INV_DISCOUNT.IsNullOrEmpty()?1:pInv.INV_DISCOUNT, pInv.INV_USER, pInv.INV_ENTITY, pInv.INV_SITE, pInv.INV_JOBM_NO);
 
                 ZComm1.StrI si4 = new ZComm1.StrI(sb.ToString(), tmpRowIndex++);
                 ls.Add(si4);
@@ -534,11 +534,11 @@ namespace MDL_CRM.Impl
                 ( select pro.prod_desc from  product pro  where pro.prod_code = jp.schg_prodcode) prod_desc,schg_qty,schg_unit,
                 (select fn_sp_getPrice(jp2.schg_PRO_MAT,jo2.jobm_accountid,JP2.schg_PRODCODE,ac2.ACCT_PRICEGROUP,ac2.ACCT_JOB_TYPE,JO2.JOBM_NO,
                 jobm_receivedate,null,trunc(sysdate),trunc(sysdate)) from {1} jo2,zt10_so_charge_dtl jp2,account ac2 where jo2.jobm_no=jp2.schg_jobm_no 
-                and jo2.jobm_accountid=ac2.acct_id and  jo2.jobm_no=jp.schg_jobm_no and schg_prodcode = jp.schg_prodcode) uprice,schg_discount,'{2}',
-                sysdate,schg_charge_yn,schg_group_id,'{3}','{4}'
+                and jo2.jobm_accountid=ac2.acct_id and  jo2.jobm_no=jp.schg_jobm_no and schg_prodcode = jp.schg_prodcode) uprice,{2},'{3}',
+                sysdate,schg_charge_yn,schg_group_id,'{4}','{5}'
                 from zt10_so_charge_dtl jp
-                where jp.schg_charge_yn  in (1,2,3,4,5) and  jp.schg_jobm_no = '{5}'",
-                    pInv.INV_NO,JobOrderTable,pInv.INV_USER,pInv.INV_ENTITY,pInv.INV_SITE,pInv.INV_JOBM_NO);
+                where jp.schg_charge_yn  in (1,2,3,4,5) and  jp.schg_jobm_no = '{6}'",
+                pInv.INV_NO,JobOrderTable,pInv.INV_DISCOUNT.IsNullOrEmpty()?1:pInv.INV_DISCOUNT, pInv.INV_USER,pInv.INV_ENTITY,pInv.INV_SITE,pInv.INV_JOBM_NO);
 
                 ZComm1.StrI si4 = new ZComm1.StrI(sb.ToString(), tmpRowIndex++);
                 ls.Add(si4);

@@ -516,6 +516,7 @@ namespace MDL_CRM
                     invo.INV_USER = DB.loginUserName;
                     invo.INV_ACCT_ID = jobVO.JOBM_ACCOUNTID;
                     invo.INV_ACCT_NAME = jobVO.JOBM_DENTNAME;
+                    invo.INV_DISCOUNT = nudSO_Discount.Value;
 
                     if (txtInvNo.Text.Trim().IsNullOrEmpty())
                     {

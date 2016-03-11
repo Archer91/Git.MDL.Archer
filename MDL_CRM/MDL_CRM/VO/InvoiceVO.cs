@@ -17,5 +17,7 @@ namespace MDL_CRM.VO
         public string INV_ACCT_NAME { get; set; }
         public string INV_NO { get; set; }
         public string INV_USER { get; set; }
+
+        public decimal? INV_DISCOUNT { get; set; }
     }
 }

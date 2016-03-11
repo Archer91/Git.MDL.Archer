@@ -23,6 +23,13 @@ namespace MDL_CRM
         /// </summary>
         private void addMode()
         {
+            btnOk.Enabled = true;
+            dgvDetail.ReadOnly = false;
+            dgvImage.ReadOnly = false;
+            dgvProperty.ReadOnly = false;
+            mainPanel.Enabled = true;
+            StatuPanel.Enabled = true;
+
             dtpSO_Date.Value = Convert.ToDateTime(Dal.GetServerDate(false));
             txtCreateBy.Text = pubcls.UserName;
             txtSO_CreateBy.Text = DB.loginUserName;
@@ -33,23 +40,37 @@ namespace MDL_CRM
             txtSO_StageDesc.Text = "正常";
             txtSO_Stage.Text = "NORMAL";
             txtSO_FromSystem.Text = "CRMSO";
-            this.Text = this.Text + "-新增";
+            this.Text = "订单-新增";
         }
         /// <summary>
         /// 为编辑模式
         /// </summary>
         private void editMode()
         {
+            btnOk.Enabled = true;
+            dgvDetail.ReadOnly = false;
+            dgvImage.ReadOnly = false;
+            dgvProperty.ReadOnly = false;
+            mainPanel.Enabled = true;
+            StatuPanel.Enabled = true;
+
             txtLmodBy.Text = pubcls.UserName;
             txtSO_LmodBy.Text = DB.loginUserName;
             txtSO_LmodDate.Text = Dal.GetServerDate(true);
-            this.Text = this.Text + "-修改";
+            this.Text = "订单-修改";
         }
         /// <summary>
         /// 为复制模式
         /// </summary>
         private void copyMode()
         {
+            btnOk.Enabled = true;
+            dgvDetail.ReadOnly = false;
+            dgvImage.ReadOnly = false;
+            dgvProperty.ReadOnly = false;
+            mainPanel.Enabled = true;
+            StatuPanel.Enabled = true;
+
             txtCreateBy.Text = DB.loginUserName;
             txtSO_CreateDate.Text = Dal.GetServerDate(true);
             txtLmodBy.Text = DB.loginUserName;
@@ -61,7 +82,7 @@ namespace MDL_CRM
             txtSO_JobmNo.Text = string.Empty;
             txtSO_Invno.Text = string.Empty;
             txtSO_RelateSO.Text = string.Empty;
-            this.Text = this.Text + "-新增";
+            this.Text = "订单-新增";
         }
         /// <summary>
         /// 为查看模式
@@ -91,7 +112,7 @@ namespace MDL_CRM
             dgvProperty.Columns["SOPP_QTY"].DefaultCellStyle.BackColor = Color.White;
             dgvProperty.Columns["SOPP_QTY"].DefaultCellStyle.BackColor = Color.White;
             dgvProperty.Columns["SOPP_REMARK"].DefaultCellStyle.BackColor = Color.White;
-            this.Text = this.Text + "-浏览";
+            this.Text = "订单-浏览";
         }
 
         /// <summary>
@@ -115,7 +136,6 @@ namespace MDL_CRM
                 cmbSO_BusinessType.Text = saleOrder.SO_BUSINESS_TYPE;
                 txtSO_RelateSO.Text = saleOrder.SO_RELATE_SO;
                 txtSO_PayTerm.Text = saleOrder.SO_PAY_TERM;
-                if (!saleOrder.SO_DISCOUNT.IsNullOrEmpty()) { nudSO_Discount.Value = Decimal.Parse(saleOrder.SO_DISCOUNT.ToString()); }
                 txtSO_FromSystem.Text = saleOrder.SO_FROM_SYSTEM;
                 txtSO_JobmNo.Text = saleOrder.SO_JOBM_NO;
                 txtSO_Invno.Text = saleOrder.SO_INVNO;
@@ -147,7 +167,6 @@ namespace MDL_CRM
                 txtSO_LmodBy.Text = saleOrder.SO_LMODBY;
                 cmbSite.SelectedValue = saleOrder.SO_SITE;
                 cmbPartner.SelectedValue = saleOrder.SO_PARTNER_ACCTID;
-                nudSO_Discount.Value = saleOrder.SO_DISCOUNT.IsNullOrEmpty() ? 1 : (Decimal)saleOrder.SO_DISCOUNT;
 
                 if (saleOrder.SO_JOBM_NO.IsNullOrEmpty())
                 {
@@ -207,10 +226,6 @@ namespace MDL_CRM
                         }
                     }
                 }
-            }
-            else
-            {
-                list1.Clear();
             }
             return list1;
         }
@@ -316,16 +331,17 @@ namespace MDL_CRM
                 return string.Empty;
             }
 
-            //校验SO明细信息
-            if (chkdata())
-            {
-                pError = "订单明细校验失败";
-                return string.Empty;
-            }
             //校验SO主信息
             chkMData(this.mainPanel.Controls);
 
             if (gError != "")
+            {
+                pError = gError;
+                return string.Empty;
+            }
+
+            //校验SO明细信息
+            if (chkdata())
             {
                 pError = gError;
                 return string.Empty;
@@ -347,7 +363,7 @@ namespace MDL_CRM
             saleOrder.SO_BUSINESS_TYPE=cmbSO_BusinessType.Text;
             saleOrder.SO_RELATE_SO=txtSO_RelateSO.Text;
             saleOrder.SO_PAY_TERM=txtSO_PayTerm.Text;
-            saleOrder.SO_DISCOUNT = nudSO_Discount.Value;
+            saleOrder.SO_DISCOUNT = 1;//默认情况下折扣都为1
             saleOrder.SO_FROM_SYSTEM=txtSO_FromSystem.Text;
             saleOrder.SO_JOBM_NO=txtSO_JobmNo.Text;
             saleOrder.SO_INVNO=txtSO_Invno.Text;
@@ -381,7 +397,6 @@ namespace MDL_CRM
             saleOrder.SO_SITE = cmbSite.SelectedValue.ToString();
             saleOrder.SO_PARTNER_ACCTID = cmbPartner.SelectedValue.ToString();
             saleOrder.SO_STATUS = "N";
-            saleOrder.SO_DISCOUNT = nudSO_Discount.Value;
 
             saleOrder.IMAGES = lstImage;
             saleOrder.DETAILS = lstDetail;
@@ -435,7 +450,7 @@ namespace MDL_CRM
                                             {
                                                 if (con.Tag.ToString() == strField)
                                                 {
-                                                    if (con.Text.Trim() == "")
+                                                    if (con.Text.Trim().IsNullOrEmpty())
                                                     { strError = strError + strFldCap[intn] + " 不能为空！" + "\r\n"; }
                                                 }
                                                 break;
@@ -463,7 +478,7 @@ namespace MDL_CRM
                                             {
                                                 if (con.Tag.ToString() == strField)
                                                 {
-                                                    if (con.Text == "" || Convert.ToInt32(con.Text) <= 0)
+                                                    if (con.Text.Trim().IsNullOrEmpty() || Convert.ToInt32(con.Text) <= 0)
                                                     { strError = strError + strFldCap1[intn] + " 必须大于零！" + "\r\n"; }
                                                 }
                                                 break;
@@ -541,22 +556,22 @@ namespace MDL_CRM
         {
             bool blnok = false;
             //SO明细检查
-            string salter = string.Empty;
+            StringBuilder salter = new StringBuilder();
             if (lstDetail == null || lstDetail.Count <= 0)
             {
-                salter = "必须有一条明细记录\r\n";
+                salter.AppendLine("必须有一条明细记录\r\n");
             }
-            if (lstDetail.Where(sodv=>sodv.SOD_QTY == 0).Count() >=1)
+            if (lstDetail.Where(sodv=>(sodv.SOD_QTY.IsNullOrEmpty() || sodv.SOD_QTY == 0) || (sodv.SOD_FDA_QTY.IsNullOrEmpty() || sodv.SOD_FDA_QTY == 0)).Count() >=1)
             {
-                salter = salter + "明细资料有数量为零的记录\r\n";
+                salter.AppendLine("明细资料有数量为空/为零的记录\r\n");
             }
             if (lstDetail.Where(sodv=>sodv.SOD_CHARGE_YN.IsNullOrEmpty()).Count()>=1)
             {
-                salter = salter + "明细资料有收费项目为空的记录";
+                salter.AppendLine("明细资料有收费项目为空的记录");
             }
             if (lstDetail.Where(sodv=>sodv.SOD_PRODCODE.IsNullOrEmpty()).Count() >=1)
             {
-                salter = salter + "明细资料有手工材料编号为空的记录";
+                salter.AppendLine("明细资料有手工材料编号为空的记录");
             }
             for (int i = 0; i < lstDetail.Count; i++)
             {
@@ -564,34 +579,44 @@ namespace MDL_CRM
                 {
                     if (lstDetail.Where(sodv => sodv.SOD_PRODCODE == lstDetail[i].SOD_PRODCODE).Count() > 1)
                     {
-                        salter = salter + "明细资料中手工材料编号[" + lstDetail[i].SOD_PRODCODE + "]有重复存在";
+                        salter.AppendLine("明细资料中手工材料编号[" + lstDetail[i].SOD_PRODCODE + "]有重复存在");
                         break;
                     }
                 }
+                //若牙位不为空，则进行牙位数据校验
+                if (!lstDetail[i].SOD_TOOTHPOS.IsNullOrEmpty())
+                {
+                    if (!pubcls.ValidateYaiWeiNum(lstDetail[i].SOD_TOOTHPOS))
+                    {
+                        salter.AppendLine("明细资料中牙位["+lstDetail[i].SOD_TOOTHPOS+"]错误");
+                        break;
+                    }
+                }
+
                 //SO明细属性检查
                 if (lstDetail[i].PROPERTIES != null && lstDetail[i].PROPERTIES.Count > 0)
                 {
                     if (lstDetail[i].PROPERTIES.Where(sopv => sopv.SOPP_TYPE.IsNullOrEmpty()).Count() >= 1)
                     {
                         blnok = true;
-                        salter += "属性类别不能为空 不能保存";
+                        salter.AppendLine("属性类别不能为空 不能保存");
                     }
                     if (lstDetail[i].PROPERTIES.Where(sopv => sopv.SOPP_PROPERTY.IsNullOrEmpty()).Count() >= 1)
                     {
                         blnok = true;
-                        salter += "属性不能为空 不能保存";
+                        salter.AppendLine("属性不能为空 不能保存");
                     }
                     if (lstDetail[i].PROPERTIES.Where(sopv => sopv.SOPP_PROPERTY_VALUE.IsNullOrEmpty()).Count() >= 1)
                     {
                         blnok = true;
-                        salter += "属性值不能为空 不能保存";
+                        salter.AppendLine("属性值不能为空 不能保存");
                     }
                 }
             }
 
-            if (!salter.IsNullOrEmpty())
+            if (!salter.ToString().IsNullOrEmpty())
             {
-                txtError.Text = salter;
+                gError = salter.ToString();
                 blnok = true;
             }
             return blnok;
@@ -795,7 +820,7 @@ namespace MDL_CRM
         {
             bool blnExist = false;
             Form[] frm;
-            frm =this.Owner.MdiParent.MdiChildren;
+            frm =this.MdiParent.MdiChildren;
             OpenForm = null;
             for (int i = 0; i < frm.Length; i++)
             {
@@ -808,5 +833,79 @@ namespace MDL_CRM
             }
             return blnExist;
         }
+
+        /// <summary>
+        /// 加载SO 委托
+        /// </summary>
+        /// <param name="pMode">操作模式</param>
+        /// <param name="pSO">订单号</param>
+        private void loadSaleOrder(EditMode pMode, string pSO = "")
+        {
+            m_EditMode = pMode;
+            m_strSo = pSO;
+
+            soHelper = new Helper.SaleOrderHelper();
+            woHelper = new Helper.WorkOrderHelper();
+            saleOrder = new SaleOrderVO();
+            //lstDetail = new List<SaleOrderDetailVO>();
+            lstDetail = new BindingList<SaleOrderDetailVO>();
+            //lstImage = new List<SaleOrderImageVO>();
+            lstImage = new BindingList<SaleOrderImageVO>();
+
+            Dal.BlankControl(this.mainPanel.Controls);
+            //重置控件内容
+            //TODO
+            loadCmb();
+            loadGridcmb();
+
+            //不为新增时，要进行数据查询
+            if (m_EditMode != EditMode.Add)
+            {
+                //获取订单信息
+                saleOrder = soHelper.getSaleOrder(pubcls.CompanyCode, m_strSo);
+                lstDetail = saleOrder.DETAILS;
+                lstImage = saleOrder.IMAGES;
+
+                //加载订单信息
+                loadSOInfo();
+               
+                //获取货类
+                txtMGRP_CODE.Text = getMgrpCode(txtSO_ACCOUNTID.Text.Trim());
+            }
+
+            dgvDetail.AutoGenerateColumns = false;
+            dgvDetail.DataSource = lstDetail;
+            dgvImage.AutoGenerateColumns = false;
+            dgvImage.DataSource = lstImage;
+            //加载附件
+            loadPicture();
+
+            //操作模式
+            switch (m_EditMode)
+            {
+                case EditMode.Add:
+                    addMode();
+                    break;
+                case EditMode.Edit:
+                    editMode();
+                    break;
+                case EditMode.Browse:
+                    browseMode();
+                    break;
+                case EditMode.Copy:
+                    copyMode();
+                    break;
+            }
+
+            fixReadOnly();
+
+            txtError.ForeColor = Color.Red;
+            txtCompany.Text = pubcls.CompanyName;
+            txtcompaycode.Text = pubcls.CompanyCode;
+
+            //显示状态颜色
+            displayColor(txtSO_Stage.Text);
+        }
+
     }
 }

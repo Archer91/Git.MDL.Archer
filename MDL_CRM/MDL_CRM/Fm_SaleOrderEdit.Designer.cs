@@ -29,37 +29,37 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle59 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle60 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.txtSO_NO = new System.Windows.Forms.TextBox();
             this.txtSO_CustCaseNo = new System.Windows.Forms.TextBox();
@@ -89,7 +89,6 @@
             this.label35 = new System.Windows.Forms.Label();
             this.cmbSite = new System.Windows.Forms.ComboBox();
             this.cmbSO_BusinessType = new System.Windows.Forms.ComboBox();
-            this.nudSO_Discount = new System.Windows.Forms.NumericUpDown();
             this.label31 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -131,7 +130,6 @@
             this.txtSO_Stage = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             this.txtSO_Patient = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.txtSO_DoctorId = new System.Windows.Forms.TextBox();
@@ -161,33 +159,6 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dgvDetail = new MDL_CRM.UserComponent.DataGrid(this.components);
-            this.SOD_LINENO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SOD_GROUP_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SOD_PRODCODE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colMaterial = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.PROD_DESC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PROD_DESC_CHI = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SOD_QTY = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SOD_PRICE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SOD_UNIT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SOD_CHARGE_YN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SOD_CHARGE_DESC = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.SOD_FDA_CODE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SOD_FDA_QTY = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SOD_TOOTHPOS = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SOD_TOOTHCOLOR = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SOD_BATCHNO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SOD_REMARK = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CREATEBY = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SOD_CREATEBY = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SOD_CREATEDATE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SOD_LMODBY = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LMODBY = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SOD_LMODDATE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SOD_PRO_MAT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SOD_SO_NO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SOD_PARENT_PRODCODE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SOD_OTHER_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RightMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.insertToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -247,14 +218,39 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtError = new System.Windows.Forms.TextBox();
-            this.btnClose = new System.Windows.Forms.Button();
             this.btnOk = new System.Windows.Forms.Button();
             this.DialogsaveFile = new System.Windows.Forms.SaveFileDialog();
+            this.SOD_LINENO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SOD_GROUP_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SOD_PRODCODE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colMaterial = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.PROD_DESC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PROD_DESC_CHI = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SOD_QTY = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SOD_PRICE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SOD_UNIT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SOD_CHARGE_YN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SOD_CHARGE_DESC = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.SOD_FDA_CODE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SOD_FDA_QTY = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SOD_TOOTHPOS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SOD_TOOTHCOLOR = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SOD_BATCHNO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SOD_REMARK = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CREATEBY = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SOD_CREATEBY = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SOD_CREATEDATE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SOD_LMODBY = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LMODBY = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SOD_LMODDATE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SOD_PRO_MAT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SOD_SO_NO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SOD_PARENT_PRODCODE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SOD_OTHER_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.topPanel.SuspendLayout();
             this.mainPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudSO_Discount)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -289,7 +285,8 @@
             this.txtSO_NO.Name = "txtSO_NO";
             this.txtSO_NO.ReadOnly = true;
             this.txtSO_NO.Size = new System.Drawing.Size(136, 21);
-            this.txtSO_NO.TabIndex = 11;
+            this.txtSO_NO.TabIndex = 110;
+            this.txtSO_NO.TabStop = false;
             this.txtSO_NO.Tag = "SO_NO";
             this.txtSO_NO.Text = "自动产生";
             // 
@@ -301,7 +298,7 @@
             this.txtSO_CustCaseNo.MaxLength = 20;
             this.txtSO_CustCaseNo.Name = "txtSO_CustCaseNo";
             this.txtSO_CustCaseNo.Size = new System.Drawing.Size(136, 21);
-            this.txtSO_CustCaseNo.TabIndex = 7;
+            this.txtSO_CustCaseNo.TabIndex = 2;
             this.txtSO_CustCaseNo.Tag = "SO_CUSTCASENO";
             // 
             // label2
@@ -321,7 +318,7 @@
             this.txtSO_ACCOUNTID.Location = new System.Drawing.Point(87, 39);
             this.txtSO_ACCOUNTID.Name = "txtSO_ACCOUNTID";
             this.txtSO_ACCOUNTID.Size = new System.Drawing.Size(96, 21);
-            this.txtSO_ACCOUNTID.TabIndex = 3;
+            this.txtSO_ACCOUNTID.TabIndex = 0;
             this.txtSO_ACCOUNTID.Tag = "SO_ACCOUNTID";
             this.txtSO_ACCOUNTID.Validated += new System.EventHandler(this.txtSO_ACCOUNTID_Validated);
             // 
@@ -343,18 +340,20 @@
             this.txtSO_DentName.ReadOnly = true;
             this.txtSO_DentName.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtSO_DentName.Size = new System.Drawing.Size(198, 21);
-            this.txtSO_DentName.TabIndex = 5;
+            this.txtSO_DentName.TabIndex = 104;
+            this.txtSO_DentName.TabStop = false;
             this.txtSO_DentName.Tag = "SO_DENTNAME";
             // 
             // txtSO_Desc
             // 
+            this.txtSO_Desc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtSO_Desc.Location = new System.Drawing.Point(72, 3);
             this.txtSO_Desc.MaxLength = 500;
             this.txtSO_Desc.Multiline = true;
             this.txtSO_Desc.Name = "txtSO_Desc";
             this.txtSO_Desc.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtSO_Desc.Size = new System.Drawing.Size(745, 28);
-            this.txtSO_Desc.TabIndex = 0;
+            this.txtSO_Desc.TabIndex = 29;
             this.txtSO_Desc.Tag = "SO_DESC";
             this.txtSO_Desc.DoubleClick += new System.EventHandler(this.txtSO_Desc_DoubleClick);
             // 
@@ -391,7 +390,6 @@
             this.mainPanel.Controls.Add(this.label35);
             this.mainPanel.Controls.Add(this.cmbSite);
             this.mainPanel.Controls.Add(this.cmbSO_BusinessType);
-            this.mainPanel.Controls.Add(this.nudSO_Discount);
             this.mainPanel.Controls.Add(this.label31);
             this.mainPanel.Controls.Add(this.label30);
             this.mainPanel.Controls.Add(this.label17);
@@ -408,7 +406,6 @@
             this.mainPanel.Controls.Add(this.groupBox2);
             this.mainPanel.Controls.Add(this.groupBox1);
             this.mainPanel.Controls.Add(this.panel3);
-            this.mainPanel.Controls.Add(this.label20);
             this.mainPanel.Controls.Add(this.txtSO_Patient);
             this.mainPanel.Controls.Add(this.label19);
             this.mainPanel.Controls.Add(this.txtSO_DoctorId);
@@ -426,7 +423,7 @@
             this.mainPanel.Location = new System.Drawing.Point(0, 0);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(826, 326);
-            this.mainPanel.TabIndex = 88;
+            this.mainPanel.TabIndex = 0;
             // 
             // txtMGRP_CODE
             // 
@@ -434,7 +431,8 @@
             this.txtMGRP_CODE.Name = "txtMGRP_CODE";
             this.txtMGRP_CODE.ReadOnly = true;
             this.txtMGRP_CODE.Size = new System.Drawing.Size(121, 21);
-            this.txtMGRP_CODE.TabIndex = 6;
+            this.txtMGRP_CODE.TabIndex = 105;
+            this.txtMGRP_CODE.TabStop = false;
             // 
             // txtcompaycode
             // 
@@ -442,7 +440,8 @@
             this.txtcompaycode.Name = "txtcompaycode";
             this.txtcompaycode.ReadOnly = true;
             this.txtcompaycode.Size = new System.Drawing.Size(48, 21);
-            this.txtcompaycode.TabIndex = 81;
+            this.txtcompaycode.TabIndex = 101;
+            this.txtcompaycode.TabStop = false;
             this.txtcompaycode.Tag = "SO_ENTITY";
             this.txtcompaycode.Visible = false;
             // 
@@ -452,7 +451,8 @@
             this.txtCompany.Name = "txtCompany";
             this.txtCompany.ReadOnly = true;
             this.txtCompany.Size = new System.Drawing.Size(136, 21);
-            this.txtCompany.TabIndex = 0;
+            this.txtCompany.TabIndex = 100;
+            this.txtCompany.TabStop = false;
             // 
             // panel1
             // 
@@ -483,7 +483,7 @@
             this.chkRedo.Location = new System.Drawing.Point(6, 17);
             this.chkRedo.Name = "chkRedo";
             this.chkRedo.Size = new System.Drawing.Size(48, 16);
-            this.chkRedo.TabIndex = 31;
+            this.chkRedo.TabIndex = 23;
             this.chkRedo.Tag = "SO_REDO_YN";
             this.chkRedo.Text = "重造";
             this.chkRedo.UseVisualStyleBackColor = true;
@@ -494,7 +494,7 @@
             this.chkAmend.Location = new System.Drawing.Point(60, 17);
             this.chkAmend.Name = "chkAmend";
             this.chkAmend.Size = new System.Drawing.Size(48, 16);
-            this.chkAmend.TabIndex = 32;
+            this.chkAmend.TabIndex = 24;
             this.chkAmend.Tag = "SO_AMEND_YN";
             this.chkAmend.Text = "修改";
             this.chkAmend.UseVisualStyleBackColor = true;
@@ -505,7 +505,7 @@
             this.chkTry.Location = new System.Drawing.Point(124, 17);
             this.chkTry.Name = "chkTry";
             this.chkTry.Size = new System.Drawing.Size(48, 16);
-            this.chkTry.TabIndex = 33;
+            this.chkTry.TabIndex = 25;
             this.chkTry.Tag = "SO_TRY_YN";
             this.chkTry.Text = "试件";
             this.chkTry.UseVisualStyleBackColor = true;
@@ -516,7 +516,7 @@
             this.chkUrgent.Location = new System.Drawing.Point(6, 44);
             this.chkUrgent.Name = "chkUrgent";
             this.chkUrgent.Size = new System.Drawing.Size(48, 16);
-            this.chkUrgent.TabIndex = 34;
+            this.chkUrgent.TabIndex = 26;
             this.chkUrgent.Tag = "SO_URGENT_YN";
             this.chkUrgent.Text = "急件";
             this.chkUrgent.UseVisualStyleBackColor = true;
@@ -527,7 +527,7 @@
             this.chkColor.Location = new System.Drawing.Point(60, 44);
             this.chkColor.Name = "chkColor";
             this.chkColor.Size = new System.Drawing.Size(60, 16);
-            this.chkColor.TabIndex = 35;
+            this.chkColor.TabIndex = 27;
             this.chkColor.Tag = "SO_COLOR_YN";
             this.chkColor.Text = "对色件";
             this.chkColor.UseVisualStyleBackColor = true;
@@ -538,24 +538,25 @@
             this.chkSpecial.Location = new System.Drawing.Point(124, 44);
             this.chkSpecial.Name = "chkSpecial";
             this.chkSpecial.Size = new System.Drawing.Size(72, 16);
-            this.chkSpecial.TabIndex = 36;
+            this.chkSpecial.TabIndex = 28;
             this.chkSpecial.Tag = "SO_SPECIAL_YN";
             this.chkSpecial.Text = "特别处理";
             this.chkSpecial.UseVisualStyleBackColor = true;
             // 
             // txtSO_FromSystem
             // 
-            this.txtSO_FromSystem.Location = new System.Drawing.Point(487, 150);
+            this.txtSO_FromSystem.Location = new System.Drawing.Point(292, 150);
             this.txtSO_FromSystem.Name = "txtSO_FromSystem";
             this.txtSO_FromSystem.ReadOnly = true;
             this.txtSO_FromSystem.Size = new System.Drawing.Size(121, 21);
-            this.txtSO_FromSystem.TabIndex = 16;
+            this.txtSO_FromSystem.TabIndex = 111;
+            this.txtSO_FromSystem.TabStop = false;
             this.txtSO_FromSystem.Tag = "SO_FROM_SYSTEM";
             // 
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(449, 154);
+            this.label33.Location = new System.Drawing.Point(254, 154);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(41, 12);
             this.label33.TabIndex = 73;
@@ -577,7 +578,7 @@
             this.cmbPartner.Location = new System.Drawing.Point(487, 12);
             this.cmbPartner.Name = "cmbPartner";
             this.cmbPartner.Size = new System.Drawing.Size(121, 20);
-            this.cmbPartner.TabIndex = 2;
+            this.cmbPartner.TabIndex = 0;
             this.cmbPartner.Tag = "SO_PARTNER_ACCTID";
             // 
             // label35
@@ -597,7 +598,7 @@
             this.cmbSite.Location = new System.Drawing.Point(292, 12);
             this.cmbSite.Name = "cmbSite";
             this.cmbSite.Size = new System.Drawing.Size(118, 20);
-            this.cmbSite.TabIndex = 1;
+            this.cmbSite.TabIndex = 0;
             this.cmbSite.Tag = "SO_SITE";
             // 
             // cmbSO_BusinessType
@@ -607,22 +608,8 @@
             this.cmbSO_BusinessType.Location = new System.Drawing.Point(487, 123);
             this.cmbSO_BusinessType.Name = "cmbSO_BusinessType";
             this.cmbSO_BusinessType.Size = new System.Drawing.Size(121, 20);
-            this.cmbSO_BusinessType.TabIndex = 13;
+            this.cmbSO_BusinessType.TabIndex = 8;
             this.cmbSO_BusinessType.Tag = "SO_BUSINESS_TYPE";
-            // 
-            // nudSO_Discount
-            // 
-            this.nudSO_Discount.DecimalPlaces = 2;
-            this.nudSO_Discount.Location = new System.Drawing.Point(292, 151);
-            this.nudSO_Discount.Name = "nudSO_Discount";
-            this.nudSO_Discount.Size = new System.Drawing.Size(118, 21);
-            this.nudSO_Discount.TabIndex = 17;
-            this.nudSO_Discount.Tag = "SO_DISCOUNT";
-            this.nudSO_Discount.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // label31
             // 
@@ -661,7 +648,7 @@
             this.txtSO_CustBarcode.MaxLength = 20;
             this.txtSO_CustBarcode.Name = "txtSO_CustBarcode";
             this.txtSO_CustBarcode.Size = new System.Drawing.Size(121, 21);
-            this.txtSO_CustBarcode.TabIndex = 18;
+            this.txtSO_CustBarcode.TabIndex = 4;
             this.txtSO_CustBarcode.Tag = "SO_CUST_BARCODE";
             // 
             // label4
@@ -680,7 +667,7 @@
             this.txtSO_PayTerm.MaxLength = 20;
             this.txtSO_PayTerm.Name = "txtSO_PayTerm";
             this.txtSO_PayTerm.Size = new System.Drawing.Size(136, 21);
-            this.txtSO_PayTerm.TabIndex = 14;
+            this.txtSO_PayTerm.TabIndex = 11;
             this.txtSO_PayTerm.Tag = "SO_PAY_TERM";
             // 
             // label8
@@ -695,14 +682,13 @@
             // dtpSO_Date
             // 
             this.dtpSO_Date.CustomFormat = "yyyy/MM/dd";
-            this.dtpSO_Date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpSO_Date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpSO_Date.Location = new System.Drawing.Point(292, 123);
             this.dtpSO_Date.Name = "dtpSO_Date";
             this.dtpSO_Date.Size = new System.Drawing.Size(118, 21);
-            this.dtpSO_Date.TabIndex = 12;
-            this.dtpSO_Date.TabStop = false;
+            this.dtpSO_Date.TabIndex = 7;
             this.dtpSO_Date.Tag = "SO_DATE";
-            this.dtpSO_Date.Value = new System.DateTime(2015, 12, 22, 0, 0, 0, 0);
+            this.dtpSO_Date.Value = new System.DateTime(2016, 3, 10, 0, 0, 0, 0);
             // 
             // label7
             // 
@@ -719,7 +705,7 @@
             this.btnCustID.Location = new System.Drawing.Point(184, 39);
             this.btnCustID.Name = "btnCustID";
             this.btnCustID.Size = new System.Drawing.Size(27, 23);
-            this.btnCustID.TabIndex = 4;
+            this.btnCustID.TabIndex = 1;
             this.btnCustID.Text = "…";
             this.btnCustID.UseVisualStyleBackColor = true;
             this.btnCustID.Click += new System.EventHandler(this.btnCustID_Click);
@@ -729,7 +715,7 @@
             this.btnRelative.Location = new System.Drawing.Point(786, 121);
             this.btnRelative.Name = "btnRelative";
             this.btnRelative.Size = new System.Drawing.Size(27, 23);
-            this.btnRelative.TabIndex = 9;
+            this.btnRelative.TabIndex = 10;
             this.btnRelative.Text = "…";
             this.btnRelative.UseVisualStyleBackColor = true;
             this.btnRelative.Click += new System.EventHandler(this.btnRelative_Click);
@@ -740,7 +726,7 @@
             this.txtSO_RelateSO.Location = new System.Drawing.Point(677, 123);
             this.txtSO_RelateSO.Name = "txtSO_RelateSO";
             this.txtSO_RelateSO.Size = new System.Drawing.Size(108, 21);
-            this.txtSO_RelateSO.TabIndex = 15;
+            this.txtSO_RelateSO.TabIndex = 9;
             this.txtSO_RelateSO.Tag = "SO_RELATE_SO";
             this.txtSO_RelateSO.Validated += new System.EventHandler(this.txtSO_RelateSO_Validated);
             // 
@@ -776,7 +762,7 @@
             this.txtSO_Location.MaxLength = 200;
             this.txtSO_Location.Name = "txtSO_Location";
             this.txtSO_Location.Size = new System.Drawing.Size(309, 21);
-            this.txtSO_Location.TabIndex = 0;
+            this.txtSO_Location.TabIndex = 19;
             this.txtSO_Location.Tag = "SO_LOCATION";
             // 
             // dtpSO_DeliveryDate
@@ -787,7 +773,7 @@
             this.dtpSO_DeliveryDate.Location = new System.Drawing.Point(63, 44);
             this.dtpSO_DeliveryDate.Name = "dtpSO_DeliveryDate";
             this.dtpSO_DeliveryDate.Size = new System.Drawing.Size(79, 21);
-            this.dtpSO_DeliveryDate.TabIndex = 1;
+            this.dtpSO_DeliveryDate.TabIndex = 20;
             this.dtpSO_DeliveryDate.Tag = "SO_DELIVERYDATE";
             // 
             // cmbDel
@@ -797,7 +783,7 @@
             this.cmbDel.Location = new System.Drawing.Point(142, 44);
             this.cmbDel.Name = "cmbDel";
             this.cmbDel.Size = new System.Drawing.Size(47, 20);
-            this.cmbDel.TabIndex = 2;
+            this.cmbDel.TabIndex = 21;
             this.cmbDel.Tag = "SO_TIMF_CODE_DEL";
             // 
             // txtSO_CustRemark
@@ -809,7 +795,7 @@
             this.txtSO_CustRemark.Name = "txtSO_CustRemark";
             this.txtSO_CustRemark.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtSO_CustRemark.Size = new System.Drawing.Size(309, 21);
-            this.txtSO_CustRemark.TabIndex = 3;
+            this.txtSO_CustRemark.TabIndex = 22;
             this.txtSO_CustRemark.Tag = "SO_CUSTREMARK";
             // 
             // label27
@@ -866,7 +852,7 @@
             this.dtpSO_ReceiveDate.Location = new System.Drawing.Point(87, 18);
             this.dtpSO_ReceiveDate.Name = "dtpSO_ReceiveDate";
             this.dtpSO_ReceiveDate.Size = new System.Drawing.Size(79, 21);
-            this.dtpSO_ReceiveDate.TabIndex = 0;
+            this.dtpSO_ReceiveDate.TabIndex = 13;
             this.dtpSO_ReceiveDate.Tag = "SO_RECEIVEDATE";
             // 
             // dtpSO_EstimateDate
@@ -877,7 +863,7 @@
             this.dtpSO_EstimateDate.Location = new System.Drawing.Point(87, 72);
             this.dtpSO_EstimateDate.Name = "dtpSO_EstimateDate";
             this.dtpSO_EstimateDate.Size = new System.Drawing.Size(79, 21);
-            this.dtpSO_EstimateDate.TabIndex = 4;
+            this.dtpSO_EstimateDate.TabIndex = 17;
             this.dtpSO_EstimateDate.Tag = "SO_ESTIMATEDATE";
             // 
             // label26
@@ -897,7 +883,7 @@
             this.cmbEst.Location = new System.Drawing.Point(166, 72);
             this.cmbEst.Name = "cmbEst";
             this.cmbEst.Size = new System.Drawing.Size(47, 20);
-            this.cmbEst.TabIndex = 5;
+            this.cmbEst.TabIndex = 18;
             this.cmbEst.Tag = "SO_TIMF_CODE_EST";
             // 
             // dtpSO_RequestDate
@@ -908,7 +894,7 @@
             this.dtpSO_RequestDate.Location = new System.Drawing.Point(87, 45);
             this.dtpSO_RequestDate.Name = "dtpSO_RequestDate";
             this.dtpSO_RequestDate.Size = new System.Drawing.Size(79, 21);
-            this.dtpSO_RequestDate.TabIndex = 2;
+            this.dtpSO_RequestDate.TabIndex = 15;
             this.dtpSO_RequestDate.Tag = "SO_REQUESTDATE";
             this.dtpSO_RequestDate.Value = new System.DateTime(2015, 12, 21, 9, 59, 0, 0);
             // 
@@ -919,7 +905,7 @@
             this.cmbRec.Location = new System.Drawing.Point(166, 19);
             this.cmbRec.Name = "cmbRec";
             this.cmbRec.Size = new System.Drawing.Size(47, 20);
-            this.cmbRec.TabIndex = 1;
+            this.cmbRec.TabIndex = 14;
             this.cmbRec.Tag = "SO_TIMF_CODE_REC";
             // 
             // label25
@@ -939,7 +925,7 @@
             this.cmbReq.Location = new System.Drawing.Point(166, 45);
             this.cmbReq.Name = "cmbReq";
             this.cmbReq.Size = new System.Drawing.Size(47, 20);
-            this.cmbReq.TabIndex = 3;
+            this.cmbReq.TabIndex = 16;
             this.cmbReq.Tag = "SO_TIMF_CODE_REQ";
             // 
             // label24
@@ -975,7 +961,8 @@
             this.txtSO_JobmNo.Name = "txtSO_JobmNo";
             this.txtSO_JobmNo.ReadOnly = true;
             this.txtSO_JobmNo.Size = new System.Drawing.Size(133, 21);
-            this.txtSO_JobmNo.TabIndex = 38;
+            this.txtSO_JobmNo.TabIndex = 102;
+            this.txtSO_JobmNo.TabStop = false;
             this.txtSO_JobmNo.Tag = "SO_JOBM_NO";
             // 
             // txtSO_StageDesc
@@ -986,7 +973,8 @@
             this.txtSO_StageDesc.Name = "txtSO_StageDesc";
             this.txtSO_StageDesc.ReadOnly = true;
             this.txtSO_StageDesc.Size = new System.Drawing.Size(133, 21);
-            this.txtSO_StageDesc.TabIndex = 3;
+            this.txtSO_StageDesc.TabIndex = 106;
+            this.txtSO_StageDesc.TabStop = false;
             this.txtSO_StageDesc.Tag = "SO_STAGEDesc";
             this.txtSO_StageDesc.Text = "111";
             // 
@@ -996,7 +984,8 @@
             this.txtSO_Invno.Name = "txtSO_Invno";
             this.txtSO_Invno.ReadOnly = true;
             this.txtSO_Invno.Size = new System.Drawing.Size(133, 21);
-            this.txtSO_Invno.TabIndex = 8;
+            this.txtSO_Invno.TabIndex = 109;
+            this.txtSO_Invno.TabStop = false;
             this.txtSO_Invno.Tag = "SO_INVNO";
             // 
             // label22
@@ -1014,7 +1003,8 @@
             this.txtSO_JobType.Name = "txtSO_JobType";
             this.txtSO_JobType.ReadOnly = true;
             this.txtSO_JobType.Size = new System.Drawing.Size(58, 21);
-            this.txtSO_JobType.TabIndex = 79;
+            this.txtSO_JobType.TabIndex = 103;
+            this.txtSO_JobType.TabStop = false;
             this.txtSO_JobType.Tag = "SO_JOB_TYPE";
             this.txtSO_JobType.Visible = false;
             // 
@@ -1025,7 +1015,7 @@
             this.label36.Location = new System.Drawing.Point(202, 15);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(47, 12);
-            this.label36.TabIndex = 78;
+            this.label36.TabIndex = 108;
             this.label36.Text = "label36";
             this.label36.Visible = false;
             // 
@@ -1035,7 +1025,8 @@
             this.txtSO_Stage.Name = "txtSO_Stage";
             this.txtSO_Stage.ReadOnly = true;
             this.txtSO_Stage.Size = new System.Drawing.Size(63, 21);
-            this.txtSO_Stage.TabIndex = 71;
+            this.txtSO_Stage.TabIndex = 107;
+            this.txtSO_Stage.TabStop = false;
             this.txtSO_Stage.Tag = "SO_STAGE";
             this.txtSO_Stage.Visible = false;
             // 
@@ -1057,16 +1048,6 @@
             this.label23.TabIndex = 28;
             this.label23.Text = "订单状态：";
             // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label20.Location = new System.Drawing.Point(253, 153);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(41, 12);
-            this.label20.TabIndex = 34;
-            this.label20.Text = "折扣：";
-            // 
             // txtSO_Patient
             // 
             this.txtSO_Patient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -1074,7 +1055,7 @@
             this.txtSO_Patient.MaxLength = 200;
             this.txtSO_Patient.Name = "txtSO_Patient";
             this.txtSO_Patient.Size = new System.Drawing.Size(326, 21);
-            this.txtSO_Patient.TabIndex = 10;
+            this.txtSO_Patient.TabIndex = 6;
             this.txtSO_Patient.Tag = "SO_PATIENT";
             // 
             // label19
@@ -1095,7 +1076,7 @@
             this.txtSO_DoctorId.Name = "txtSO_DoctorId";
             this.txtSO_DoctorId.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtSO_DoctorId.Size = new System.Drawing.Size(323, 21);
-            this.txtSO_DoctorId.TabIndex = 8;
+            this.txtSO_DoctorId.TabIndex = 5;
             this.txtSO_DoctorId.Tag = "SO_DOCTORID";
             this.txtSO_DoctorId.DoubleClick += new System.EventHandler(this.txtSO_DoctorId_DoubleClick);
             // 
@@ -1115,7 +1096,7 @@
             this.txtSO_CustBatchId.MaxLength = 20;
             this.txtSO_CustBatchId.Name = "txtSO_CustBatchId";
             this.txtSO_CustBatchId.Size = new System.Drawing.Size(118, 21);
-            this.txtSO_CustBatchId.TabIndex = 9;
+            this.txtSO_CustBatchId.TabIndex = 3;
             this.txtSO_CustBatchId.Tag = "SO_CUSTBATCHID";
             // 
             // label16
@@ -1148,7 +1129,7 @@
             this.btnInvoice.Location = new System.Drawing.Point(3, 227);
             this.btnInvoice.Name = "btnInvoice";
             this.btnInvoice.Size = new System.Drawing.Size(98, 29);
-            this.btnInvoice.TabIndex = 87;
+            this.btnInvoice.TabIndex = 36;
             this.btnInvoice.Text = "收费明细(&G)";
             this.btnInvoice.UseVisualStyleBackColor = true;
             this.btnInvoice.Click += new System.EventHandler(this.btnInvoice_Click);
@@ -1158,7 +1139,7 @@
             this.btnToWork.Location = new System.Drawing.Point(3, 190);
             this.btnToWork.Name = "btnToWork";
             this.btnToWork.Size = new System.Drawing.Size(98, 29);
-            this.btnToWork.TabIndex = 46;
+            this.btnToWork.TabIndex = 35;
             this.btnToWork.Text = "转工作单(&T)";
             this.btnToWork.UseVisualStyleBackColor = true;
             this.btnToWork.Click += new System.EventHandler(this.btnToWork_Click);
@@ -1168,7 +1149,7 @@
             this.btnNormal.Location = new System.Drawing.Point(3, 5);
             this.btnNormal.Name = "btnNormal";
             this.btnNormal.Size = new System.Drawing.Size(98, 29);
-            this.btnNormal.TabIndex = 82;
+            this.btnNormal.TabIndex = 30;
             this.btnNormal.Text = "正常(&L)";
             this.btnNormal.UseVisualStyleBackColor = true;
             this.btnNormal.Click += new System.EventHandler(this.btnNormal_Click);
@@ -1178,7 +1159,7 @@
             this.btnReturn.Location = new System.Drawing.Point(3, 152);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(98, 29);
-            this.btnReturn.TabIndex = 86;
+            this.btnReturn.TabIndex = 34;
             this.btnReturn.Text = "退回(&B)";
             this.btnReturn.UseVisualStyleBackColor = true;
             this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
@@ -1188,7 +1169,7 @@
             this.btndPrint.Location = new System.Drawing.Point(3, 42);
             this.btndPrint.Name = "btndPrint";
             this.btndPrint.Size = new System.Drawing.Size(98, 29);
-            this.btndPrint.TabIndex = 83;
+            this.btndPrint.TabIndex = 31;
             this.btndPrint.Text = "等印(&P)";
             this.btndPrint.UseVisualStyleBackColor = true;
             this.btndPrint.Click += new System.EventHandler(this.btndPrint_Click);
@@ -1198,7 +1179,7 @@
             this.btndReport.Location = new System.Drawing.Point(3, 78);
             this.btndReport.Name = "btndReport";
             this.btndReport.Size = new System.Drawing.Size(98, 29);
-            this.btndReport.TabIndex = 84;
+            this.btndReport.TabIndex = 32;
             this.btndReport.Text = "等覆(&R)";
             this.btndReport.UseVisualStyleBackColor = true;
             this.btndReport.Click += new System.EventHandler(this.btndReport_Click);
@@ -1208,7 +1189,7 @@
             this.btndCancel.Location = new System.Drawing.Point(3, 115);
             this.btndCancel.Name = "btndCancel";
             this.btndCancel.Size = new System.Drawing.Size(98, 29);
-            this.btndCancel.TabIndex = 85;
+            this.btndCancel.TabIndex = 33;
             this.btndCancel.Text = "取消(&N)";
             this.btndCancel.UseVisualStyleBackColor = true;
             this.btndCancel.Click += new System.EventHandler(this.btndCancel_Click);
@@ -1238,7 +1219,7 @@
             this.txtSO_CreateBy.Name = "txtSO_CreateBy";
             this.txtSO_CreateBy.ReadOnly = true;
             this.txtSO_CreateBy.Size = new System.Drawing.Size(70, 21);
-            this.txtSO_CreateBy.TabIndex = 81;
+            this.txtSO_CreateBy.TabIndex = 117;
             this.txtSO_CreateBy.TabStop = false;
             this.txtSO_CreateBy.Tag = "SO_CREATEBY";
             this.txtSO_CreateBy.Visible = false;
@@ -1249,7 +1230,7 @@
             this.txtSO_LmodBy.Name = "txtSO_LmodBy";
             this.txtSO_LmodBy.ReadOnly = true;
             this.txtSO_LmodBy.Size = new System.Drawing.Size(71, 21);
-            this.txtSO_LmodBy.TabIndex = 80;
+            this.txtSO_LmodBy.TabIndex = 116;
             this.txtSO_LmodBy.TabStop = false;
             this.txtSO_LmodBy.Tag = "SO_LMODBY";
             this.txtSO_LmodBy.Visible = false;
@@ -1260,7 +1241,7 @@
             this.chkMainProperty.Location = new System.Drawing.Point(7, 8);
             this.chkMainProperty.Name = "chkMainProperty";
             this.chkMainProperty.Size = new System.Drawing.Size(72, 16);
-            this.chkMainProperty.TabIndex = 79;
+            this.chkMainProperty.TabIndex = 39;
             this.chkMainProperty.Text = "主表属性";
             this.chkMainProperty.UseVisualStyleBackColor = true;
             this.chkMainProperty.CheckedChanged += new System.EventHandler(this.chkMainProperty_CheckedChanged);
@@ -1271,7 +1252,7 @@
             this.txtSO_LmodDate.Name = "txtSO_LmodDate";
             this.txtSO_LmodDate.ReadOnly = true;
             this.txtSO_LmodDate.Size = new System.Drawing.Size(127, 21);
-            this.txtSO_LmodDate.TabIndex = 11;
+            this.txtSO_LmodDate.TabIndex = 115;
             this.txtSO_LmodDate.TabStop = false;
             this.txtSO_LmodDate.Tag = "SO_LMODDATE";
             // 
@@ -1290,7 +1271,7 @@
             this.txtLmodBy.Name = "txtLmodBy";
             this.txtLmodBy.ReadOnly = true;
             this.txtLmodBy.Size = new System.Drawing.Size(71, 21);
-            this.txtLmodBy.TabIndex = 9;
+            this.txtLmodBy.TabIndex = 114;
             this.txtLmodBy.TabStop = false;
             this.txtLmodBy.Tag = "LMODBY";
             // 
@@ -1309,7 +1290,7 @@
             this.txtSO_CreateDate.Name = "txtSO_CreateDate";
             this.txtSO_CreateDate.ReadOnly = true;
             this.txtSO_CreateDate.Size = new System.Drawing.Size(127, 21);
-            this.txtSO_CreateDate.TabIndex = 7;
+            this.txtSO_CreateDate.TabIndex = 113;
             this.txtSO_CreateDate.TabStop = false;
             this.txtSO_CreateDate.Tag = "SO_CREATEDATE";
             // 
@@ -1328,7 +1309,7 @@
             this.txtCreateBy.Name = "txtCreateBy";
             this.txtCreateBy.ReadOnly = true;
             this.txtCreateBy.Size = new System.Drawing.Size(70, 21);
-            this.txtCreateBy.TabIndex = 5;
+            this.txtCreateBy.TabIndex = 112;
             this.txtCreateBy.TabStop = false;
             this.txtCreateBy.Tag = "CREATEBY";
             // 
@@ -1373,14 +1354,14 @@
             this.dgvDetail.AllowUserToAddRows = false;
             this.dgvDetail.AllowUserToDeleteRows = false;
             this.dgvDetail.AllowUserToResizeRows = false;
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle32.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle32.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDetail.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDetail.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvDetail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDetail.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.SOD_LINENO,
@@ -1419,7 +1400,7 @@
             this.dgvDetail.RowHeadersWidth = 30;
             this.dgvDetail.RowTemplate.Height = 23;
             this.dgvDetail.Size = new System.Drawing.Size(971, 161);
-            this.dgvDetail.TabIndex = 41;
+            this.dgvDetail.TabIndex = 37;
             this.dgvDetail.CellKeyDown += new System.Windows.Forms.KeyEventHandler(this.dgvDetail_CellKeyDown);
             this.dgvDetail.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDetail_CellContentClick);
             this.dgvDetail.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDetail_CellEndEdit);
@@ -1428,266 +1409,6 @@
             this.dgvDetail.SelectionChanged += new System.EventHandler(this.dgvDetail_SelectionChanged);
             this.dgvDetail.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dgvDetail_KeyDown);
             this.dgvDetail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.dgvDetail_KeyPress);
-            // 
-            // SOD_LINENO
-            // 
-            this.SOD_LINENO.DataPropertyName = "SOD_LINENO";
-            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle33.BackColor = System.Drawing.Color.White;
-            this.SOD_LINENO.DefaultCellStyle = dataGridViewCellStyle33;
-            this.SOD_LINENO.HeaderText = "序号";
-            this.SOD_LINENO.Name = "SOD_LINENO";
-            this.SOD_LINENO.ReadOnly = true;
-            this.SOD_LINENO.Width = 30;
-            // 
-            // SOD_GROUP_ID
-            // 
-            this.SOD_GROUP_ID.DataPropertyName = "SOD_GROUP_ID";
-            dataGridViewCellStyle34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.SOD_GROUP_ID.DefaultCellStyle = dataGridViewCellStyle34;
-            this.SOD_GROUP_ID.HeaderText = "分组编号";
-            this.SOD_GROUP_ID.Name = "SOD_GROUP_ID";
-            this.SOD_GROUP_ID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.SOD_GROUP_ID.Width = 60;
-            // 
-            // SOD_PRODCODE
-            // 
-            this.SOD_PRODCODE.DataPropertyName = "SOD_PRODCODE";
-            dataGridViewCellStyle35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.SOD_PRODCODE.DefaultCellStyle = dataGridViewCellStyle35;
-            this.SOD_PRODCODE.HeaderText = "手工物料编号";
-            this.SOD_PRODCODE.Name = "SOD_PRODCODE";
-            this.SOD_PRODCODE.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.SOD_PRODCODE.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.SOD_PRODCODE.Width = 110;
-            // 
-            // colMaterial
-            // 
-            this.colMaterial.HeaderText = "  ";
-            this.colMaterial.Name = "colMaterial";
-            this.colMaterial.Text = "…";
-            this.colMaterial.UseColumnTextForButtonValue = true;
-            this.colMaterial.Width = 30;
-            // 
-            // PROD_DESC
-            // 
-            this.PROD_DESC.DataPropertyName = "PROD_DESC";
-            this.PROD_DESC.HeaderText = "英文名称";
-            this.PROD_DESC.Name = "PROD_DESC";
-            this.PROD_DESC.ReadOnly = true;
-            this.PROD_DESC.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // PROD_DESC_CHI
-            // 
-            this.PROD_DESC_CHI.DataPropertyName = "PROD_DESC_CHI";
-            this.PROD_DESC_CHI.HeaderText = "物料中文名称";
-            this.PROD_DESC_CHI.Name = "PROD_DESC_CHI";
-            this.PROD_DESC_CHI.ReadOnly = true;
-            this.PROD_DESC_CHI.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // SOD_QTY
-            // 
-            this.SOD_QTY.DataPropertyName = "SOD_QTY";
-            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.SOD_QTY.DefaultCellStyle = dataGridViewCellStyle36;
-            this.SOD_QTY.HeaderText = "数量";
-            this.SOD_QTY.Name = "SOD_QTY";
-            this.SOD_QTY.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.SOD_QTY.Width = 60;
-            // 
-            // SOD_PRICE
-            // 
-            this.SOD_PRICE.DataPropertyName = "SOD_PRICE";
-            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.SOD_PRICE.DefaultCellStyle = dataGridViewCellStyle37;
-            this.SOD_PRICE.HeaderText = "单价";
-            this.SOD_PRICE.Name = "SOD_PRICE";
-            this.SOD_PRICE.ReadOnly = true;
-            this.SOD_PRICE.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.SOD_PRICE.Width = 80;
-            // 
-            // SOD_UNIT
-            // 
-            this.SOD_UNIT.DataPropertyName = "SOD_UNIT";
-            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle38.BackColor = System.Drawing.Color.White;
-            this.SOD_UNIT.DefaultCellStyle = dataGridViewCellStyle38;
-            this.SOD_UNIT.HeaderText = "单位";
-            this.SOD_UNIT.Name = "SOD_UNIT";
-            this.SOD_UNIT.ReadOnly = true;
-            this.SOD_UNIT.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.SOD_UNIT.Width = 60;
-            // 
-            // SOD_CHARGE_YN
-            // 
-            this.SOD_CHARGE_YN.DataPropertyName = "SOD_CHARGE_YN";
-            this.SOD_CHARGE_YN.HeaderText = "收费项目";
-            this.SOD_CHARGE_YN.Name = "SOD_CHARGE_YN";
-            this.SOD_CHARGE_YN.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.SOD_CHARGE_YN.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.SOD_CHARGE_YN.Visible = false;
-            // 
-            // SOD_CHARGE_DESC
-            // 
-            this.SOD_CHARGE_DESC.DataPropertyName = "SOD_CHARGE_DESC";
-            this.SOD_CHARGE_DESC.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox;
-            this.SOD_CHARGE_DESC.HeaderText = "收费项目";
-            this.SOD_CHARGE_DESC.Name = "SOD_CHARGE_DESC";
-            this.SOD_CHARGE_DESC.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.SOD_CHARGE_DESC.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // SOD_FDA_CODE
-            // 
-            this.SOD_FDA_CODE.DataPropertyName = "SOD_FDA_CODE";
-            this.SOD_FDA_CODE.HeaderText = "FDA号";
-            this.SOD_FDA_CODE.Name = "SOD_FDA_CODE";
-            this.SOD_FDA_CODE.ReadOnly = true;
-            // 
-            // SOD_FDA_QTY
-            // 
-            this.SOD_FDA_QTY.DataPropertyName = "SOD_FDA_QTY";
-            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.SOD_FDA_QTY.DefaultCellStyle = dataGridViewCellStyle39;
-            this.SOD_FDA_QTY.HeaderText = "FDA数量";
-            this.SOD_FDA_QTY.Name = "SOD_FDA_QTY";
-            this.SOD_FDA_QTY.Width = 80;
-            // 
-            // SOD_TOOTHPOS
-            // 
-            this.SOD_TOOTHPOS.DataPropertyName = "SOD_TOOTHPOS";
-            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.SOD_TOOTHPOS.DefaultCellStyle = dataGridViewCellStyle40;
-            this.SOD_TOOTHPOS.HeaderText = "牙位";
-            this.SOD_TOOTHPOS.Name = "SOD_TOOTHPOS";
-            this.SOD_TOOTHPOS.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.SOD_TOOTHPOS.Width = 60;
-            // 
-            // SOD_TOOTHCOLOR
-            // 
-            this.SOD_TOOTHCOLOR.DataPropertyName = "SOD_TOOTHCOLOR";
-            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.SOD_TOOTHCOLOR.DefaultCellStyle = dataGridViewCellStyle41;
-            this.SOD_TOOTHCOLOR.HeaderText = "颜色";
-            this.SOD_TOOTHCOLOR.Name = "SOD_TOOTHCOLOR";
-            this.SOD_TOOTHCOLOR.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.SOD_TOOTHCOLOR.Width = 60;
-            // 
-            // SOD_BATCHNO
-            // 
-            this.SOD_BATCHNO.DataPropertyName = "SOD_BATCHNO";
-            dataGridViewCellStyle42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.SOD_BATCHNO.DefaultCellStyle = dataGridViewCellStyle42;
-            this.SOD_BATCHNO.HeaderText = "批号";
-            this.SOD_BATCHNO.Name = "SOD_BATCHNO";
-            this.SOD_BATCHNO.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.SOD_BATCHNO.Width = 60;
-            // 
-            // SOD_REMARK
-            // 
-            this.SOD_REMARK.DataPropertyName = "SOD_REMARK";
-            dataGridViewCellStyle43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.SOD_REMARK.DefaultCellStyle = dataGridViewCellStyle43;
-            this.SOD_REMARK.HeaderText = "备注";
-            this.SOD_REMARK.Name = "SOD_REMARK";
-            this.SOD_REMARK.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // CREATEBY
-            // 
-            this.CREATEBY.DataPropertyName = "CREATEBY";
-            this.CREATEBY.HeaderText = "创建";
-            this.CREATEBY.Name = "CREATEBY";
-            this.CREATEBY.ReadOnly = true;
-            this.CREATEBY.Width = 60;
-            // 
-            // SOD_CREATEBY
-            // 
-            this.SOD_CREATEBY.DataPropertyName = "SOD_CREATEBY";
-            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle44.BackColor = System.Drawing.Color.White;
-            this.SOD_CREATEBY.DefaultCellStyle = dataGridViewCellStyle44;
-            this.SOD_CREATEBY.HeaderText = "创";
-            this.SOD_CREATEBY.Name = "SOD_CREATEBY";
-            this.SOD_CREATEBY.ReadOnly = true;
-            this.SOD_CREATEBY.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.SOD_CREATEBY.Visible = false;
-            this.SOD_CREATEBY.Width = 80;
-            // 
-            // SOD_CREATEDATE
-            // 
-            this.SOD_CREATEDATE.DataPropertyName = "SOD_CREATEDATE";
-            dataGridViewCellStyle45.BackColor = System.Drawing.Color.White;
-            this.SOD_CREATEDATE.DefaultCellStyle = dataGridViewCellStyle45;
-            this.SOD_CREATEDATE.HeaderText = "创建时间";
-            this.SOD_CREATEDATE.Name = "SOD_CREATEDATE";
-            this.SOD_CREATEDATE.ReadOnly = true;
-            this.SOD_CREATEDATE.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // SOD_LMODBY
-            // 
-            this.SOD_LMODBY.DataPropertyName = "SOD_LMODBY";
-            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle46.BackColor = System.Drawing.Color.White;
-            this.SOD_LMODBY.DefaultCellStyle = dataGridViewCellStyle46;
-            this.SOD_LMODBY.HeaderText = "修";
-            this.SOD_LMODBY.Name = "SOD_LMODBY";
-            this.SOD_LMODBY.ReadOnly = true;
-            this.SOD_LMODBY.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.SOD_LMODBY.Visible = false;
-            this.SOD_LMODBY.Width = 80;
-            // 
-            // LMODBY
-            // 
-            this.LMODBY.DataPropertyName = "LMODBY";
-            this.LMODBY.HeaderText = "修改";
-            this.LMODBY.Name = "LMODBY";
-            this.LMODBY.ReadOnly = true;
-            this.LMODBY.Width = 60;
-            // 
-            // SOD_LMODDATE
-            // 
-            this.SOD_LMODDATE.DataPropertyName = "SOD_LMODDATE";
-            dataGridViewCellStyle47.BackColor = System.Drawing.Color.White;
-            this.SOD_LMODDATE.DefaultCellStyle = dataGridViewCellStyle47;
-            this.SOD_LMODDATE.HeaderText = "修改时间";
-            this.SOD_LMODDATE.Name = "SOD_LMODDATE";
-            this.SOD_LMODDATE.ReadOnly = true;
-            this.SOD_LMODDATE.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // SOD_PRO_MAT
-            // 
-            this.SOD_PRO_MAT.DataPropertyName = "SOD_PRO_MAT";
-            this.SOD_PRO_MAT.HeaderText = "类别";
-            this.SOD_PRO_MAT.Name = "SOD_PRO_MAT";
-            this.SOD_PRO_MAT.ReadOnly = true;
-            this.SOD_PRO_MAT.Width = 5;
-            // 
-            // SOD_SO_NO
-            // 
-            this.SOD_SO_NO.DataPropertyName = "SOD_SO_NO";
-            this.SOD_SO_NO.HeaderText = "SOD_SO_NO";
-            this.SOD_SO_NO.Name = "SOD_SO_NO";
-            this.SOD_SO_NO.ReadOnly = true;
-            this.SOD_SO_NO.Visible = false;
-            this.SOD_SO_NO.Width = 5;
-            // 
-            // SOD_PARENT_PRODCODE
-            // 
-            this.SOD_PARENT_PRODCODE.HeaderText = "SOD_PARENT_PRODCODE";
-            this.SOD_PARENT_PRODCODE.Name = "SOD_PARENT_PRODCODE";
-            this.SOD_PARENT_PRODCODE.ReadOnly = true;
-            this.SOD_PARENT_PRODCODE.Visible = false;
-            this.SOD_PARENT_PRODCODE.Width = 5;
-            // 
-            // SOD_OTHER_NAME
-            // 
-            this.SOD_OTHER_NAME.DataPropertyName = "SOD_OTHER_NAME";
-            this.SOD_OTHER_NAME.HeaderText = "Column1";
-            this.SOD_OTHER_NAME.Name = "SOD_OTHER_NAME";
-            this.SOD_OTHER_NAME.Visible = false;
             // 
             // RightMenu
             // 
@@ -1776,14 +1497,14 @@
             this.dgvProperty.AllowUserToAddRows = false;
             this.dgvProperty.AllowUserToDeleteRows = false;
             this.dgvProperty.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProperty.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProperty.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.dgvProperty.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProperty.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colprodcode,
@@ -1811,7 +1532,7 @@
             this.dgvProperty.RowHeadersWidth = 30;
             this.dgvProperty.RowTemplate.Height = 23;
             this.dgvProperty.Size = new System.Drawing.Size(971, 141);
-            this.dgvProperty.TabIndex = 42;
+            this.dgvProperty.TabIndex = 38;
             this.dgvProperty.CellKeyDown += new System.Windows.Forms.KeyEventHandler(this.dgvProperty_CellKeyDown);
             this.dgvProperty.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgvProperty_DataError);
             this.dgvProperty.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dgvProperty_KeyDown);
@@ -1826,9 +1547,9 @@
             // SOPP_SOD_LINENO
             // 
             this.SOPP_SOD_LINENO.DataPropertyName = "SOPP_SOD_LINENO";
-            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle48.BackColor = System.Drawing.Color.White;
-            this.SOPP_SOD_LINENO.DefaultCellStyle = dataGridViewCellStyle48;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
+            this.SOPP_SOD_LINENO.DefaultCellStyle = dataGridViewCellStyle18;
             this.SOPP_SOD_LINENO.HeaderText = "序号";
             this.SOPP_SOD_LINENO.Name = "SOPP_SOD_LINENO";
             this.SOPP_SOD_LINENO.ReadOnly = true;
@@ -1837,8 +1558,8 @@
             // SOPP_SEQUENCE
             // 
             this.SOPP_SEQUENCE.DataPropertyName = "SOPP_SEQUENCE";
-            dataGridViewCellStyle49.BackColor = System.Drawing.Color.White;
-            this.SOPP_SEQUENCE.DefaultCellStyle = dataGridViewCellStyle49;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
+            this.SOPP_SEQUENCE.DefaultCellStyle = dataGridViewCellStyle19;
             this.SOPP_SEQUENCE.HeaderText = "编号";
             this.SOPP_SEQUENCE.Name = "SOPP_SEQUENCE";
             this.SOPP_SEQUENCE.ReadOnly = true;
@@ -1849,8 +1570,8 @@
             // SOPP_TYPE
             // 
             this.SOPP_TYPE.DataPropertyName = "SOPP_TYPE";
-            dataGridViewCellStyle50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.SOPP_TYPE.DefaultCellStyle = dataGridViewCellStyle50;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.SOPP_TYPE.DefaultCellStyle = dataGridViewCellStyle20;
             this.SOPP_TYPE.HeaderText = "类别";
             this.SOPP_TYPE.Name = "SOPP_TYPE";
             this.SOPP_TYPE.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -1858,8 +1579,8 @@
             // SOPP_PROPERTY
             // 
             this.SOPP_PROPERTY.DataPropertyName = "SOPP_PROPERTY";
-            dataGridViewCellStyle51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.SOPP_PROPERTY.DefaultCellStyle = dataGridViewCellStyle51;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.SOPP_PROPERTY.DefaultCellStyle = dataGridViewCellStyle21;
             this.SOPP_PROPERTY.HeaderText = "属性";
             this.SOPP_PROPERTY.Name = "SOPP_PROPERTY";
             this.SOPP_PROPERTY.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -1868,8 +1589,8 @@
             // SOPP_PROPERTY_VALUE
             // 
             this.SOPP_PROPERTY_VALUE.DataPropertyName = "SOPP_PROPERTY_VALUE";
-            dataGridViewCellStyle52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.SOPP_PROPERTY_VALUE.DefaultCellStyle = dataGridViewCellStyle52;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.SOPP_PROPERTY_VALUE.DefaultCellStyle = dataGridViewCellStyle22;
             this.SOPP_PROPERTY_VALUE.HeaderText = "属性值";
             this.SOPP_PROPERTY_VALUE.Name = "SOPP_PROPERTY_VALUE";
             this.SOPP_PROPERTY_VALUE.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -1878,9 +1599,9 @@
             // SOPP_QTY
             // 
             this.SOPP_QTY.DataPropertyName = "SOPP_QTY";
-            dataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle53.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.SOPP_QTY.DefaultCellStyle = dataGridViewCellStyle53;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.SOPP_QTY.DefaultCellStyle = dataGridViewCellStyle23;
             this.SOPP_QTY.HeaderText = "数量";
             this.SOPP_QTY.Name = "SOPP_QTY";
             this.SOPP_QTY.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -1889,8 +1610,8 @@
             // SOPP_REMARK
             // 
             this.SOPP_REMARK.DataPropertyName = "SOPP_REMARK";
-            dataGridViewCellStyle54.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.SOPP_REMARK.DefaultCellStyle = dataGridViewCellStyle54;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.SOPP_REMARK.DefaultCellStyle = dataGridViewCellStyle24;
             this.SOPP_REMARK.HeaderText = "备注";
             this.SOPP_REMARK.Name = "SOPP_REMARK";
             this.SOPP_REMARK.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -1899,9 +1620,9 @@
             // SOPP_CRT_BY
             // 
             this.SOPP_CRT_BY.DataPropertyName = "SOPP_CRT_BY";
-            dataGridViewCellStyle55.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle55.BackColor = System.Drawing.Color.White;
-            this.SOPP_CRT_BY.DefaultCellStyle = dataGridViewCellStyle55;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.White;
+            this.SOPP_CRT_BY.DefaultCellStyle = dataGridViewCellStyle25;
             this.SOPP_CRT_BY.HeaderText = "创";
             this.SOPP_CRT_BY.Name = "SOPP_CRT_BY";
             this.SOPP_CRT_BY.ReadOnly = true;
@@ -1920,8 +1641,8 @@
             // SOPP_CRT_ON
             // 
             this.SOPP_CRT_ON.DataPropertyName = "SOPP_CRT_ON";
-            dataGridViewCellStyle56.BackColor = System.Drawing.Color.White;
-            this.SOPP_CRT_ON.DefaultCellStyle = dataGridViewCellStyle56;
+            dataGridViewCellStyle26.BackColor = System.Drawing.Color.White;
+            this.SOPP_CRT_ON.DefaultCellStyle = dataGridViewCellStyle26;
             this.SOPP_CRT_ON.HeaderText = "创建时间";
             this.SOPP_CRT_ON.Name = "SOPP_CRT_ON";
             this.SOPP_CRT_ON.ReadOnly = true;
@@ -1930,9 +1651,9 @@
             // SOPP_UPD_BY
             // 
             this.SOPP_UPD_BY.DataPropertyName = "SOPP_UPD_BY";
-            dataGridViewCellStyle57.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle57.BackColor = System.Drawing.Color.White;
-            this.SOPP_UPD_BY.DefaultCellStyle = dataGridViewCellStyle57;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle27.BackColor = System.Drawing.Color.White;
+            this.SOPP_UPD_BY.DefaultCellStyle = dataGridViewCellStyle27;
             this.SOPP_UPD_BY.HeaderText = "修";
             this.SOPP_UPD_BY.Name = "SOPP_UPD_BY";
             this.SOPP_UPD_BY.ReadOnly = true;
@@ -1951,8 +1672,8 @@
             // SOPP_UPD_ON
             // 
             this.SOPP_UPD_ON.DataPropertyName = "SOPP_UPD_ON";
-            dataGridViewCellStyle58.BackColor = System.Drawing.Color.White;
-            this.SOPP_UPD_ON.DefaultCellStyle = dataGridViewCellStyle58;
+            dataGridViewCellStyle28.BackColor = System.Drawing.Color.White;
+            this.SOPP_UPD_ON.DefaultCellStyle = dataGridViewCellStyle28;
             this.SOPP_UPD_ON.HeaderText = "修改时间";
             this.SOPP_UPD_ON.Name = "SOPP_UPD_ON";
             this.SOPP_UPD_ON.ReadOnly = true;
@@ -1961,8 +1682,8 @@
             // SOPP_STATUS
             // 
             this.SOPP_STATUS.DataPropertyName = "SOPP_STATUS";
-            dataGridViewCellStyle59.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.SOPP_STATUS.DefaultCellStyle = dataGridViewCellStyle59;
+            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.SOPP_STATUS.DefaultCellStyle = dataGridViewCellStyle29;
             this.SOPP_STATUS.HeaderText = "状态";
             this.SOPP_STATUS.Name = "SOPP_STATUS";
             this.SOPP_STATUS.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -2055,14 +1776,14 @@
             // 
             this.dgvImage.AllowUserToAddRows = false;
             this.dgvImage.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvImage.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle30.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle30.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvImage.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle30;
             this.dgvImage.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvImage.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.SIMG_LINENO,
@@ -2127,8 +1848,8 @@
             // SIMG_DESC
             // 
             this.SIMG_DESC.DataPropertyName = "SIMG_DESC";
-            dataGridViewCellStyle60.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.SIMG_DESC.DefaultCellStyle = dataGridViewCellStyle60;
+            dataGridViewCellStyle31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.SIMG_DESC.DefaultCellStyle = dataGridViewCellStyle31;
             this.SIMG_DESC.HeaderText = "文件内容";
             this.SIMG_DESC.Name = "SIMG_DESC";
             this.SIMG_DESC.Width = 300;
@@ -2253,7 +1974,6 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.txtError);
-            this.panel4.Controls.Add(this.btnClose);
             this.panel4.Controls.Add(this.btnOk);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel4.Location = new System.Drawing.Point(0, 719);
@@ -2271,30 +1991,280 @@
             this.txtError.ReadOnly = true;
             this.txtError.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtError.Size = new System.Drawing.Size(541, 26);
-            this.txtError.TabIndex = 44;
+            this.txtError.TabIndex = 42;
             this.txtError.DoubleClick += new System.EventHandler(this.txtError_DoubleClick);
-            // 
-            // btnClose
-            // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.Location = new System.Drawing.Point(911, 3);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(67, 29);
-            this.btnClose.TabIndex = 43;
-            this.btnClose.Text = "关闭(&C)";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnOk
             // 
             this.btnOk.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOk.Location = new System.Drawing.Point(838, 3);
+            this.btnOk.Location = new System.Drawing.Point(909, 3);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(67, 29);
-            this.btnOk.TabIndex = 42;
+            this.btnOk.TabIndex = 40;
             this.btnOk.Text = "保存(&S)";
             this.btnOk.UseVisualStyleBackColor = true;
             this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
+            // 
+            // SOD_LINENO
+            // 
+            this.SOD_LINENO.DataPropertyName = "SOD_LINENO";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            this.SOD_LINENO.DefaultCellStyle = dataGridViewCellStyle2;
+            this.SOD_LINENO.HeaderText = "序号";
+            this.SOD_LINENO.Name = "SOD_LINENO";
+            this.SOD_LINENO.ReadOnly = true;
+            this.SOD_LINENO.Width = 30;
+            // 
+            // SOD_GROUP_ID
+            // 
+            this.SOD_GROUP_ID.DataPropertyName = "SOD_GROUP_ID";
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.SOD_GROUP_ID.DefaultCellStyle = dataGridViewCellStyle3;
+            this.SOD_GROUP_ID.HeaderText = "分组编号";
+            this.SOD_GROUP_ID.Name = "SOD_GROUP_ID";
+            this.SOD_GROUP_ID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.SOD_GROUP_ID.Width = 60;
+            // 
+            // SOD_PRODCODE
+            // 
+            this.SOD_PRODCODE.DataPropertyName = "SOD_PRODCODE";
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.SOD_PRODCODE.DefaultCellStyle = dataGridViewCellStyle4;
+            this.SOD_PRODCODE.HeaderText = "手工物料编号";
+            this.SOD_PRODCODE.Name = "SOD_PRODCODE";
+            this.SOD_PRODCODE.ReadOnly = true;
+            this.SOD_PRODCODE.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.SOD_PRODCODE.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.SOD_PRODCODE.Width = 110;
+            // 
+            // colMaterial
+            // 
+            this.colMaterial.HeaderText = "  ";
+            this.colMaterial.Name = "colMaterial";
+            this.colMaterial.Text = "…";
+            this.colMaterial.UseColumnTextForButtonValue = true;
+            this.colMaterial.Width = 30;
+            // 
+            // PROD_DESC
+            // 
+            this.PROD_DESC.DataPropertyName = "PROD_DESC";
+            this.PROD_DESC.HeaderText = "英文名称";
+            this.PROD_DESC.Name = "PROD_DESC";
+            this.PROD_DESC.ReadOnly = true;
+            this.PROD_DESC.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // PROD_DESC_CHI
+            // 
+            this.PROD_DESC_CHI.DataPropertyName = "PROD_DESC_CHI";
+            this.PROD_DESC_CHI.HeaderText = "物料中文名称";
+            this.PROD_DESC_CHI.Name = "PROD_DESC_CHI";
+            this.PROD_DESC_CHI.ReadOnly = true;
+            this.PROD_DESC_CHI.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // SOD_QTY
+            // 
+            this.SOD_QTY.DataPropertyName = "SOD_QTY";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.SOD_QTY.DefaultCellStyle = dataGridViewCellStyle5;
+            this.SOD_QTY.HeaderText = "数量";
+            this.SOD_QTY.Name = "SOD_QTY";
+            this.SOD_QTY.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.SOD_QTY.Width = 60;
+            // 
+            // SOD_PRICE
+            // 
+            this.SOD_PRICE.DataPropertyName = "SOD_PRICE";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.SOD_PRICE.DefaultCellStyle = dataGridViewCellStyle6;
+            this.SOD_PRICE.HeaderText = "单价";
+            this.SOD_PRICE.Name = "SOD_PRICE";
+            this.SOD_PRICE.ReadOnly = true;
+            this.SOD_PRICE.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.SOD_PRICE.Width = 80;
+            // 
+            // SOD_UNIT
+            // 
+            this.SOD_UNIT.DataPropertyName = "SOD_UNIT";
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.SOD_UNIT.DefaultCellStyle = dataGridViewCellStyle7;
+            this.SOD_UNIT.HeaderText = "单位";
+            this.SOD_UNIT.Name = "SOD_UNIT";
+            this.SOD_UNIT.ReadOnly = true;
+            this.SOD_UNIT.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.SOD_UNIT.Width = 60;
+            // 
+            // SOD_CHARGE_YN
+            // 
+            this.SOD_CHARGE_YN.DataPropertyName = "SOD_CHARGE_YN";
+            this.SOD_CHARGE_YN.HeaderText = "收费项目";
+            this.SOD_CHARGE_YN.Name = "SOD_CHARGE_YN";
+            this.SOD_CHARGE_YN.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.SOD_CHARGE_YN.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.SOD_CHARGE_YN.Visible = false;
+            // 
+            // SOD_CHARGE_DESC
+            // 
+            this.SOD_CHARGE_DESC.DataPropertyName = "SOD_CHARGE_DESC";
+            this.SOD_CHARGE_DESC.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox;
+            this.SOD_CHARGE_DESC.HeaderText = "收费项目";
+            this.SOD_CHARGE_DESC.Name = "SOD_CHARGE_DESC";
+            this.SOD_CHARGE_DESC.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.SOD_CHARGE_DESC.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // SOD_FDA_CODE
+            // 
+            this.SOD_FDA_CODE.DataPropertyName = "SOD_FDA_CODE";
+            this.SOD_FDA_CODE.HeaderText = "FDA号";
+            this.SOD_FDA_CODE.Name = "SOD_FDA_CODE";
+            this.SOD_FDA_CODE.ReadOnly = true;
+            // 
+            // SOD_FDA_QTY
+            // 
+            this.SOD_FDA_QTY.DataPropertyName = "SOD_FDA_QTY";
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.SOD_FDA_QTY.DefaultCellStyle = dataGridViewCellStyle8;
+            this.SOD_FDA_QTY.HeaderText = "FDA数量";
+            this.SOD_FDA_QTY.Name = "SOD_FDA_QTY";
+            this.SOD_FDA_QTY.Width = 80;
+            // 
+            // SOD_TOOTHPOS
+            // 
+            this.SOD_TOOTHPOS.DataPropertyName = "SOD_TOOTHPOS";
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.SOD_TOOTHPOS.DefaultCellStyle = dataGridViewCellStyle9;
+            this.SOD_TOOTHPOS.HeaderText = "牙位";
+            this.SOD_TOOTHPOS.Name = "SOD_TOOTHPOS";
+            this.SOD_TOOTHPOS.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.SOD_TOOTHPOS.Width = 60;
+            // 
+            // SOD_TOOTHCOLOR
+            // 
+            this.SOD_TOOTHCOLOR.DataPropertyName = "SOD_TOOTHCOLOR";
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.SOD_TOOTHCOLOR.DefaultCellStyle = dataGridViewCellStyle10;
+            this.SOD_TOOTHCOLOR.HeaderText = "颜色";
+            this.SOD_TOOTHCOLOR.Name = "SOD_TOOTHCOLOR";
+            this.SOD_TOOTHCOLOR.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.SOD_TOOTHCOLOR.Width = 60;
+            // 
+            // SOD_BATCHNO
+            // 
+            this.SOD_BATCHNO.DataPropertyName = "SOD_BATCHNO";
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.SOD_BATCHNO.DefaultCellStyle = dataGridViewCellStyle11;
+            this.SOD_BATCHNO.HeaderText = "批号";
+            this.SOD_BATCHNO.Name = "SOD_BATCHNO";
+            this.SOD_BATCHNO.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.SOD_BATCHNO.Width = 60;
+            // 
+            // SOD_REMARK
+            // 
+            this.SOD_REMARK.DataPropertyName = "SOD_REMARK";
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.SOD_REMARK.DefaultCellStyle = dataGridViewCellStyle12;
+            this.SOD_REMARK.HeaderText = "备注";
+            this.SOD_REMARK.Name = "SOD_REMARK";
+            this.SOD_REMARK.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // CREATEBY
+            // 
+            this.CREATEBY.DataPropertyName = "CREATEBY";
+            this.CREATEBY.HeaderText = "创建";
+            this.CREATEBY.Name = "CREATEBY";
+            this.CREATEBY.ReadOnly = true;
+            this.CREATEBY.Width = 60;
+            // 
+            // SOD_CREATEBY
+            // 
+            this.SOD_CREATEBY.DataPropertyName = "SOD_CREATEBY";
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            this.SOD_CREATEBY.DefaultCellStyle = dataGridViewCellStyle13;
+            this.SOD_CREATEBY.HeaderText = "创";
+            this.SOD_CREATEBY.Name = "SOD_CREATEBY";
+            this.SOD_CREATEBY.ReadOnly = true;
+            this.SOD_CREATEBY.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.SOD_CREATEBY.Visible = false;
+            this.SOD_CREATEBY.Width = 80;
+            // 
+            // SOD_CREATEDATE
+            // 
+            this.SOD_CREATEDATE.DataPropertyName = "SOD_CREATEDATE";
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.White;
+            this.SOD_CREATEDATE.DefaultCellStyle = dataGridViewCellStyle14;
+            this.SOD_CREATEDATE.HeaderText = "创建时间";
+            this.SOD_CREATEDATE.Name = "SOD_CREATEDATE";
+            this.SOD_CREATEDATE.ReadOnly = true;
+            this.SOD_CREATEDATE.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // SOD_LMODBY
+            // 
+            this.SOD_LMODBY.DataPropertyName = "SOD_LMODBY";
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            this.SOD_LMODBY.DefaultCellStyle = dataGridViewCellStyle15;
+            this.SOD_LMODBY.HeaderText = "修";
+            this.SOD_LMODBY.Name = "SOD_LMODBY";
+            this.SOD_LMODBY.ReadOnly = true;
+            this.SOD_LMODBY.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.SOD_LMODBY.Visible = false;
+            this.SOD_LMODBY.Width = 80;
+            // 
+            // LMODBY
+            // 
+            this.LMODBY.DataPropertyName = "LMODBY";
+            this.LMODBY.HeaderText = "修改";
+            this.LMODBY.Name = "LMODBY";
+            this.LMODBY.ReadOnly = true;
+            this.LMODBY.Width = 60;
+            // 
+            // SOD_LMODDATE
+            // 
+            this.SOD_LMODDATE.DataPropertyName = "SOD_LMODDATE";
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            this.SOD_LMODDATE.DefaultCellStyle = dataGridViewCellStyle16;
+            this.SOD_LMODDATE.HeaderText = "修改时间";
+            this.SOD_LMODDATE.Name = "SOD_LMODDATE";
+            this.SOD_LMODDATE.ReadOnly = true;
+            this.SOD_LMODDATE.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // SOD_PRO_MAT
+            // 
+            this.SOD_PRO_MAT.DataPropertyName = "SOD_PRO_MAT";
+            this.SOD_PRO_MAT.HeaderText = "类别";
+            this.SOD_PRO_MAT.Name = "SOD_PRO_MAT";
+            this.SOD_PRO_MAT.ReadOnly = true;
+            this.SOD_PRO_MAT.Width = 5;
+            // 
+            // SOD_SO_NO
+            // 
+            this.SOD_SO_NO.DataPropertyName = "SOD_SO_NO";
+            this.SOD_SO_NO.HeaderText = "SOD_SO_NO";
+            this.SOD_SO_NO.Name = "SOD_SO_NO";
+            this.SOD_SO_NO.ReadOnly = true;
+            this.SOD_SO_NO.Visible = false;
+            this.SOD_SO_NO.Width = 5;
+            // 
+            // SOD_PARENT_PRODCODE
+            // 
+            this.SOD_PARENT_PRODCODE.HeaderText = "SOD_PARENT_PRODCODE";
+            this.SOD_PARENT_PRODCODE.Name = "SOD_PARENT_PRODCODE";
+            this.SOD_PARENT_PRODCODE.ReadOnly = true;
+            this.SOD_PARENT_PRODCODE.Visible = false;
+            this.SOD_PARENT_PRODCODE.Width = 5;
+            // 
+            // SOD_OTHER_NAME
+            // 
+            this.SOD_OTHER_NAME.DataPropertyName = "SOD_OTHER_NAME";
+            this.SOD_OTHER_NAME.HeaderText = "Column1";
+            this.SOD_OTHER_NAME.Name = "SOD_OTHER_NAME";
+            this.SOD_OTHER_NAME.Visible = false;
             // 
             // Fm_SaleOrderEdit
             // 
@@ -2318,7 +2288,6 @@
             this.panel1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudSO_Discount)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -2375,7 +2344,6 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox txtSO_DoctorId;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox txtSO_Invno;
         private System.Windows.Forms.Label label22;
@@ -2416,7 +2384,6 @@
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem insertToolStripMenuItem;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.TextBox txtSO_JobmNo;
         private System.Windows.Forms.Label label6;
@@ -2431,7 +2398,6 @@
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.NumericUpDown nudSO_Discount;
         private System.Windows.Forms.ComboBox cmbSO_BusinessType;
         private System.Windows.Forms.TextBox txtSO_Stage;
         private System.Windows.Forms.TextBox txtSO_FromSystem;
@@ -2507,6 +2473,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SIMG_CATEGORY;
         private System.Windows.Forms.DataGridViewTextBoxColumn filename;
         private System.Windows.Forms.DataGridViewTextBoxColumn SIMG_SO_NO;
+        private System.Windows.Forms.Button btnInvoice;
+        private System.Windows.Forms.TextBox txtcompaycode;
+        private PhotoControl ctr_Photo1;
         private System.Windows.Forms.DataGridViewTextBoxColumn SOD_LINENO;
         private System.Windows.Forms.DataGridViewTextBoxColumn SOD_GROUP_ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn SOD_PRODCODE;
@@ -2534,8 +2503,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SOD_SO_NO;
         private System.Windows.Forms.DataGridViewTextBoxColumn SOD_PARENT_PRODCODE;
         private System.Windows.Forms.DataGridViewTextBoxColumn SOD_OTHER_NAME;
-        private System.Windows.Forms.Button btnInvoice;
-        private System.Windows.Forms.TextBox txtcompaycode;
-        private PhotoControl ctr_Photo1;
     }
 }

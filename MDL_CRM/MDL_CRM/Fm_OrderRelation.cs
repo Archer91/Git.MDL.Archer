@@ -147,6 +147,14 @@ namespace MDL_CRM
             {
                 if (dTable.Rows.Count == 0) { return; }
                 m_strReturnValue = "";
+                if (!dTable.Rows[0][2].ToString().Trim().Equals(m_strCustID))
+                {
+                    if (MessageBox.Show(string.Format("当前订单的客户【{0}】与相关订单客户【{1}】不一致，是否继续操作？", m_strCustID, dTable.Rows[0][2].ToString()), "MDL-提示", MessageBoxButtons.YesNo, MessageBoxIcon.Information) != System.Windows.Forms.DialogResult.Yes)
+                    {
+                        return;
+                    }
+                }
+
                 for (intN = 0; intN < Grid.Rows.Count; intN++)
                 {
                     if (Grid.Rows[intN].Selected == true)

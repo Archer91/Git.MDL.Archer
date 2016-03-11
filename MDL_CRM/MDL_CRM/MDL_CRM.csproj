@@ -117,7 +117,6 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Classes\DB.cs" />
-    <Compile Include="Classes\ImportJob.cs" />
     <Compile Include="Factory\ChargeFactory.cs" />
     <Compile Include="Factory\SaleOrderFactory.cs" />
     <Compile Include="Factory\WorkOrderFactory.cs" />

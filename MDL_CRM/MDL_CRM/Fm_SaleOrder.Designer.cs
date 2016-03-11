@@ -30,12 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Fm_SaleOrder));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnNew = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -53,14 +53,11 @@
             this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
             this.btnQuery = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator14 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnAdditional = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.btnToJob = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.btnToInvoice = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.btnExit = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.Right = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.mnuAdd = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuEdit = new System.Windows.Forms.ToolStripMenuItem();
@@ -102,7 +99,6 @@
             this.txtSO = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvSOList = new System.Windows.Forms.DataGridView();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.SO_NO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SO_DATE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SO_RELATE_SO = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -153,6 +149,7 @@
             this.SO_ACTUAL_SHIPDATE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SO_JOBM_NO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SO_PARTNER_ACCTID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.toolStrip1.SuspendLayout();
             this.Right.SuspendLayout();
             this.FindBar.SuspendLayout();
@@ -170,22 +167,19 @@
             this.toolStripSeparator8,
             this.btnCopy,
             this.toolStripSeparator12,
-            this.btnRefresh,
-            this.toolStripSeparator10,
             this.btnExport,
             this.toolStripSeparator2,
             this.btnPrint,
             this.toolStripSeparator11,
             this.btnQuery,
             this.toolStripSeparator14,
-            this.btnAdditional,
-            this.toolStripSeparator4,
             this.btnToJob,
             this.toolStripSeparator3,
             this.btnToInvoice,
             this.toolStripSeparator6,
-            this.btnExit,
-            this.toolStripButton1});
+            this.btnRefresh,
+            this.toolStripSeparator10,
+            this.btnExit});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(931, 25);
@@ -305,26 +299,14 @@
             this.btnQuery.Name = "btnQuery";
             this.btnQuery.Size = new System.Drawing.Size(54, 22);
             this.btnQuery.Text = "查询(&Q)";
+            this.btnQuery.Visible = false;
             this.btnQuery.Click += new System.EventHandler(this.btnQuery_Click);
             // 
             // toolStripSeparator14
             // 
             this.toolStripSeparator14.Name = "toolStripSeparator14";
             this.toolStripSeparator14.Size = new System.Drawing.Size(6, 25);
-            // 
-            // btnAdditional
-            // 
-            this.btnAdditional.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnAdditional.Image = ((System.Drawing.Image)(resources.GetObject("btnAdditional.Image")));
-            this.btnAdditional.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnAdditional.Name = "btnAdditional";
-            this.btnAdditional.Size = new System.Drawing.Size(52, 22);
-            this.btnAdditional.Text = "附件(&A)";
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator14.Visible = false;
             // 
             // btnToJob
             // 
@@ -365,14 +347,6 @@
             this.btnExit.Size = new System.Drawing.Size(52, 22);
             this.btnExit.Text = "退出(&X)";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton1.Text = "toolStripButton1";
             // 
             // Right
             // 
@@ -729,7 +703,7 @@
             this.btnFilter.Name = "btnFilter";
             this.btnFilter.Size = new System.Drawing.Size(91, 24);
             this.btnFilter.TabIndex = 14;
-            this.btnFilter.Text = "过滤(&F)";
+            this.btnFilter.Text = "查询(&Q)";
             this.btnFilter.UseVisualStyleBackColor = true;
             this.btnFilter.Click += new System.EventHandler(this.btnFilter_Click);
             // 
@@ -763,14 +737,14 @@
             // 
             this.dgvSOList.AllowUserToAddRows = false;
             this.dgvSOList.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSOList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSOList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvSOList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSOList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.SO_NO,
@@ -837,14 +811,6 @@
             this.dgvSOList.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvSOList_CellMouseDown);
             this.dgvSOList.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dgvSOList_KeyDown);
             // 
-            // progressBar1
-            // 
-            this.progressBar1.Location = new System.Drawing.Point(246, 339);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(421, 17);
-            this.progressBar1.TabIndex = 15;
-            this.progressBar1.Visible = false;
-            // 
             // SO_NO
             // 
             this.SO_NO.DataPropertyName = "SO_NO";
@@ -855,9 +821,9 @@
             // SO_DATE
             // 
             this.SO_DATE.DataPropertyName = "SO_DATE";
-            dataGridViewCellStyle2.Format = "d";
-            dataGridViewCellStyle2.NullValue = null;
-            this.SO_DATE.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle18.Format = "d";
+            dataGridViewCellStyle18.NullValue = null;
+            this.SO_DATE.DefaultCellStyle = dataGridViewCellStyle18;
             this.SO_DATE.HeaderText = "订单日期";
             this.SO_DATE.Name = "SO_DATE";
             this.SO_DATE.ReadOnly = true;
@@ -943,8 +909,8 @@
             // SO_RECEIVEDATE
             // 
             this.SO_RECEIVEDATE.DataPropertyName = "SO_RECEIVEDATE";
-            dataGridViewCellStyle3.Format = "d";
-            this.SO_RECEIVEDATE.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle19.Format = "d";
+            this.SO_RECEIVEDATE.DefaultCellStyle = dataGridViewCellStyle19;
             this.SO_RECEIVEDATE.HeaderText = "开始日期";
             this.SO_RECEIVEDATE.Name = "SO_RECEIVEDATE";
             this.SO_RECEIVEDATE.ReadOnly = true;
@@ -959,8 +925,8 @@
             // SO_DELIVERYDATE
             // 
             this.SO_DELIVERYDATE.DataPropertyName = "SO_DELIVERYDATE";
-            dataGridViewCellStyle4.Format = "d";
-            this.SO_DELIVERYDATE.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle20.Format = "d";
+            this.SO_DELIVERYDATE.DefaultCellStyle = dataGridViewCellStyle20;
             this.SO_DELIVERYDATE.HeaderText = "送货日期";
             this.SO_DELIVERYDATE.Name = "SO_DELIVERYDATE";
             this.SO_DELIVERYDATE.ReadOnly = true;
@@ -989,8 +955,8 @@
             // SO_REQUESTDATE
             // 
             this.SO_REQUESTDATE.DataPropertyName = "SO_REQUESTDATE";
-            dataGridViewCellStyle5.Format = "d";
-            this.SO_REQUESTDATE.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle21.Format = "d";
+            this.SO_REQUESTDATE.DefaultCellStyle = dataGridViewCellStyle21;
             this.SO_REQUESTDATE.HeaderText = "要求日期";
             this.SO_REQUESTDATE.Name = "SO_REQUESTDATE";
             this.SO_REQUESTDATE.ReadOnly = true;
@@ -1005,8 +971,8 @@
             // SO_ESTIMATEDATE
             // 
             this.SO_ESTIMATEDATE.DataPropertyName = "SO_ESTIMATEDATE";
-            dataGridViewCellStyle6.Format = "d";
-            this.SO_ESTIMATEDATE.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle22.Format = "d";
+            this.SO_ESTIMATEDATE.DefaultCellStyle = dataGridViewCellStyle22;
             this.SO_ESTIMATEDATE.HeaderText = "出货日期";
             this.SO_ESTIMATEDATE.Name = "SO_ESTIMATEDATE";
             this.SO_ESTIMATEDATE.ReadOnly = true;
@@ -1209,6 +1175,14 @@
             this.SO_PARTNER_ACCTID.Name = "SO_PARTNER_ACCTID";
             this.SO_PARTNER_ACCTID.ReadOnly = true;
             // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(246, 339);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(421, 17);
+            this.progressBar1.TabIndex = 15;
+            this.progressBar1.Visible = false;
+            // 
             // Fm_SaleOrder
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -1242,7 +1216,6 @@
         private System.Windows.Forms.ToolStripButton btnExport;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripButton btnAdditional;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripButton btnEdit;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
@@ -1293,13 +1266,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvSOList;
         private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripMenuItem mnujob;
         private System.Windows.Forms.ToolStripMenuItem mnuInvoice;
         private System.Windows.Forms.ToolStripButton btnToJob;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox cmbStage;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripMenuItem mnuLog;
         private System.Windows.Forms.ToolStripButton btnToInvoice;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;

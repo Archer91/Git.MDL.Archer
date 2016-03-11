@@ -58,8 +58,8 @@
             this.invd_qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.invd_unit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.invd_uprice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sumPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.invd_discount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sumPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.invd_charge_yn_desc = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.invd_charge_yn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RightMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -73,6 +73,8 @@
             this.txtCode = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtPartner = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txtEntity = new System.Windows.Forms.TextBox();
             this.txtSite = new System.Windows.Forms.TextBox();
@@ -118,8 +120,6 @@
             this.cndt_lmodby = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cndt_lmoddate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cnhr_status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txtPartner = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInvoiceDetail)).BeginInit();
             this.RightMenu.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -150,8 +150,8 @@
             this.invd_qty,
             this.invd_unit,
             this.invd_uprice,
-            this.sumPrice,
             this.invd_discount,
+            this.sumPrice,
             this.invd_charge_yn_desc,
             this.invd_charge_yn});
             this.dgvInvoiceDetail.ContextMenuStrip = this.RightMenu;
@@ -172,7 +172,6 @@
             // 
             this.invd_jobno.DataPropertyName = "invd_jobno";
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.invd_jobno.DefaultCellStyle = dataGridViewCellStyle2;
             this.invd_jobno.HeaderText = "工作单编号";
             this.invd_jobno.Name = "invd_jobno";
@@ -183,7 +182,6 @@
             // 
             this.invd_prodcode.DataPropertyName = "invd_prodcode";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.invd_prodcode.DefaultCellStyle = dataGridViewCellStyle3;
             this.invd_prodcode.HeaderText = "手工物料编号";
             this.invd_prodcode.Name = "invd_prodcode";
@@ -194,7 +192,6 @@
             // 
             this.invd_desc.DataPropertyName = "invd_desc";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.invd_desc.DefaultCellStyle = dataGridViewCellStyle4;
             this.invd_desc.HeaderText = "收费详细";
             this.invd_desc.Name = "invd_desc";
@@ -203,8 +200,7 @@
             // invd_qty
             // 
             this.invd_qty.DataPropertyName = "invd_qty";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.invd_qty.DefaultCellStyle = dataGridViewCellStyle5;
             this.invd_qty.HeaderText = "数量";
             this.invd_qty.Name = "invd_qty";
@@ -214,7 +210,6 @@
             // 
             this.invd_unit.DataPropertyName = "invd_unit";
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.invd_unit.DefaultCellStyle = dataGridViewCellStyle6;
             this.invd_unit.HeaderText = "单位";
             this.invd_unit.Name = "invd_unit";
@@ -225,34 +220,33 @@
             // 
             this.invd_uprice.DataPropertyName = "invd_uprice";
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             dataGridViewCellStyle7.Format = "N2";
             dataGridViewCellStyle7.NullValue = null;
             this.invd_uprice.DefaultCellStyle = dataGridViewCellStyle7;
             this.invd_uprice.HeaderText = "单价";
             this.invd_uprice.Name = "invd_uprice";
             // 
-            // sumPrice
-            // 
-            this.sumPrice.DataPropertyName = "sumPrice";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle8.Format = "N2";
-            dataGridViewCellStyle8.NullValue = null;
-            this.sumPrice.DefaultCellStyle = dataGridViewCellStyle8;
-            this.sumPrice.HeaderText = "金额";
-            this.sumPrice.Name = "sumPrice";
-            this.sumPrice.ReadOnly = true;
-            // 
             // invd_discount
             // 
             this.invd_discount.DataPropertyName = "invd_discount";
-            dataGridViewCellStyle9.Format = "N2";
-            dataGridViewCellStyle9.NullValue = null;
-            this.invd_discount.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle8.Format = "N2";
+            dataGridViewCellStyle8.NullValue = null;
+            this.invd_discount.DefaultCellStyle = dataGridViewCellStyle8;
             this.invd_discount.HeaderText = "折扣";
             this.invd_discount.Name = "invd_discount";
-            this.invd_discount.Visible = false;
+            this.invd_discount.ReadOnly = true;
+            // 
+            // sumPrice
+            // 
+            this.sumPrice.DataPropertyName = "sumPrice";
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle9.Format = "N2";
+            dataGridViewCellStyle9.NullValue = null;
+            this.sumPrice.DefaultCellStyle = dataGridViewCellStyle9;
+            this.sumPrice.HeaderText = "金额";
+            this.sumPrice.Name = "sumPrice";
+            this.sumPrice.ReadOnly = true;
             // 
             // invd_charge_yn_desc
             // 
@@ -340,7 +334,8 @@
             this.txtCode.Name = "txtCode";
             this.txtCode.ReadOnly = true;
             this.txtCode.Size = new System.Drawing.Size(96, 21);
-            this.txtCode.TabIndex = 4;
+            this.txtCode.TabIndex = 103;
+            this.txtCode.TabStop = false;
             // 
             // label2
             // 
@@ -391,6 +386,25 @@
             this.panel1.Size = new System.Drawing.Size(313, 730);
             this.panel1.TabIndex = 14;
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(9, 43);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(59, 12);
+            this.label15.TabIndex = 55;
+            this.label15.Text = "合作伙伴:";
+            // 
+            // txtPartner
+            // 
+            this.txtPartner.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtPartner.Location = new System.Drawing.Point(74, 40);
+            this.txtPartner.Name = "txtPartner";
+            this.txtPartner.ReadOnly = true;
+            this.txtPartner.Size = new System.Drawing.Size(96, 21);
+            this.txtPartner.TabIndex = 102;
+            this.txtPartner.TabStop = false;
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -407,7 +421,8 @@
             this.txtEntity.Name = "txtEntity";
             this.txtEntity.ReadOnly = true;
             this.txtEntity.Size = new System.Drawing.Size(96, 21);
-            this.txtEntity.TabIndex = 50;
+            this.txtEntity.TabIndex = 100;
+            this.txtEntity.TabStop = false;
             // 
             // txtSite
             // 
@@ -415,7 +430,8 @@
             this.txtSite.Name = "txtSite";
             this.txtSite.ReadOnly = true;
             this.txtSite.Size = new System.Drawing.Size(82, 21);
-            this.txtSite.TabIndex = 53;
+            this.txtSite.TabIndex = 101;
+            this.txtSite.TabStop = false;
             // 
             // label12
             // 
@@ -432,14 +448,15 @@
             this.txt_Printdate.Name = "txt_Printdate";
             this.txt_Printdate.ReadOnly = true;
             this.txt_Printdate.Size = new System.Drawing.Size(147, 21);
-            this.txt_Printdate.TabIndex = 49;
+            this.txt_Printdate.TabIndex = 110;
+            this.txt_Printdate.TabStop = false;
             // 
             // btnComplate
             // 
             this.btnComplate.Location = new System.Drawing.Point(167, 445);
             this.btnComplate.Name = "btnComplate";
             this.btnComplate.Size = new System.Drawing.Size(91, 23);
-            this.btnComplate.TabIndex = 48;
+            this.btnComplate.TabIndex = 2;
             this.btnComplate.Text = "正式(&C)";
             this.btnComplate.UseVisualStyleBackColor = true;
             this.btnComplate.Click += new System.EventHandler(this.btnComplate_Click);
@@ -449,7 +466,7 @@
             this.btn_Save.Location = new System.Drawing.Point(167, 503);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(91, 23);
-            this.btn_Save.TabIndex = 47;
+            this.btn_Save.TabIndex = 4;
             this.btn_Save.Text = "保存(&S)";
             this.btn_Save.UseVisualStyleBackColor = true;
             this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
@@ -459,7 +476,7 @@
             this.Btn_Print.Location = new System.Drawing.Point(66, 445);
             this.Btn_Print.Name = "Btn_Print";
             this.Btn_Print.Size = new System.Drawing.Size(91, 23);
-            this.Btn_Print.TabIndex = 44;
+            this.Btn_Print.TabIndex = 1;
             this.Btn_Print.Text = "打印发票(&P)";
             this.Btn_Print.UseVisualStyleBackColor = true;
             this.Btn_Print.Click += new System.EventHandler(this.Btn_Print_Click);
@@ -469,7 +486,7 @@
             this.btn_Cancel.Location = new System.Drawing.Point(167, 474);
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Size = new System.Drawing.Size(91, 23);
-            this.btn_Cancel.TabIndex = 43;
+            this.btn_Cancel.TabIndex = 3;
             this.btn_Cancel.Text = "取消(&V)";
             this.btn_Cancel.UseVisualStyleBackColor = true;
             this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
@@ -480,7 +497,8 @@
             this.txt_Cancel.Name = "txt_Cancel";
             this.txt_Cancel.ReadOnly = true;
             this.txt_Cancel.Size = new System.Drawing.Size(82, 21);
-            this.txt_Cancel.TabIndex = 42;
+            this.txt_Cancel.TabIndex = 113;
+            this.txt_Cancel.TabStop = false;
             // 
             // txt_CancelDt
             // 
@@ -488,7 +506,8 @@
             this.txt_CancelDt.Name = "txt_CancelDt";
             this.txt_CancelDt.ReadOnly = true;
             this.txt_CancelDt.Size = new System.Drawing.Size(147, 21);
-            this.txt_CancelDt.TabIndex = 41;
+            this.txt_CancelDt.TabIndex = 114;
+            this.txt_CancelDt.TabStop = false;
             // 
             // txt_ModifyUser
             // 
@@ -496,7 +515,8 @@
             this.txt_ModifyUser.Name = "txt_ModifyUser";
             this.txt_ModifyUser.ReadOnly = true;
             this.txt_ModifyUser.Size = new System.Drawing.Size(82, 21);
-            this.txt_ModifyUser.TabIndex = 40;
+            this.txt_ModifyUser.TabIndex = 111;
+            this.txt_ModifyUser.TabStop = false;
             // 
             // txt_ComplateDt
             // 
@@ -504,7 +524,8 @@
             this.txt_ComplateDt.Name = "txt_ComplateDt";
             this.txt_ComplateDt.ReadOnly = true;
             this.txt_ComplateDt.Size = new System.Drawing.Size(147, 21);
-            this.txt_ComplateDt.TabIndex = 39;
+            this.txt_ComplateDt.TabIndex = 112;
+            this.txt_ComplateDt.TabStop = false;
             // 
             // txt_Print
             // 
@@ -512,7 +533,8 @@
             this.txt_Print.Name = "txt_Print";
             this.txt_Print.ReadOnly = true;
             this.txt_Print.Size = new System.Drawing.Size(82, 21);
-            this.txt_Print.TabIndex = 38;
+            this.txt_Print.TabIndex = 109;
+            this.txt_Print.TabStop = false;
             // 
             // txt_Remark
             // 
@@ -521,7 +543,7 @@
             this.txt_Remark.Name = "txt_Remark";
             this.txt_Remark.ReadOnly = true;
             this.txt_Remark.Size = new System.Drawing.Size(243, 97);
-            this.txt_Remark.TabIndex = 37;
+            this.txt_Remark.TabIndex = 0;
             // 
             // txt_AccName
             // 
@@ -529,7 +551,8 @@
             this.txt_AccName.Name = "txt_AccName";
             this.txt_AccName.ReadOnly = true;
             this.txt_AccName.Size = new System.Drawing.Size(235, 21);
-            this.txt_AccName.TabIndex = 36;
+            this.txt_AccName.TabIndex = 106;
+            this.txt_AccName.TabStop = false;
             // 
             // label8
             // 
@@ -555,7 +578,8 @@
             this.txt_InvnoteDate.Name = "txt_InvnoteDate";
             this.txt_InvnoteDate.ReadOnly = true;
             this.txt_InvnoteDate.Size = new System.Drawing.Size(82, 21);
-            this.txt_InvnoteDate.TabIndex = 31;
+            this.txt_InvnoteDate.TabIndex = 107;
+            this.txt_InvnoteDate.TabStop = false;
             // 
             // label3
             // 
@@ -572,7 +596,8 @@
             this.txt_Currency.Name = "txt_Currency";
             this.txt_Currency.ReadOnly = true;
             this.txt_Currency.Size = new System.Drawing.Size(95, 21);
-            this.txt_Currency.TabIndex = 24;
+            this.txt_Currency.TabIndex = 108;
+            this.txt_Currency.TabStop = false;
             // 
             // label7
             // 
@@ -598,7 +623,8 @@
             this.txt_Account.Name = "txt_Account";
             this.txt_Account.ReadOnly = true;
             this.txt_Account.Size = new System.Drawing.Size(95, 21);
-            this.txt_Account.TabIndex = 26;
+            this.txt_Account.TabIndex = 105;
+            this.txt_Account.TabStop = false;
             // 
             // label14
             // 
@@ -615,7 +641,8 @@
             this.txt_State.Name = "txt_State";
             this.txt_State.ReadOnly = true;
             this.txt_State.Size = new System.Drawing.Size(82, 21);
-            this.txt_State.TabIndex = 23;
+            this.txt_State.TabIndex = 104;
+            this.txt_State.TabStop = false;
             // 
             // label6
             // 
@@ -653,17 +680,18 @@
             // 
             // txtSum
             // 
-            this.txtSum.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtSum.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtSum.ForeColor = System.Drawing.Color.Red;
             this.txtSum.Location = new System.Drawing.Point(544, 14);
             this.txtSum.Name = "txtSum";
             this.txtSum.ReadOnly = true;
-            this.txtSum.Size = new System.Drawing.Size(110, 23);
+            this.txtSum.Size = new System.Drawing.Size(110, 26);
             this.txtSum.TabIndex = 6;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(494, 20);
+            this.label13.Location = new System.Drawing.Point(494, 21);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(53, 12);
             this.label13.TabIndex = 5;
@@ -845,24 +873,6 @@
             this.cnhr_status.ReadOnly = true;
             this.cnhr_status.Width = 60;
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(9, 43);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(59, 12);
-            this.label15.TabIndex = 55;
-            this.label15.Text = "合作伙伴:";
-            // 
-            // txtPartner
-            // 
-            this.txtPartner.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtPartner.Location = new System.Drawing.Point(74, 40);
-            this.txtPartner.Name = "txtPartner";
-            this.txtPartner.ReadOnly = true;
-            this.txtPartner.Size = new System.Drawing.Size(96, 21);
-            this.txtPartner.TabIndex = 54;
-            // 
             // Fm_MkInvoice
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -944,17 +954,17 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtSum;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox txtPartner;
         private System.Windows.Forms.DataGridViewTextBoxColumn invd_jobno;
         private System.Windows.Forms.DataGridViewTextBoxColumn invd_prodcode;
         private System.Windows.Forms.DataGridViewTextBoxColumn invd_desc;
         private System.Windows.Forms.DataGridViewTextBoxColumn invd_qty;
         private System.Windows.Forms.DataGridViewTextBoxColumn invd_unit;
         private System.Windows.Forms.DataGridViewTextBoxColumn invd_uprice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sumPrice;
         private System.Windows.Forms.DataGridViewTextBoxColumn invd_discount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sumPrice;
         private System.Windows.Forms.DataGridViewComboBoxColumn invd_charge_yn_desc;
         private System.Windows.Forms.DataGridViewTextBoxColumn invd_charge_yn;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txtPartner;
     }
 }

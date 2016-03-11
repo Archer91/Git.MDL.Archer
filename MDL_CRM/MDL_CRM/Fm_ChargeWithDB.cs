@@ -83,7 +83,6 @@ namespace MDL_CRM
             chkSpecial.Checked = jobVO.JOBM_SPECIAL_YN.IsNullOrEmpty() ? false : (jobVO.JOBM_SPECIAL_YN == 1 ? true : false);
             txtInvoiceStatus.Text = jobVO.JOBM_STATUSDesc;
             txtInvNo.Text = jobVO.JOBM_INVNO;
-            nudSO_Discount.Value = jobVO.JOBM_DISCOUNT.IsNullOrEmpty()?1:(Decimal)jobVO.JOBM_DISCOUNT;
             #endregion
 
             //写入订单收费明细

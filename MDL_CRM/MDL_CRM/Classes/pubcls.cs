@@ -511,6 +511,67 @@ namespace MDL_CRM
                 #endregion
             }
         }
+
+        /// <summary>
+        /// 牙位
+        /// </summary>
+        /// <param name="pYawei">牙位数据</param>
+        /// <returns></returns>
+        public static bool ValidateYaiWeiNum(string pYawei, string pStandard = "EN")
+        {
+            if (pStandard.Trim() == "")
+            {
+                pStandard = "EN";
+            }
+            else if (pStandard.Trim().ToUpper() == "US")
+            {
+                pStandard = "US";
+            }
+            else
+            {
+                pStandard = "EN";
+            }
+            string[] sUs ={"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18",
+                            "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32",
+"lower","lowerarch","mandibular","mandible","man",
+"upper","upperarch","maxillary","maxilla","max",
+                            "upper/lower"};
+            List<string> lUs = sUs.ToList();
+            string[] sEn = { "18", "17", "16", "15", "14", "13", "12", "11", "21", "22", "23", "24", "25", "26", "27", "28", "38",
+                                           "37", "36", "35", "34", "33", "32", "31", "41", "42", "43", "44", "45", "46", "47", "48",
+                                       "下托","下托","下托","下托","下托",
+                                       "上托","上托","上托","上托","上托",
+                                       "上/下托"
+,"lower","lowerarch","mandibular","mandible","man",
+"upper","upperarch","maxillary","maxilla","max",
+                            "upper/lower"                           };
+            List<string> lEn = sEn.ToList();
+            pYawei = pYawei.TrimStart('\'');
+            string[] sA = pYawei.Split(',');//, '-'
+            foreach (string s1 in sA)
+            {
+                string[] sA2 = s1.Split('-');//, '-'
+                foreach (string s2 in sA2)
+                {
+                    string s3 = s2.Replace(" ", "").ToLower();
+                    int ii = -1;
+                    if (pStandard == "EN")
+                    {
+                        ii = lEn.IndexOf(s3);
+                    }
+                    else if (pStandard == "US")
+                    {
+                        ii = lUs.IndexOf(s3);
+                    }
+                    if (ii == -1 && s3 != "")
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+
     }
     
     /// <summary>

@@ -190,7 +190,7 @@
             this.txtError.ReadOnly = true;
             this.txtError.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtError.Size = new System.Drawing.Size(906, 28);
-            this.txtError.TabIndex = 92;
+            this.txtError.TabIndex = 6;
             this.txtError.DoubleClick += new System.EventHandler(this.txtError_DoubleClick);
             // 
             // groupBox2
@@ -218,7 +218,8 @@
             this.dtpCharge_DeliveryDate.Location = new System.Drawing.Point(70, 45);
             this.dtpCharge_DeliveryDate.Name = "dtpCharge_DeliveryDate";
             this.dtpCharge_DeliveryDate.Size = new System.Drawing.Size(79, 21);
-            this.dtpCharge_DeliveryDate.TabIndex = 1;
+            this.dtpCharge_DeliveryDate.TabIndex = 123;
+            this.dtpCharge_DeliveryDate.TabStop = false;
             this.dtpCharge_DeliveryDate.Tag = "JOBM_DELIVERYDATE";
             // 
             // cmbDel
@@ -228,7 +229,8 @@
             this.cmbDel.Location = new System.Drawing.Point(149, 45);
             this.cmbDel.Name = "cmbDel";
             this.cmbDel.Size = new System.Drawing.Size(47, 20);
-            this.cmbDel.TabIndex = 2;
+            this.cmbDel.TabIndex = 124;
+            this.cmbDel.TabStop = false;
             this.cmbDel.Tag = "SO_TIMF_CODE_DEL";
             // 
             // txtCharge_CustRemark
@@ -240,7 +242,8 @@
             this.txtCharge_CustRemark.ReadOnly = true;
             this.txtCharge_CustRemark.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtCharge_CustRemark.Size = new System.Drawing.Size(223, 21);
-            this.txtCharge_CustRemark.TabIndex = 3;
+            this.txtCharge_CustRemark.TabIndex = 125;
+            this.txtCharge_CustRemark.TabStop = false;
             this.txtCharge_CustRemark.Tag = "JOBM_CUSTREMARK";
             // 
             // label27
@@ -268,7 +271,8 @@
             this.txtCharge_Location.Name = "txtCharge_Location";
             this.txtCharge_Location.ReadOnly = true;
             this.txtCharge_Location.Size = new System.Drawing.Size(223, 21);
-            this.txtCharge_Location.TabIndex = 0;
+            this.txtCharge_Location.TabIndex = 122;
+            this.txtCharge_Location.TabStop = false;
             this.txtCharge_Location.Tag = "JOBM_LOCATION";
             // 
             // label29
@@ -301,7 +305,8 @@
             this.txtRefundStatus.Name = "txtRefundStatus";
             this.txtRefundStatus.ReadOnly = true;
             this.txtRefundStatus.Size = new System.Drawing.Size(129, 21);
-            this.txtRefundStatus.TabIndex = 31;
+            this.txtRefundStatus.TabIndex = 115;
+            this.txtRefundStatus.TabStop = false;
             this.txtRefundStatus.Tag = "SO_INVNO";
             // 
             // txtInvNo
@@ -310,7 +315,8 @@
             this.txtInvNo.Name = "txtInvNo";
             this.txtInvNo.ReadOnly = true;
             this.txtInvNo.Size = new System.Drawing.Size(129, 21);
-            this.txtInvNo.TabIndex = 8;
+            this.txtInvNo.TabIndex = 112;
+            this.txtInvNo.TabStop = false;
             this.txtInvNo.Tag = "JOBM_INVNO";
             // 
             // label4
@@ -329,7 +335,7 @@
             this.txtInvoiceStatus.Name = "txtInvoiceStatus";
             this.txtInvoiceStatus.ReadOnly = true;
             this.txtInvoiceStatus.Size = new System.Drawing.Size(129, 21);
-            this.txtInvoiceStatus.TabIndex = 3;
+            this.txtInvoiceStatus.TabIndex = 109;
             this.txtInvoiceStatus.TabStop = false;
             // 
             // label23
@@ -356,7 +362,7 @@
             this.txtOrder.Location = new System.Drawing.Point(66, 14);
             this.txtOrder.Name = "txtOrder";
             this.txtOrder.Size = new System.Drawing.Size(0, 12);
-            this.txtOrder.TabIndex = 75;
+            this.txtOrder.TabIndex = 100;
             this.txtOrder.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.txtOrder_LinkClicked);
             // 
             // label8
@@ -376,7 +382,8 @@
             this.txtStage.Name = "txtStage";
             this.txtStage.ReadOnly = true;
             this.txtStage.Size = new System.Drawing.Size(60, 21);
-            this.txtStage.TabIndex = 52;
+            this.txtStage.TabIndex = 105;
+            this.txtStage.TabStop = false;
             this.txtStage.Tag = "JOBM_STAGEDesc";
             // 
             // txtCompany
@@ -385,7 +392,8 @@
             this.txtCompany.Name = "txtCompany";
             this.txtCompany.ReadOnly = true;
             this.txtCompany.Size = new System.Drawing.Size(71, 21);
-            this.txtCompany.TabIndex = 73;
+            this.txtCompany.TabIndex = 101;
+            this.txtCompany.TabStop = false;
             this.txtCompany.Tag = "JOBM_PARTNER";
             // 
             // label9
@@ -404,7 +412,8 @@
             this.txtCharge_Patient.Name = "txtCharge_Patient";
             this.txtCharge_Patient.ReadOnly = true;
             this.txtCharge_Patient.Size = new System.Drawing.Size(252, 21);
-            this.txtCharge_Patient.TabIndex = 4;
+            this.txtCharge_Patient.TabIndex = 113;
+            this.txtCharge_Patient.TabStop = false;
             this.txtCharge_Patient.Tag = "JOBM_PATIENT";
             // 
             // groupBox1
@@ -434,7 +443,8 @@
             this.dtpCharge_EstimateDate.Location = new System.Drawing.Point(83, 72);
             this.dtpCharge_EstimateDate.Name = "dtpCharge_EstimateDate";
             this.dtpCharge_EstimateDate.Size = new System.Drawing.Size(79, 21);
-            this.dtpCharge_EstimateDate.TabIndex = 4;
+            this.dtpCharge_EstimateDate.TabIndex = 120;
+            this.dtpCharge_EstimateDate.TabStop = false;
             this.dtpCharge_EstimateDate.Tag = "JOBM_ESTIMATEDATE";
             // 
             // label26
@@ -457,7 +467,8 @@
             this.dtpCharge_ReceiveDate.Location = new System.Drawing.Point(83, 18);
             this.dtpCharge_ReceiveDate.Name = "dtpCharge_ReceiveDate";
             this.dtpCharge_ReceiveDate.Size = new System.Drawing.Size(79, 21);
-            this.dtpCharge_ReceiveDate.TabIndex = 0;
+            this.dtpCharge_ReceiveDate.TabIndex = 116;
+            this.dtpCharge_ReceiveDate.TabStop = false;
             this.dtpCharge_ReceiveDate.Tag = "JOBM_RECEIVEDATE";
             // 
             // cmbEst
@@ -467,7 +478,8 @@
             this.cmbEst.Location = new System.Drawing.Point(162, 72);
             this.cmbEst.Name = "cmbEst";
             this.cmbEst.Size = new System.Drawing.Size(47, 20);
-            this.cmbEst.TabIndex = 5;
+            this.cmbEst.TabIndex = 121;
+            this.cmbEst.TabStop = false;
             this.cmbEst.Tag = "SO_TIMF_CODE_EST";
             // 
             // dtpCharge_RequestDate
@@ -478,7 +490,8 @@
             this.dtpCharge_RequestDate.Location = new System.Drawing.Point(83, 45);
             this.dtpCharge_RequestDate.Name = "dtpCharge_RequestDate";
             this.dtpCharge_RequestDate.Size = new System.Drawing.Size(79, 21);
-            this.dtpCharge_RequestDate.TabIndex = 2;
+            this.dtpCharge_RequestDate.TabIndex = 118;
+            this.dtpCharge_RequestDate.TabStop = false;
             this.dtpCharge_RequestDate.Tag = "JOBM_REQUESTDATE";
             this.dtpCharge_RequestDate.Value = new System.DateTime(2015, 12, 21, 9, 59, 0, 0);
             // 
@@ -489,7 +502,8 @@
             this.cmbRec.Location = new System.Drawing.Point(162, 19);
             this.cmbRec.Name = "cmbRec";
             this.cmbRec.Size = new System.Drawing.Size(47, 20);
-            this.cmbRec.TabIndex = 1;
+            this.cmbRec.TabIndex = 117;
+            this.cmbRec.TabStop = false;
             this.cmbRec.Tag = "SO_TIMF_CODE_REC";
             // 
             // label25
@@ -509,7 +523,8 @@
             this.cmbReq.Location = new System.Drawing.Point(162, 45);
             this.cmbReq.Name = "cmbReq";
             this.cmbReq.Size = new System.Drawing.Size(47, 20);
-            this.cmbReq.TabIndex = 3;
+            this.cmbReq.TabIndex = 119;
+            this.cmbReq.TabStop = false;
             this.cmbReq.Tag = "SO_TIMF_CODE_REQ";
             // 
             // label24
@@ -543,7 +558,8 @@
             this.chkRedo.Location = new System.Drawing.Point(6, 17);
             this.chkRedo.Name = "chkRedo";
             this.chkRedo.Size = new System.Drawing.Size(48, 16);
-            this.chkRedo.TabIndex = 31;
+            this.chkRedo.TabIndex = 126;
+            this.chkRedo.TabStop = false;
             this.chkRedo.Tag = "JOBM_REDO_YN";
             this.chkRedo.Text = "重造";
             this.chkRedo.UseVisualStyleBackColor = true;
@@ -554,7 +570,8 @@
             this.chkAmend.Location = new System.Drawing.Point(60, 17);
             this.chkAmend.Name = "chkAmend";
             this.chkAmend.Size = new System.Drawing.Size(48, 16);
-            this.chkAmend.TabIndex = 32;
+            this.chkAmend.TabIndex = 127;
+            this.chkAmend.TabStop = false;
             this.chkAmend.Tag = "JOBM_AMEND_YN";
             this.chkAmend.Text = "修改";
             this.chkAmend.UseVisualStyleBackColor = true;
@@ -565,7 +582,8 @@
             this.chkTry.Location = new System.Drawing.Point(124, 17);
             this.chkTry.Name = "chkTry";
             this.chkTry.Size = new System.Drawing.Size(48, 16);
-            this.chkTry.TabIndex = 33;
+            this.chkTry.TabIndex = 128;
+            this.chkTry.TabStop = false;
             this.chkTry.Tag = "JOBM_TRY_YN";
             this.chkTry.Text = "试件";
             this.chkTry.UseVisualStyleBackColor = true;
@@ -576,7 +594,8 @@
             this.chkUrgent.Location = new System.Drawing.Point(6, 44);
             this.chkUrgent.Name = "chkUrgent";
             this.chkUrgent.Size = new System.Drawing.Size(48, 16);
-            this.chkUrgent.TabIndex = 34;
+            this.chkUrgent.TabIndex = 129;
+            this.chkUrgent.TabStop = false;
             this.chkUrgent.Tag = "JOBM_URGENT_YN";
             this.chkUrgent.Text = "急件";
             this.chkUrgent.UseVisualStyleBackColor = true;
@@ -587,7 +606,8 @@
             this.chkColor.Location = new System.Drawing.Point(60, 44);
             this.chkColor.Name = "chkColor";
             this.chkColor.Size = new System.Drawing.Size(60, 16);
-            this.chkColor.TabIndex = 35;
+            this.chkColor.TabIndex = 130;
+            this.chkColor.TabStop = false;
             this.chkColor.Tag = "JOBM_COLOR_YN";
             this.chkColor.Text = "对色件";
             this.chkColor.UseVisualStyleBackColor = true;
@@ -598,7 +618,8 @@
             this.chkSpecial.Location = new System.Drawing.Point(124, 44);
             this.chkSpecial.Name = "chkSpecial";
             this.chkSpecial.Size = new System.Drawing.Size(72, 16);
-            this.chkSpecial.TabIndex = 36;
+            this.chkSpecial.TabIndex = 131;
+            this.chkSpecial.TabStop = false;
             this.chkSpecial.Tag = "JOBM_SPECIAL_YN";
             this.chkSpecial.Text = "特别处理";
             this.chkSpecial.UseVisualStyleBackColor = true;
@@ -608,7 +629,7 @@
             this.btnInvoice.Location = new System.Drawing.Point(780, 168);
             this.btnInvoice.Name = "btnInvoice";
             this.btnInvoice.Size = new System.Drawing.Size(116, 30);
-            this.btnInvoice.TabIndex = 79;
+            this.btnInvoice.TabIndex = 5;
             this.btnInvoice.Text = "产生发票(&G)";
             this.btnInvoice.UseVisualStyleBackColor = true;
             this.btnInvoice.Click += new System.EventHandler(this.btnInvoice_Click);
@@ -764,11 +785,12 @@
             // 
             // txtScanJobNo
             // 
+            this.txtScanJobNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtScanJobNo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtScanJobNo.Location = new System.Drawing.Point(71, 28);
             this.txtScanJobNo.Name = "txtScanJobNo";
             this.txtScanJobNo.Size = new System.Drawing.Size(144, 21);
-            this.txtScanJobNo.TabIndex = 74;
+            this.txtScanJobNo.TabIndex = 0;
             this.txtScanJobNo.Tag = "SO_JOBM_NO";
             this.txtScanJobNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Fm_Charge_KeyPress);
             // 
@@ -790,7 +812,8 @@
             this.txtCharge_DoctorId.ReadOnly = true;
             this.txtCharge_DoctorId.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtCharge_DoctorId.Size = new System.Drawing.Size(252, 21);
-            this.txtCharge_DoctorId.TabIndex = 5;
+            this.txtCharge_DoctorId.TabIndex = 110;
+            this.txtCharge_DoctorId.TabStop = false;
             this.txtCharge_DoctorId.Tag = "JOBM_DOCTORID";
             // 
             // mainPanel
@@ -829,15 +852,16 @@
             this.mainPanel.Location = new System.Drawing.Point(0, 51);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(768, 253);
-            this.mainPanel.TabIndex = 76;
+            this.mainPanel.TabIndex = 1;
             // 
             // nudSO_Discount
             // 
+            this.nudSO_Discount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.nudSO_Discount.DecimalPlaces = 2;
             this.nudSO_Discount.Location = new System.Drawing.Point(606, 220);
             this.nudSO_Discount.Name = "nudSO_Discount";
             this.nudSO_Discount.Size = new System.Drawing.Size(88, 21);
-            this.nudSO_Discount.TabIndex = 79;
+            this.nudSO_Discount.TabIndex = 1;
             this.nudSO_Discount.Tag = "Charge_DISCOUNT";
             this.nudSO_Discount.Value = new decimal(new int[] {
             1,
@@ -860,7 +884,8 @@
             this.txtPartner.Name = "txtPartner";
             this.txtPartner.ReadOnly = true;
             this.txtPartner.Size = new System.Drawing.Size(85, 21);
-            this.txtPartner.TabIndex = 77;
+            this.txtPartner.TabIndex = 103;
+            this.txtPartner.TabStop = false;
             this.txtPartner.Tag = "JOBM_ENTITY";
             // 
             // label10
@@ -878,7 +903,8 @@
             this.txtJobNo.Name = "txtJobNo";
             this.txtJobNo.ReadOnly = true;
             this.txtJobNo.Size = new System.Drawing.Size(85, 21);
-            this.txtJobNo.TabIndex = 1;
+            this.txtJobNo.TabIndex = 102;
+            this.txtJobNo.TabStop = false;
             this.txtJobNo.Tag = "JOBM_NO";
             // 
             // label1
@@ -897,7 +923,8 @@
             this.txtMgrpCode.Name = "txtMgrpCode";
             this.txtMgrpCode.ReadOnly = true;
             this.txtMgrpCode.Size = new System.Drawing.Size(61, 21);
-            this.txtMgrpCode.TabIndex = 37;
+            this.txtMgrpCode.TabIndex = 104;
+            this.txtMgrpCode.TabStop = false;
             // 
             // label18
             // 
@@ -924,7 +951,8 @@
             this.txtCharge_CustBatchId.Name = "txtCharge_CustBatchId";
             this.txtCharge_CustBatchId.ReadOnly = true;
             this.txtCharge_CustBatchId.Size = new System.Drawing.Size(123, 21);
-            this.txtCharge_CustBatchId.TabIndex = 6;
+            this.txtCharge_CustBatchId.TabIndex = 111;
+            this.txtCharge_CustBatchId.TabStop = false;
             this.txtCharge_CustBatchId.Tag = "JOBM_CUSTBATCHID";
             // 
             // label16
@@ -944,7 +972,8 @@
             this.txtCharge_DentName.ReadOnly = true;
             this.txtCharge_DentName.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtCharge_DentName.Size = new System.Drawing.Size(166, 21);
-            this.txtCharge_DentName.TabIndex = 6;
+            this.txtCharge_DentName.TabIndex = 107;
+            this.txtCharge_DentName.TabStop = false;
             this.txtCharge_DentName.Tag = "JOBM_DENTNAME";
             // 
             // txtCharge_ACCOUNTID
@@ -953,7 +982,8 @@
             this.txtCharge_ACCOUNTID.Name = "txtCharge_ACCOUNTID";
             this.txtCharge_ACCOUNTID.ReadOnly = true;
             this.txtCharge_ACCOUNTID.Size = new System.Drawing.Size(85, 21);
-            this.txtCharge_ACCOUNTID.TabIndex = 2;
+            this.txtCharge_ACCOUNTID.TabIndex = 106;
+            this.txtCharge_ACCOUNTID.TabStop = false;
             this.txtCharge_ACCOUNTID.Tag = "JOBM_ACCOUNTID";
             // 
             // label5
@@ -972,7 +1002,8 @@
             this.txtCharge_CustCaseNo.Name = "txtCharge_CustCaseNo";
             this.txtCharge_CustCaseNo.ReadOnly = true;
             this.txtCharge_CustCaseNo.Size = new System.Drawing.Size(123, 21);
-            this.txtCharge_CustCaseNo.TabIndex = 1;
+            this.txtCharge_CustCaseNo.TabIndex = 108;
+            this.txtCharge_CustCaseNo.TabStop = false;
             this.txtCharge_CustCaseNo.Tag = "JOBM_CUSTCASENO";
             // 
             // txtCharge_RelateWO
@@ -981,7 +1012,8 @@
             this.txtCharge_RelateWO.Name = "txtCharge_RelateWO";
             this.txtCharge_RelateWO.ReadOnly = true;
             this.txtCharge_RelateWO.Size = new System.Drawing.Size(123, 21);
-            this.txtCharge_RelateWO.TabIndex = 1;
+            this.txtCharge_RelateWO.TabIndex = 114;
+            this.txtCharge_RelateWO.TabStop = false;
             this.txtCharge_RelateWO.Tag = "JOBM_RELATEJOB";
             // 
             // label2
@@ -1008,7 +1040,7 @@
             this.btnReInvoice.Location = new System.Drawing.Point(780, 132);
             this.btnReInvoice.Name = "btnReInvoice";
             this.btnReInvoice.Size = new System.Drawing.Size(116, 30);
-            this.btnReInvoice.TabIndex = 83;
+            this.btnReInvoice.TabIndex = 4;
             this.btnReInvoice.Text = "相关发票(&I)";
             this.btnReInvoice.UseVisualStyleBackColor = true;
             this.btnReInvoice.Click += new System.EventHandler(this.btnReInvoice_Click);
@@ -1018,7 +1050,7 @@
             this.btnRelease.Location = new System.Drawing.Point(780, 97);
             this.btnRelease.Name = "btnRelease";
             this.btnRelease.Size = new System.Drawing.Size(116, 30);
-            this.btnRelease.TabIndex = 94;
+            this.btnRelease.TabIndex = 3;
             this.btnRelease.Text = "解除相关限制(&O)";
             this.btnRelease.UseVisualStyleBackColor = true;
             this.btnRelease.Click += new System.EventHandler(this.btnRelease_Click);
@@ -1028,7 +1060,7 @@
             this.btnDiscount.Location = new System.Drawing.Point(780, 61);
             this.btnDiscount.Name = "btnDiscount";
             this.btnDiscount.Size = new System.Drawing.Size(116, 30);
-            this.btnDiscount.TabIndex = 95;
+            this.btnDiscount.TabIndex = 2;
             this.btnDiscount.Text = "折扣/额外收费";
             this.btnDiscount.UseVisualStyleBackColor = true;
             this.btnDiscount.Click += new System.EventHandler(this.btnDiscount_Click);

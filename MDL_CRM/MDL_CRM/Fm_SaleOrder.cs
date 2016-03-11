@@ -15,10 +15,10 @@ namespace MDL_CRM
 {
     public partial class Fm_SaleOrder : Form
     {
-        SaleOrderHelper soHelper;
-        WorkOrderHelper woHelper;
-        int intCurRow;//当前行Index
-        string selectSO = string.Empty;//当前选择的订单
+        SaleOrderHelper soHelper = null;
+        WorkOrderHelper woHelper = null;
+        int intCurRow = 0;//当前行Index
+        string selectSO = string.Empty;//当前选择的订单号
       
         public Fm_SaleOrder()
         {
@@ -40,17 +40,32 @@ namespace MDL_CRM
         {
             try
             {
-                //加载Stage
-                loadStage();
                 soHelper = new SaleOrderHelper();
                 woHelper = new WorkOrderHelper();
-
-                pubcls.LoadSODelegate = loadSO;//将方法绑定到委托
+                //启用/禁用菜单按钮
+                enableMenuButton(false);
+                //加载Stage
+                loadStage();
+                //将方法绑定到委托
+                pubcls.LoadSODelegate = loadSO;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "MDL-提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        /// <summary>
+        /// 启用或禁用菜单相关按钮
+        /// </summary>
+        /// <param name="pBool">true启用，false禁用</param>
+        private void enableMenuButton(bool pBool)
+        {
+            btnEdit.Enabled = pBool;
+            btnCopy.Enabled = pBool;
+            btnDel.Enabled = pBool;
+            btnExport.Enabled = pBool;
+            btnPrint.Enabled = pBool;
         }
         /// <summary>
         /// 获取Stage
@@ -103,6 +118,7 @@ namespace MDL_CRM
                 MessageBox.Show(ex.Message, "MDL-提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        
         /// <summary>
         /// 加载SO列表
         /// </summary>
@@ -157,7 +173,14 @@ namespace MDL_CRM
 
             dgvSOList.AutoGenerateColumns = false;
             dgvSOList.DataSource = soHelper.getSaleOrderList(pubcls.CompanyCode,conditionStr.ToString());
-            this.Cursor = Cursors.Default;
+            if (dgvSOList.Rows.Count <= 0)
+            {
+                enableMenuButton(false);
+            }
+            else
+            {
+                enableMenuButton(true);
+            }
         }
         
         //客户
@@ -187,8 +210,26 @@ namespace MDL_CRM
         {
             try
             {
-                Fm_SaleOrderEdit frm = new Fm_SaleOrderEdit(EditMode.Add);
-                frm.ShowDialog();
+                Fm_SaleOrderEdit frm = new Fm_SaleOrderEdit();
+                Form newform;
+                if (blnOpenForm(frm, out newform))
+                {
+                    frm = (Fm_SaleOrderEdit)newform;
+                    frm.Activate();
+                    if (frm.LoadSaleOrderDelegate != null)
+                    {
+                        frm.LoadSaleOrderDelegate(EditMode.Add);
+                    }
+                }
+                else
+                {
+                    frm.MdiParent = this.MdiParent;
+                    frm.Show();
+                    if (frm.LoadSaleOrderDelegate != null)
+                    {
+                        frm.LoadSaleOrderDelegate(EditMode.Add);
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -209,8 +250,26 @@ namespace MDL_CRM
                 intCurRow = dgvSOList.CurrentCell.RowIndex;
                 selectSO = dgvSOList.Rows[intCurRow].Cells["SO_NO"].Value.ToString();
 
-                Fm_SaleOrderEdit frm = new Fm_SaleOrderEdit(EditMode.Edit, selectSO);
-                frm.ShowDialog();
+                Fm_SaleOrderEdit frm = new Fm_SaleOrderEdit();
+                Form newform;
+                if (blnOpenForm(frm, out newform))
+                {
+                    frm = (Fm_SaleOrderEdit)newform;
+                    frm.Activate();
+                    if (frm.LoadSaleOrderDelegate != null)
+                    {
+                        frm.LoadSaleOrderDelegate(EditMode.Edit, selectSO);
+                    }
+                }
+                else
+                {
+                    frm.MdiParent = this.MdiParent;
+                    frm.Show();
+                    if (frm.LoadSaleOrderDelegate != null)
+                    {
+                        frm.LoadSaleOrderDelegate(EditMode.Edit, selectSO);
+                    }
+                }
                 #endregion
             }
             catch (Exception ex)
@@ -275,8 +334,26 @@ namespace MDL_CRM
                 intCurRow = dgvSOList.CurrentCell.RowIndex;
                 selectSO = dgvSOList.Rows[intCurRow].Cells["SO_NO"].Value.ToString();
 
-                Fm_SaleOrderEdit frm = new Fm_SaleOrderEdit(EditMode.Copy, selectSO);
-                frm.ShowDialog();
+                Fm_SaleOrderEdit frm = new Fm_SaleOrderEdit();
+                Form newform;
+                if (blnOpenForm(frm, out newform))
+                {
+                    frm = (Fm_SaleOrderEdit)newform;
+                    frm.Activate();
+                    if (frm.LoadSaleOrderDelegate != null)
+                    {
+                        frm.LoadSaleOrderDelegate(EditMode.Copy, selectSO);
+                    }
+                }
+                else
+                {
+                    frm.MdiParent = this.MdiParent;
+                    frm.Show();
+                    if (frm.LoadSaleOrderDelegate != null)
+                    {
+                        frm.LoadSaleOrderDelegate(EditMode.Copy, selectSO);
+                    }
+                }
                 #endregion
             }
             catch (Exception ex)
@@ -339,7 +416,8 @@ namespace MDL_CRM
                     return;
                 }
                 //转工作单
-                string tmpJobNo = woHelper.transferJobOrder(dgvSOList.Rows[intCurRow].Cells["SO_ENTITY"].Value.ToString().Trim(),  
+                string tmpJobNo = woHelper.transferJobOrder(
+                    dgvSOList.Rows[intCurRow].Cells["SO_ENTITY"].Value.ToString().Trim(),  
                     dgvSOList.Rows[intCurRow].Cells["SO_SITE"].Value.ToString().Trim(),
                     dgvSOList.Rows[intCurRow].Cells["SO_PARTNER_ACCTID"].Value.ToString().Trim(),
                     selectSO);
@@ -507,7 +585,6 @@ namespace MDL_CRM
                 {
                     frm = (Fm_JobItem)newform;
                     frm.Activate();
-
                     if (frm.ScanJobmNo != null)
                     {
                         frm.ScanJobmNo(tmpJobmNo);
@@ -616,9 +693,27 @@ namespace MDL_CRM
                 intCurRow = dgvSOList.CurrentCell.RowIndex;
                 selectSO = dgvSOList.Rows[intCurRow].Cells["SO_NO"].Value.ToString();
 
-                Fm_SaleOrderEdit frm = new Fm_SaleOrderEdit(EditMode.Browse, selectSO);
-                frm.Owner = this;
-                frm.ShowDialog();
+                Form newform;
+                Fm_SaleOrderEdit frm = new Fm_SaleOrderEdit();
+
+                if (blnOpenForm(frm, out newform))
+                {
+                    frm = (Fm_SaleOrderEdit)newform;
+                    frm.Activate();
+                    if (frm.LoadSaleOrderDelegate != null)
+                    {
+                        frm.LoadSaleOrderDelegate(EditMode.Browse, selectSO);
+                    }
+                }
+                else
+                {
+                    frm.MdiParent = this.MdiParent;
+                    frm.Show();
+                    if (frm.LoadSaleOrderDelegate != null)
+                    {
+                        frm.LoadSaleOrderDelegate(EditMode.Browse, selectSO);
+                    }
+                }
             }
             catch (Exception ex)
             {

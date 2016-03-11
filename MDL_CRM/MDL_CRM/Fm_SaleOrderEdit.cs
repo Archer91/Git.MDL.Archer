@@ -23,13 +23,6 @@ namespace MDL_CRM
             InitializeComponent();
         }
 
-        public Fm_SaleOrderEdit(EditMode pMode, string pSO = "") 
-            : this() 
-        {
-            m_EditMode = pMode;
-            m_strSo = pSO;
-        }
-
         protected override bool ProcessDialogKey(Keys keyData)
         {
             if ((ActiveControl is TextBox || ActiveControl is ComboBox || 
@@ -45,68 +38,7 @@ namespace MDL_CRM
         {
             try
             {
-                soHelper = new Helper.SaleOrderHelper();
-                woHelper = new WorkOrderHelper();
-                saleOrder = new SaleOrderVO();
-                //lstDetail = new List<SaleOrderDetailVO>();
-                lstDetail = new BindingList<SaleOrderDetailVO>();
-                //lstImage = new List<SaleOrderImageVO>();
-                lstImage = new BindingList<SaleOrderImageVO>();
-
-                Dal.BlankControl(this.mainPanel.Controls);
-                //重置控件内容
-                //TODO
-                loadCmb();
-                loadGridcmb();
-
-                //不为新增时，要进行数据查询
-                if (m_EditMode != EditMode.Add)
-                {
-                    //获取订单信息
-                    saleOrder = soHelper.getSaleOrder(pubcls.CompanyCode, m_strSo);
-                        lstDetail = saleOrder.DETAILS;
-                        lstImage = saleOrder.IMAGES;
-
-                    //加载订单信息
-                    loadSOInfo();
-
-                    //加载附件
-                    loadPicture();
-                    //获取货类
-                    txtMGRP_CODE.Text = getMgrpCode(txtSO_ACCOUNTID.Text.Trim());
-                }
-
-                dgvDetail.AutoGenerateColumns = false;
-                dgvDetail.DataSource = lstDetail;
-                dgvImage.AutoGenerateColumns = false;
-                dgvImage.DataSource = lstImage;
-                loadPicture();
-
-                //操作模式
-                switch (m_EditMode)
-                {
-                    case EditMode.Add:
-                        addMode();
-                        break;
-                    case EditMode.Edit:
-                        editMode();
-                        break;
-                    case EditMode.Browse:
-                        browseMode();
-                        break;
-                    case EditMode.Copy:
-                        copyMode();
-                        break;
-                }
-
-                fixReadOnly();
-                
-                txtError.ForeColor = Color.Red;
-                txtCompany.Text = pubcls.CompanyName;
-                txtcompaycode.Text = pubcls.CompanyCode;
-               
-                //显示状态颜色
-                displayColor(txtSO_Stage.Text);
+                LoadSaleOrderDelegate = loadSaleOrder;//将方法绑定到委托
             }
             catch (Exception ex)
             {
@@ -156,16 +88,31 @@ namespace MDL_CRM
 
         private void Fm_SaleOrderEdit_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //释放资源
-            saleOrder = null;
-            lstDetail = null;
-            lstImage = null;
-        }
-
-        //关闭按钮
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
+            if (m_EditMode == EditMode.Browse)
+            {
+                //释放资源
+                saleOrder = null;
+                lstDetail = null;
+                lstImage = null;
+            }
+            else
+            {
+                if (e.CloseReason == CloseReason.ApplicationExitCall)
+                {
+                    return;
+                }
+                if (DialogResult.Yes == MessageBox.Show("订单当前处于编辑状态，确认现在关闭?", "MDL-提示", MessageBoxButtons.YesNo, MessageBoxIcon.Information))
+                {
+                    //释放资源
+                    saleOrder = null;
+                    lstDetail = null;
+                    lstImage = null;
+                }
+                else
+                {
+                    e.Cancel = true;
+                }
+            }
         }
 
         //保存按钮
@@ -173,7 +120,9 @@ namespace MDL_CRM
         {
             try
             {
+                txtError.Text = string.Empty;
                 string tmpError = string.Empty;
+                gError = string.Empty;
                 string tmpSO = saveData(out tmpError);
                 if (tmpSO.IsNullOrEmpty())
                 {
@@ -518,7 +467,15 @@ namespace MDL_CRM
                         strCurProdCode = dgvDetail.Rows[dgvDetail.CurrentCell.RowIndex].Cells["SOD_PRODCODE"].Value.ToString();
                         chkMainProperty.Checked = false;
                         //加载SO明细属性
-                        loadpropertyView(lstDetail[dgvDetail.CurrentCell.RowIndex].PROPERTIES);
+                        if (lstDetail == null || lstDetail.Count <= 0)
+                        {
+                            strCurProdCode = "";
+                            dgvProperty.DataSource = null;
+                        }
+                        else
+                        {
+                            loadpropertyView(lstDetail[dgvDetail.CurrentCell.RowIndex].PROPERTIES);
+                        }
                     }
                 }
             }
@@ -1090,19 +1047,16 @@ namespace MDL_CRM
                     {
                         InvoiceMainForm.ScanJobmNo(txtSO_JobmNo.Text.Trim());
                     }
-                    this.Close();
                 }
                 else
                 {
-                    InvoiceMainForm.MdiParent = this.Owner.MdiParent;
+                    InvoiceMainForm.MdiParent = this.MdiParent;
                     InvoiceMainForm.Show();
                     if (InvoiceMainForm.ScanJobmNo != null)
                     {
                         InvoiceMainForm.ScanJobmNo(txtSO_JobmNo.Text.Trim());
                     }
-                    this.Close();
-                }
-                
+                } 
             }
             catch (Exception ex)
             {

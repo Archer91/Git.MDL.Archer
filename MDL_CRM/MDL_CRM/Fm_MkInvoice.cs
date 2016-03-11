@@ -691,9 +691,9 @@ namespace MDL_CRM
             }
             else
             {
-                dgvInvoiceDetail.Columns["invd_desc"].DefaultCellStyle.BackColor = SystemColors.Control;
-                dgvInvoiceDetail.Columns["invd_qty"].DefaultCellStyle.BackColor = SystemColors.Control;
-                dgvInvoiceDetail.Columns["invd_uprice"].DefaultCellStyle.BackColor = SystemColors.Control;
+                dgvInvoiceDetail.Columns["invd_desc"].DefaultCellStyle.BackColor = Color.White;
+                dgvInvoiceDetail.Columns["invd_qty"].DefaultCellStyle.BackColor = Color.White;
+                dgvInvoiceDetail.Columns["invd_uprice"].DefaultCellStyle.BackColor = Color.White;
             }
         }
 

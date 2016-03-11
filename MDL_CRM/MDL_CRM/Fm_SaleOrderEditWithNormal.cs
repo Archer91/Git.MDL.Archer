@@ -60,5 +60,11 @@ namespace MDL_CRM
         //List<SaleOrderImageVO> lstImage;//SO附件
         BindingList<SaleOrderImageVO> lstImage;
 
+        public delegate void loadSaleOrderEventHandler(EditMode pMode, string pSO = "");
+        public loadSaleOrderEventHandler LoadSaleOrderDelegate
+        { 
+            get;
+            set;
+        }
     }
 }

@@ -427,15 +427,51 @@ namespace MDL_CRM.Impl
                 '{30}','{31}',{32},{33},{34},
                 {35},{36},'{37}','{38}',{39},{40},
                 to_date('{41}','yyyy/MM/dd'),'{42}','{43}','{44}')", 
-                tmpJobNo, tmpJobOrder.JOBM_ACCOUNTID, tmpJobOrder.JOBM_DENTISTID, tmpJobOrder.JOBM_PATIENT, tmpJobOrder.JOBM_DOCTORID, tmpJobOrder.JOBM_JOB_TYPE,
-                tmpJobOrder.JOBM_JOB_NATURE, tmpJobOrder.JOBM_SYSTEMID, tmpJobOrder.JOBM_STATUS, tmpJobOrder.JOBM_RECEIVEDATE.IsNullOrEmpty()?null:tmpJobOrder.JOBM_RECEIVEDATE.Value.ToString("yyyy/MM/dd"), tmpJobOrder.JOBM_TIMF_CODE_REC,
-                tmpJobOrder.JOBM_DELIVERYDATE.IsNullOrEmpty() ? null : tmpJobOrder.JOBM_DELIVERYDATE.Value.ToString("yyyy/MM/dd"), tmpJobOrder.JOBM_TIMF_CODE_DEL, tmpJobOrder.JOBM_REQUESTDATE.IsNullOrEmpty() ? null : tmpJobOrder.JOBM_REQUESTDATE.Value.ToString("yyyy/MM/dd"), tmpJobOrder.JOBM_TIMF_CODE_REQ,
-                tmpJobOrder.JOBM_ESTIMATEDATE.IsNullOrEmpty() ? null : tmpJobOrder.JOBM_ESTIMATEDATE.Value.ToString("yyyy/MM/dd"), tmpJobOrder.JOBM_TIMF_CODE_EST, tmpJobOrder.JOBM_DESC, tmpJobOrder.JOBM_TOOTHPOS, tmpJobOrder.JOBM_TOOTHCOLOR, tmpJobOrder.JOBM_TOOTHCOLOR2,
-                tmpJobOrder.JOBM_TOOTHCOLOR3, tmpJobOrder.JOBM_STAGE, tmpJobOrder.JOBM_CUSTBATCHID, tmpJobOrder.JOBM_CUSTCASENO,
-                tmpJobOrder.JOBM_RELATEJOB, tmpJobOrder.JOBM_CUSTREMARK, tmpJobOrder.JOBM_LOCATION, tmpJobOrder.JOBM_DISCOUNT, tmpJobOrder.JOBM_CREATEBY,
-                tmpJobOrder.JOBM_DENTNAME, tmpJobOrder.JOBM_INVNO, tmpJobOrder.JOBM_COLOR_YN, tmpJobOrder.JOBM_COMP_YN, tmpJobOrder.JOBM_REDO_YN,
-                tmpJobOrder.JOBM_TRY_YN, tmpJobOrder.JOBM_URGENT_YN, tmpJobOrder.JOBM_DOCINFO_1, tmpJobOrder.JOBM_DOCINFO_2, tmpJobOrder.JOBM_SPECIAL_YN, tmpJobOrder.JOBM_AMEND_YN,
-                tmpJobOrder.JOBM_COMPDATE.IsNullOrEmpty() ? null : tmpJobOrder.JOBM_COMPDATE.Value.ToString("yyyy/MM/dd"), tmpJobOrder.JOBM_PACKNO, tmpJobOrder.JOBM_SLNO, tmpJobOrder.ZJOBM_RCV_BATCHNO);
+                tmpJobNo, 
+                tmpJobOrder.JOBM_ACCOUNTID, 
+                tmpJobOrder.JOBM_DENTISTID,
+                tmpJobOrder.JOBM_PATIENT, 
+                tmpJobOrder.JOBM_DOCTORID, 
+                tmpJobOrder.JOBM_JOB_TYPE,
+                tmpJobOrder.JOBM_JOB_NATURE,
+                tmpJobOrder.JOBM_SYSTEMID,
+                tmpJobOrder.JOBM_STATUS, 
+                tmpJobOrder.JOBM_RECEIVEDATE.IsNullOrEmpty()?null:tmpJobOrder.JOBM_RECEIVEDATE.Value.ToString("yyyy/MM/dd"), 
+                tmpJobOrder.JOBM_TIMF_CODE_REC,
+                tmpJobOrder.JOBM_DELIVERYDATE.IsNullOrEmpty() ? null : tmpJobOrder.JOBM_DELIVERYDATE.Value.ToString("yyyy/MM/dd"),
+                tmpJobOrder.JOBM_TIMF_CODE_DEL,
+                tmpJobOrder.JOBM_REQUESTDATE.IsNullOrEmpty() ? null : tmpJobOrder.JOBM_REQUESTDATE.Value.ToString("yyyy/MM/dd"), 
+                tmpJobOrder.JOBM_TIMF_CODE_REQ,
+                tmpJobOrder.JOBM_ESTIMATEDATE.IsNullOrEmpty() ? null : tmpJobOrder.JOBM_ESTIMATEDATE.Value.ToString("yyyy/MM/dd"), 
+                tmpJobOrder.JOBM_TIMF_CODE_EST, 
+                tmpJobOrder.JOBM_DESC, 
+                tmpJobOrder.JOBM_TOOTHPOS, 
+                tmpJobOrder.JOBM_TOOTHCOLOR,
+                tmpJobOrder.JOBM_TOOTHCOLOR2,
+                tmpJobOrder.JOBM_TOOTHCOLOR3,
+                tmpJobOrder.JOBM_STAGE, 
+                tmpJobOrder.JOBM_CUSTBATCHID, 
+                tmpJobOrder.JOBM_CUSTCASENO,
+                tmpJobOrder.JOBM_RELATEJOB, 
+                tmpJobOrder.JOBM_CUSTREMARK, 
+                tmpJobOrder.JOBM_LOCATION, 
+                tmpJobOrder.JOBM_DISCOUNT,
+                tmpJobOrder.JOBM_CREATEBY,
+                tmpJobOrder.JOBM_DENTNAME, 
+                tmpJobOrder.JOBM_INVNO, 
+                tmpJobOrder.JOBM_COLOR_YN, 
+                tmpJobOrder.JOBM_COMP_YN, 
+                tmpJobOrder.JOBM_REDO_YN,
+                tmpJobOrder.JOBM_TRY_YN, 
+                tmpJobOrder.JOBM_URGENT_YN, 
+                tmpJobOrder.JOBM_DOCINFO_1, 
+                tmpJobOrder.JOBM_DOCINFO_2, 
+                tmpJobOrder.JOBM_SPECIAL_YN, 
+                tmpJobOrder.JOBM_AMEND_YN,
+                tmpJobOrder.JOBM_COMPDATE.IsNullOrEmpty() ? null : tmpJobOrder.JOBM_COMPDATE.Value.ToString("yyyy/MM/dd"),
+                tmpJobOrder.JOBM_PACKNO,
+                tmpJobOrder.JOBM_SLNO, 
+                tmpJobOrder.ZJOBM_RCV_BATCHNO);
 
                 ZComm1.StrI si = new ZComm1.StrI(tmpSql.ToString(), tmpIndex++);
                 ls.Add(si);
@@ -455,9 +491,24 @@ namespace MDL_CRM.Impl
                         tmpSql.AppendFormat(@"'{0}',{1},'{2}','{3}','{4}',{5},'{6}',
                         {7},'{8}','{9}','{10}','{11}','{12}',sysdate,
                         {13},'{14}',{15},{16},{17})",
-                        tmpJobNo,item.JDTL_LINENO,item.JDTL_PRO_MAT,item.JDTL_PRODCODE,item.JDTL_PARENT_PRODCODE,item.JDTL_QTY,item.JDTL_UNIT,
-                        item.JDTL_CHARGE_YN,item.JDTL_TOOTHPOS,item.JDTL_TOOTHCOLOR,item.JDTL_BATCHNO,item.JDTL_REMARK,item.JDTL_CREATEBY,
-                        item.JDTL_PRICE,item.JDTL_OTHER_NAME,item.JDTL_DONE_YN,item.JDTL_GROUP_ID,item.ZJDTL_FDA_QTY);
+                        tmpJobNo,
+                        item.JDTL_LINENO,
+                        item.JDTL_PRO_MAT,
+                        item.JDTL_PRODCODE,
+                        item.JDTL_PARENT_PRODCODE,
+                        item.JDTL_QTY,
+                        item.JDTL_UNIT,
+                        item.JDTL_CHARGE_YN,
+                        item.JDTL_TOOTHPOS,
+                        item.JDTL_TOOTHCOLOR,
+                        item.JDTL_BATCHNO,
+                        item.JDTL_REMARK,
+                        item.JDTL_CREATEBY,
+                        item.JDTL_PRICE,
+                        item.JDTL_OTHER_NAME,
+                        item.JDTL_DONE_YN,
+                        item.JDTL_GROUP_ID,
+                        item.ZJDTL_FDA_QTY);
 
                         ZComm1.StrI siProduct = new ZComm1.StrI(tmpSql.ToString(), tmpIndex++);
                         ls.Add(siProduct);
@@ -476,8 +527,14 @@ namespace MDL_CRM.Impl
                         JIMG_REALNAME,IMAGEEXSISTFLAG,JIMG_CATEGORY)");
                         tmpSql.Append(" values (");
                         tmpSql.AppendFormat(@"'{0}',{1},'{2}','{3}','{4}',sysdate,'{5}','{6}','{7}')",
-                        tmpJobNo,item.JIMG_LINENO,item.JIMG_IMAGE_PATH,item.JIMG_DESC,item.JIMG_CREATEBY,
-                        item.JIMG_REALNAME,item.IMAGEEXSISTFLAG,item.JIMG_CATEGORY);
+                        tmpJobNo,
+                        item.JIMG_LINENO,
+                        item.JIMG_IMAGE_PATH,
+                        item.JIMG_DESC,
+                        item.JIMG_CREATEBY,
+                        item.JIMG_REALNAME,
+                        item.IMAGEEXSISTFLAG,
+                        item.JIMG_CATEGORY);
 
                         ZComm1.StrI siImage = new ZComm1.StrI(tmpSql.ToString(), tmpIndex++);
                         ls.Add(siImage);
@@ -487,7 +544,10 @@ namespace MDL_CRM.Impl
                 //更新订单对应的工作单信息
                 tmpSql.Clear();
                 tmpSql.AppendFormat(@"update zt10_so_sales_order set so_jobm_no='{0}',so_lmodby='{1}',so_lmoddate=sysdate
-                where so_no='{2}'",tmpJobNo,DB.loginUserName,pSaleOrder);
+                where so_no='{2}'",
+                   tmpJobNo,
+                   DB.loginUserName,
+                   pSaleOrder);
 
                 ZComm1.StrI siSale = new ZComm1.StrI(tmpSql.ToString(), tmpIndex++);
                 ls.Add(siSale);
@@ -496,7 +556,16 @@ namespace MDL_CRM.Impl
                 tmpSql.Clear();
                 tmpSql.Append(@"insert into ZT_SS_LOG(");
                 tmpSql.Append(@"USER_ID,IP,ACTIONTIME,FUNCTION,ACTION,RESULT,RESULT_DESC,FROM_SYSTEM,FROM_KEY_VALUE) values(");
-                tmpSql.AppendFormat(@"'{0}','{1}',sysdate,'{2}','{3}',{4},'{5}','{6}','{7}'", DB.loginUserName, pubcls.IP, "订单维护", "转工作单", 1, tmpJobNo, "MDL", pSaleOrder);
+                tmpSql.AppendFormat(@"'{0}','{1}',sysdate,'{2}','{3}',{4},'{5}','{6}','{7}'",
+                    DB.loginUserName,
+                    pubcls.IP,
+                    "订单维护",
+                    "转工作单",
+                    1, 
+                    tmpJobNo,
+                    "MDL", 
+                    pSaleOrder);
+
                 tmpSql.Append(")");
 
                 ZComm1.StrI siLogMain = new ZComm1.StrI(tmpSql.ToString(), tmpIndex++);
@@ -558,15 +627,54 @@ namespace MDL_CRM.Impl
                 '{33}','{34}',{35},{36},{37},
                 {38},{39},'{40}','{41}',{42},{43},
                 to_date('{44}','yyyy/MM/dd'),'{45}','{46}','{47}')",
-                tmpJobOrder.JOBM_ENTITY, tmpJobOrder.JOBM_SITE, tmpJobOrder.JOBM_PARTNER, tmpJobNo, tmpJobOrder.JOBM_ACCOUNTID, tmpJobOrder.JOBM_DENTISTID, tmpJobOrder.JOBM_PATIENT, tmpJobOrder.JOBM_DOCTORID, tmpJobOrder.JOBM_JOB_TYPE,
-                tmpJobOrder.JOBM_JOB_NATURE, tmpJobOrder.JOBM_SYSTEMID, tmpJobOrder.JOBM_STATUS, tmpJobOrder.JOBM_RECEIVEDATE.IsNullOrEmpty() ? null : tmpJobOrder.JOBM_RECEIVEDATE.Value.ToString("yyyy/MM/dd"), tmpJobOrder.JOBM_TIMF_CODE_REC,
-                tmpJobOrder.JOBM_DELIVERYDATE.IsNullOrEmpty() ? null : tmpJobOrder.JOBM_DELIVERYDATE.Value.ToString("yyyy/MM/dd"), tmpJobOrder.JOBM_TIMF_CODE_DEL, tmpJobOrder.JOBM_REQUESTDATE.IsNullOrEmpty() ? null : tmpJobOrder.JOBM_REQUESTDATE.Value.ToString("yyyy/MM/dd"), tmpJobOrder.JOBM_TIMF_CODE_REQ,
-                tmpJobOrder.JOBM_ESTIMATEDATE.IsNullOrEmpty() ? null : tmpJobOrder.JOBM_ESTIMATEDATE.Value.ToString("yyyy/MM/dd"), tmpJobOrder.JOBM_TIMF_CODE_EST, tmpJobOrder.JOBM_DESC, tmpJobOrder.JOBM_TOOTHPOS, tmpJobOrder.JOBM_TOOTHCOLOR, tmpJobOrder.JOBM_TOOTHCOLOR2,
-                tmpJobOrder.JOBM_TOOTHCOLOR3, tmpJobOrder.JOBM_STAGE, tmpJobOrder.JOBM_CUSTBATCHID, tmpJobOrder.JOBM_CUSTCASENO,
-                tmpJobOrder.JOBM_RELATEJOB, tmpJobOrder.JOBM_CUSTREMARK, tmpJobOrder.JOBM_LOCATION, tmpJobOrder.JOBM_DISCOUNT, tmpJobOrder.JOBM_CREATEBY,
-                tmpJobOrder.JOBM_DENTNAME, tmpJobOrder.JOBM_INVNO, tmpJobOrder.JOBM_COLOR_YN, tmpJobOrder.JOBM_COMP_YN, tmpJobOrder.JOBM_REDO_YN,
-                tmpJobOrder.JOBM_TRY_YN, tmpJobOrder.JOBM_URGENT_YN, tmpJobOrder.JOBM_DOCINFO_1, tmpJobOrder.JOBM_DOCINFO_2, tmpJobOrder.JOBM_SPECIAL_YN, tmpJobOrder.JOBM_AMEND_YN,
-                tmpJobOrder.JOBM_COMPDATE.IsNullOrEmpty()?null:tmpJobOrder.JOBM_COMPDATE.Value.ToString("yyyy/MM/dd"), tmpJobOrder.JOBM_PACKNO, tmpJobOrder.JOBM_SLNO, tmpJobOrder.ZJOBM_RCV_BATCHNO);
+                tmpJobOrder.JOBM_ENTITY, 
+                tmpJobOrder.JOBM_SITE, 
+                tmpJobOrder.JOBM_PARTNER, 
+                tmpJobNo, 
+                tmpJobOrder.JOBM_ACCOUNTID, 
+                tmpJobOrder.JOBM_DENTISTID, 
+                tmpJobOrder.JOBM_PATIENT, 
+                tmpJobOrder.JOBM_DOCTORID, 
+                tmpJobOrder.JOBM_JOB_TYPE,
+                tmpJobOrder.JOBM_JOB_NATURE, 
+                tmpJobOrder.JOBM_SYSTEMID, 
+                tmpJobOrder.JOBM_STATUS, 
+                tmpJobOrder.JOBM_RECEIVEDATE.IsNullOrEmpty() ? null : tmpJobOrder.JOBM_RECEIVEDATE.Value.ToString("yyyy/MM/dd"), 
+                tmpJobOrder.JOBM_TIMF_CODE_REC,
+                tmpJobOrder.JOBM_DELIVERYDATE.IsNullOrEmpty() ? null : tmpJobOrder.JOBM_DELIVERYDATE.Value.ToString("yyyy/MM/dd"), 
+                tmpJobOrder.JOBM_TIMF_CODE_DEL, 
+                tmpJobOrder.JOBM_REQUESTDATE.IsNullOrEmpty() ? null : tmpJobOrder.JOBM_REQUESTDATE.Value.ToString("yyyy/MM/dd"), 
+                tmpJobOrder.JOBM_TIMF_CODE_REQ,
+                tmpJobOrder.JOBM_ESTIMATEDATE.IsNullOrEmpty() ? null : tmpJobOrder.JOBM_ESTIMATEDATE.Value.ToString("yyyy/MM/dd"), 
+                tmpJobOrder.JOBM_TIMF_CODE_EST, 
+                tmpJobOrder.JOBM_DESC, 
+                tmpJobOrder.JOBM_TOOTHPOS, 
+                tmpJobOrder.JOBM_TOOTHCOLOR, 
+                tmpJobOrder.JOBM_TOOTHCOLOR2,
+                tmpJobOrder.JOBM_TOOTHCOLOR3, 
+                tmpJobOrder.JOBM_STAGE, 
+                tmpJobOrder.JOBM_CUSTBATCHID, 
+                tmpJobOrder.JOBM_CUSTCASENO,
+                tmpJobOrder.JOBM_RELATEJOB, 
+                tmpJobOrder.JOBM_CUSTREMARK, 
+                tmpJobOrder.JOBM_LOCATION, 
+                tmpJobOrder.JOBM_DISCOUNT, 
+                tmpJobOrder.JOBM_CREATEBY,
+                tmpJobOrder.JOBM_DENTNAME, 
+                tmpJobOrder.JOBM_INVNO, 
+                tmpJobOrder.JOBM_COLOR_YN, 
+                tmpJobOrder.JOBM_COMP_YN, 
+                tmpJobOrder.JOBM_REDO_YN,
+                tmpJobOrder.JOBM_TRY_YN, 
+                tmpJobOrder.JOBM_URGENT_YN, 
+                tmpJobOrder.JOBM_DOCINFO_1, 
+                tmpJobOrder.JOBM_DOCINFO_2, 
+                tmpJobOrder.JOBM_SPECIAL_YN, 
+                tmpJobOrder.JOBM_AMEND_YN,
+                tmpJobOrder.JOBM_COMPDATE.IsNullOrEmpty()?null:tmpJobOrder.JOBM_COMPDATE.Value.ToString("yyyy/MM/dd"), 
+                tmpJobOrder.JOBM_PACKNO, 
+                tmpJobOrder.JOBM_SLNO, 
+                tmpJobOrder.ZJOBM_RCV_BATCHNO);
 
                 ZComm1.StrI si = new ZComm1.StrI(tmpSql.ToString(), tmpIndex++);
                 ls.Add(si);
@@ -586,9 +694,24 @@ namespace MDL_CRM.Impl
                         tmpSql.AppendFormat(@"'{0}',{1},'{2}','{3}','{4}',{5},'{6}',
                         {7},'{8}','{9}','{10}','{11}','{12}',sysdate,
                         {13},'{14}',{15},{16},{17})",
-                        tmpJobNo, item.JDTL_LINENO, item.JDTL_PRO_MAT, item.JDTL_PRODCODE, item.JDTL_PARENT_PRODCODE, item.JDTL_QTY, item.JDTL_UNIT,
-                        item.JDTL_CHARGE_YN, item.JDTL_TOOTHPOS, item.JDTL_TOOTHCOLOR, item.JDTL_BATCHNO, item.JDTL_REMARK, item.JDTL_CREATEBY,
-                        item.JDTL_PRICE, item.JDTL_OTHER_NAME, item.JDTL_DONE_YN, item.JDTL_GROUP_ID, item.ZJDTL_FDA_QTY);
+                        tmpJobNo, 
+                        item.JDTL_LINENO, 
+                        item.JDTL_PRO_MAT,
+                        item.JDTL_PRODCODE, 
+                        item.JDTL_PARENT_PRODCODE, 
+                        item.JDTL_QTY, 
+                        item.JDTL_UNIT,
+                        item.JDTL_CHARGE_YN, 
+                        item.JDTL_TOOTHPOS, 
+                        item.JDTL_TOOTHCOLOR, 
+                        item.JDTL_BATCHNO,
+                        item.JDTL_REMARK, 
+                        item.JDTL_CREATEBY,
+                        item.JDTL_PRICE, 
+                        item.JDTL_OTHER_NAME, 
+                        item.JDTL_DONE_YN,
+                        item.JDTL_GROUP_ID, 
+                        item.ZJDTL_FDA_QTY);
 
                         ZComm1.StrI siProduct = new ZComm1.StrI(tmpSql.ToString(), tmpIndex++);
                         ls.Add(siProduct);
@@ -607,8 +730,14 @@ namespace MDL_CRM.Impl
                         JIMG_REALNAME,IMAGEEXSISTFLAG,JIMG_CATEGORY)");
                         tmpSql.Append(" values (");
                         tmpSql.AppendFormat(@"'{0}',{1},'{2}','{3}','{4}',sysdate,'{5}','{6}','{7}')",
-                        tmpJobNo, item.JIMG_LINENO, item.JIMG_IMAGE_PATH, item.JIMG_DESC, item.JIMG_CREATEBY,
-                        item.JIMG_REALNAME, item.IMAGEEXSISTFLAG, item.JIMG_CATEGORY);
+                        tmpJobNo, 
+                        item.JIMG_LINENO, 
+                        item.JIMG_IMAGE_PATH, 
+                        item.JIMG_DESC, 
+                        item.JIMG_CREATEBY,
+                        item.JIMG_REALNAME, 
+                        item.IMAGEEXSISTFLAG,
+                        item.JIMG_CATEGORY);
 
                         ZComm1.StrI siImage = new ZComm1.StrI(tmpSql.ToString(), tmpIndex++);
                         ls.Add(siImage);
@@ -618,7 +747,10 @@ namespace MDL_CRM.Impl
                 //更新订单对应的工作单信息
                 tmpSql.Clear();
                 tmpSql.AppendFormat(@"update zt10_so_sales_order set so_jobm_no='{0}',so_lmodby='{1}',so_lmoddate=sysdate
-                where so_no='{2}'", tmpJobNo, DB.loginUserName, pSaleOrder);
+                where so_no='{2}'", 
+                  tmpJobNo, 
+                  DB.loginUserName, 
+                  pSaleOrder);
 
                 ZComm1.StrI siSale = new ZComm1.StrI(tmpSql.ToString(), tmpIndex++);
                 ls.Add(siSale);
@@ -627,7 +759,16 @@ namespace MDL_CRM.Impl
                 tmpSql.Clear();
                 tmpSql.Append(@"insert into ZT_SS_LOG(");
                 tmpSql.Append(@"USER_ID,IP,ACTIONTIME,FUNCTION,ACTION,RESULT,RESULT_DESC,FROM_SYSTEM,FROM_KEY_VALUE) values(");
-                tmpSql.AppendFormat(@"'{0}','{1}',sysdate,'{2}','{3}',{4},'{5}','{6}','{7}'", DB.loginUserName, pubcls.IP, "订单维护", "转工作单", 1, tmpJobNo, "MDL", pSaleOrder);
+                tmpSql.AppendFormat(@"'{0}','{1}',sysdate,'{2}','{3}',{4},'{5}','{6}','{7}'", 
+                    DB.loginUserName,
+                    pubcls.IP, 
+                    "订单维护",
+                    "转工作单", 
+                    1, 
+                    tmpJobNo, 
+                    "MDL",
+                    pSaleOrder);
+
                 tmpSql.Append(")");
 
                 ZComm1.StrI siLogMain = new ZComm1.StrI(tmpSql.ToString(), tmpIndex++);
@@ -644,7 +785,11 @@ namespace MDL_CRM.Impl
                         tmpSql.Append(
                             string.Format(@"select sseq_upd_on from zt00_form_sysseq 
                     where sseq_entity='{0}' and sseq_site='{1}' and sseq_type='{2}' and sseq_yyyymm='{3}' for update",
-                            tmpSeqVO.Seq_Entity, tmpSeqVO.Seq_Site, tmpSeqVO.Seq_Type, tmpSeqVO.Seq_YYYYMM));
+                            tmpSeqVO.Seq_Entity, 
+                            tmpSeqVO.Seq_Site, 
+                            tmpSeqVO.Seq_Type, 
+                            tmpSeqVO.Seq_YYYYMM));
+
                         DataTable tmpDt = ZComm1.Oracle.DB.GetDSFromSql1(tmpSql.ToString()).Tables[0];
                         //当已存在单据记录时
                         if (tmpDt != null && tmpDt.Rows.Count > 0)
@@ -658,9 +803,20 @@ namespace MDL_CRM.Impl
                         sseq_min_val,sseq_max_val, sseq_curr_val, sseq_prefix,sseq_suffix, sseq_yyyymm,
                         sseq_seq_length,sseq_prefix_ymd,sseq_step,sseq_crt_by,sseq_crt_on)
                         values('{0}','{1}','{2}','{3}',{4},{5},{6},'{7}','{8}','{9}',{10},'{11}',{12},'{13}',sysdate)",
-                            tmpSeqVO.Seq_Entity, tmpSeqVO.Seq_Site, tmpSeqVO.Seq_Type, tmpSeqVO.Seq_Type,
-                            tmpSeqVO.Seq_Min_Val, tmpSeqVO.Seq_Max_Val, tmpSeqVO.Seq_Curr_Val, tmpSeqVO.Seq_Prefix, tmpSeqVO.Seq_Suffix, tmpSeqVO.Seq_YYYYMM,
-                            tmpSeqVO.Seq_Length, tmpSeqVO.Seq_Prefix_YMD, tmpSeqVO.Seq_Step, tmpSeqVO.Seq_Crt_By));
+                            tmpSeqVO.Seq_Entity, 
+                            tmpSeqVO.Seq_Site, 
+                            tmpSeqVO.Seq_Type, 
+                            tmpSeqVO.Seq_Type,
+                            tmpSeqVO.Seq_Min_Val, 
+                            tmpSeqVO.Seq_Max_Val,
+                            tmpSeqVO.Seq_Curr_Val, 
+                            tmpSeqVO.Seq_Prefix, 
+                            tmpSeqVO.Seq_Suffix, 
+                            tmpSeqVO.Seq_YYYYMM,
+                            tmpSeqVO.Seq_Length, 
+                            tmpSeqVO.Seq_Prefix_YMD, 
+                            tmpSeqVO.Seq_Step, 
+                            tmpSeqVO.Seq_Crt_By));
                     }
                     else if(tmpSeqVO.Seq_Flag == 1)//单据号为更新
                     {
@@ -669,7 +825,11 @@ namespace MDL_CRM.Impl
                         tmpSql.Append(
                             string.Format(@"select sseq_upd_on from zt00_form_sysseq 
                     where sseq_entity='{0}' and sseq_site='{1}' and sseq_type='{2}' and sseq_yyyymm='{3}' for update",
-                            tmpSeqVO.Seq_Entity, tmpSeqVO.Seq_Site, tmpSeqVO.Seq_Type, tmpSeqVO.Seq_YYYYMM));
+                            tmpSeqVO.Seq_Entity,
+                            tmpSeqVO.Seq_Site,
+                            tmpSeqVO.Seq_Type, 
+                            tmpSeqVO.Seq_YYYYMM));
+
                         DataTable tmpDt = ZComm1.Oracle.DB.GetDSFromSql1(tmpSql.ToString()).Tables[0];
                         if (tmpDt != null && tmpDt.Rows.Count > 0)
                         {
@@ -684,7 +844,11 @@ namespace MDL_CRM.Impl
                         tmpSql.Append(
                             string.Format(@"update zt00_form_sysseq set sseq_curr_val=sseq_curr_val+sseq_step,sseq_upd_by='{0}',
                         sseq_upd_on=sysdate where sseq_entity='{1}' and sseq_site='{2}' and sseq_type='{3}' and sseq_yyyymm='{4}'",
-                            tmpSeqVO.Seq_Upd_By, tmpSeqVO.Seq_Entity, tmpSeqVO.Seq_Site, tmpSeqVO.Seq_Type, tmpSeqVO.Seq_YYYYMM));
+                            tmpSeqVO.Seq_Upd_By, 
+                            tmpSeqVO.Seq_Entity, 
+                            tmpSeqVO.Seq_Site,
+                            tmpSeqVO.Seq_Type, 
+                            tmpSeqVO.Seq_YYYYMM));
                     }
 
                     ZComm1.StrI siSeq = new ZComm1.StrI(tmpSql.ToString(), 0);//作为第一条处理
